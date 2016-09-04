@@ -8,6 +8,7 @@ func closure(x int) (func(), func(int)){
     x = x+5
     fmt.Printf("x+5: %d, 内存地址: %p\n", x, &x)
   }
+  // f2 访问了　ｆ1　中的ｘ
   f2 := func(y int){
     x = x+y
     fmt.Printf("x+%d: %d, 内存地址: %p\n", y, x, &x)
