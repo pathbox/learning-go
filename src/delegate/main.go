@@ -34,6 +34,6 @@ type Foo struct {
 
 func main() {
   f := Delegate{new(Foo)}
-  f.Magic() // print magic
+  f.Magic()
   f.MoreMagic()
 }
