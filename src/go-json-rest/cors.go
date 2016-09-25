@@ -1,3 +1,4 @@
+// Demonstrate how to setup CorsMiddleware around all the API endpoints.
 package main
 
 import (
@@ -16,13 +17,12 @@ func main() {
     },
     AllowedMethods: []string{"GET", "POST", "PUT"},
     AllowedHeaders: []string{
-      "Accept", "Content-Type", "X-Custom-Header", "Origin"
-    },
+      "Accept", "Content-Type", "X-Custom-Header", "Origin"},
     AccessControlAllowCredentials: true,
     AccessControlMaxAge:           3600,
   })
   router, err := rest.MakeRouter(
-    rest.Get("/conutries", GetAllCountries),
+    rest.Get("/countries", GetAllCountries),
   )
   if err != nil{
     log.Fatal(err)
@@ -46,8 +46,8 @@ func GetAllCountries(w rest.ResponseWriter, r *rest.Request)  {
       Country{
         Code: "US",
         Name: "United States",
-      }
-    }
+      },
+    },
   )
 
 }
