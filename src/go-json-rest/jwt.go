@@ -9,7 +9,7 @@ import (
     "github.com/ant0ine/go-json-rest/rest"
 )
 
-func handle_auth(w rest.ResponseWrite, r *rest.Request){
+func handle_auth(w rest.ResponseWriter, r *rest.Request){
   w.WriteJson(map[string]string{"authed": r.Env["REMOTE_USER"].(string)})
 }
 
@@ -25,7 +25,7 @@ func main() {
   }
 
   api := api.NewApi()
-  api.Use(DefauleDevStack...)
+  api.Use(DefaultDevStack...)
   api.Use(&rest.IfMiddleware{
     Condition: func(request *rest.Request) bool{
       return request.URL.Path != "/login"
