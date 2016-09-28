@@ -15,13 +15,21 @@ func main() {
   fmt.Println(db)
   defer db.Close()
 
-  db.AutoMigrate(&User{})
-  db.AutoMigrate(&Uer{}, &Order{})
+  // db.AutoMigrate(&User{})
+  // db.AutoMigrate(&Uer{}, &Order{})
+  //
+  // db.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(&User{})
+  //
+  // db.HasTable(&User{})
 
-  db.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(&User{})
-
-  db.HasTable(&User{})
-
+  // todos table
+  type Todo struct {
+    gorm.Model
+    ID int
+    Title string
+    Content string
+  }
+  db.Model(&Todo{}).AddIndex("idx_title", "title")
 
 }
 // Auto Migration
