@@ -1,0 +1,3 @@
+[Debug]/home/ldk/code/learning-go/src/log/log_file.go:18: A debug message here
+[Info]/home/ldk/code/learning-go/src/log/log_file.go:20: An Info Message here
+[Info]2016/10/13 21:48:13 /home/ldk/code/learning-go/src/log/log_file.go:22: A different prefix
