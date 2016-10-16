@@ -2,8 +2,7 @@ package main
 
 import (
 	"os"
-	log "github.com/Sirupsen/logrus,
-	"
+	log "github.com/Sirupsen/logrus"
 )
 
 func init() {
