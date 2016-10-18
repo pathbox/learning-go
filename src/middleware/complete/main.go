@@ -32,7 +32,7 @@ func myLoggingHandler(h http.Handler) http.Handler {
 	if err != nil {
 		panic(err)
 	}
-	return handlers.LoggingHandler(logFiler, h)
+	return handlers.LoggingHandler(logFile, h)
 }
 
 func main() {
@@ -40,7 +40,7 @@ func main() {
 	authHandler := httpauth.SimpleBasicAuth("admin", "password")
 
 	http.Handle("/", myLoggingHandler(authHandler(enforeceXMLHandler(indexHandler))))
-	http.ListenAndServe("9090", nil)
+	http.ListenAndServe(":9090", nil)
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
