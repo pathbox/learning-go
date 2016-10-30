@@ -8,6 +8,7 @@ import (
 
 func main() {
 	e := echo.New()
+	e.Use(middleware.Logger())
 	e.Get("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Hello World!")
 	})
