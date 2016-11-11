@@ -11,7 +11,7 @@ func main() {
 	data <- 1 // 在缓冲区未满前，不会阻塞。
 	data <- 2
 	data <- 3
-	// data <- 33  fatal error: all goroutines are asleep - deadlock!
+	// data <- 33  fatal error: all goroutines are asleep - deadlock! 缓冲区已满，一直等待进入缓冲区而导致死锁
 
 	go func() {
 		for d := range data { // 在缓冲区未空前，不会阻塞。
