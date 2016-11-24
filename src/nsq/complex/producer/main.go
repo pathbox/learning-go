@@ -14,7 +14,7 @@ var (
 func main() {
 	logger = log.New(ioutil.Discard, "", log.LstdFlags)
 	config := nsq.NewConfig()
-	addr := "10.0.3.126:4150"
+	addr := "127.0.0.1:9090"
 	w, _ := nsq.NewProducer(addr, config)
 	defer w.Stop()
 	w.SetLogger(logger, nsq.LogLevelDebug)
