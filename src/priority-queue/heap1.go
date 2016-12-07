@@ -41,16 +41,39 @@ func main() {
 	queue := TaskQueue{}
 	heap.Init(&queue)
 
-	heap.Push(&queue, Task{Time: time.Now().Add(time.Second * 3), Comment: "3"})
-	heap.Push(&queue, Task{Time: time.Now().Add(time.Second * 2), Comment: "2"})
-	heap.Push(&queue, Task{Time: time.Now().Add(time.Second), Comment: "1"})
+	notify := make(chan bool)
 
-	for queue.Len() > 0 {
-		task := heap.Pop(&queue).(Task)
-		diff := task.Time.Sub(time.Now())
-		if diff > 0 {
-			time.Sleep(diff)
+	go func() {
+		wait := time.Second * 30
+		for {
+			select {
+			case <-notify:
+			case <-time.After(wait):
+			}
+
+			if queue.Len() > 0 {
+				task := queue[0]
+				diff := task.Time.Sub(time.Now())
+				if diff > 0 {
+					wait = diff
+				} else {
+					fmt.Println(task.Comment)
+					heap.Pop(&queue)
+				}
+			} else {
+				wait = time.Second * 30
+			}
 		}
-		fmt.Println(task.Comment)
-	}
+	}()
+
+	heap.Push(&queue, Task{Time: time.Now().Add(time.Second * 3), Comment: "3"})
+	notify <- true
+
+	heap.Push(&queue, Task{Time: time.Now().Add(time.Second * 2), Comment: "2"})
+	notify <- true
+
+	heap.Push(&queue, Task{Time: time.Now().Add(time.Second), Comment: "1"})
+	notify <- true
+
+	select {}
 }
