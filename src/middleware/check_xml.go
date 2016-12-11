@@ -2,7 +2,7 @@ package main
 
 import (
 	"bytes"
-	"net/http"
+     	"net/http"
 )
 
 func enforceXMLHandler(next http.Handler) http.Handler {
