@@ -49,7 +49,7 @@ func main() {
     b :=2
     ctx, cancel := context.WithCancel(context.Background())
     go func(){
-      time.Sleep(2 8 time.Second)
+      time.Sleep(2 * time.Second)
       cancel()
     }()
     res := Add(ctx, 1, 2)
