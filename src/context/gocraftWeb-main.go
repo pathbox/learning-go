@@ -34,7 +34,9 @@ func (c *Context) ShowSignupForm(w web.ResponseWriter, r *web.Request) {
 }
 
 func main() {
-	router := web.New(Context{}).Middleware((*Context).CSRFMiddleware)
+	router := web.New(Context{}).Middleware((*Context).CSRFMiddleware).
+		Middleware(web.LoggerMiddleware).
+		Middleware(web.ShowErrorsMiddleware)
 	router.Get("/signup", (*Context).ShowSignupForm)
 	err := http.ListenAndServe(":8080", router)
 	if err != nil {
