@@ -8,11 +8,16 @@ import (
 	"net/http"
 )
 
+type Number struct {
+	Content string
+	AppID   uint
+}
+
 var db *gorm.DB
 
 func init() {
 	db, _ = gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/udesk_cti?charset=utf8")
-	db.DB().SetMaxOpenConns(100)
+	db.DB().SetMaxOpenConns(30)
 	db.DB().SetMaxIdleConns(30)
 	db.LogMode(true)
 }
@@ -53,10 +58,11 @@ func pool(w http.ResponseWriter, r *http.Request) {
 
 	// fmt.Println(record)
 	// fmt.Fprintln(w, "finish")
-	var id, content, app_id string
-	row := db.Table("numbers").Where("content = ?", "18521524159").Select("id, content, app_id").Row() // (*sql.Row)
-	row.Scan(&id, &content, &app_id)
-	fmt.Println(id, content, app_id)
+	number := Number{}
+	db.Where("content = ?", "28521524153").First(&number)
+	fmt.Println(number.Content, number.AppID)
+	db.Model(&number).Where("content = ?", "28521524153").Update("content", "38521524153")
+	r.Header.Set("Connection", "close")
 }
 
 // func checkErr(err error) {
