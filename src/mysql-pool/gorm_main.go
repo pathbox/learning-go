@@ -59,9 +59,11 @@ func pool(w http.ResponseWriter, r *http.Request) {
 	// fmt.Println(record)
 	// fmt.Fprintln(w, "finish")
 	number := Number{}
-	db.Where("content = ?", "28521524153").First(&number)
-	fmt.Println(number.Content, number.AppID)
-	db.Model(&number).Where("content = ?", "28521524153").Update("content", "38521524153")
+	// db.Where("content = ?", "18521524153").First(&number)
+	// fmt.Println(number.Content, number.AppID)
+	db.Model(&number).Where("content = ?", "18521524153").Update("content", "28521524153")
+	db.Model(&number).Where("content = ?", "28521524153").Update("content", "18521524153")
+	fmt.Println(number)
 	r.Header.Set("Connection", "close")
 }
 
