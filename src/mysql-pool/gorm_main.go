@@ -1,16 +1,21 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 	"log"
 	"net/http"
+	"time"
 )
 
 type Number struct {
-	Content string
-	AppID   uint
+	ID        uint `gorm:"primary_key"`
+	Content   string
+	AppID     uint
+	CreatedAt time.Time
+	UpdatedAt time.Time
 }
 
 var db *gorm.DB
@@ -62,6 +67,11 @@ func pool(w http.ResponseWriter, r *http.Request) {
 	// db.Where("content = ?", "18521524153").First(&number)
 	db.Limit(2).Find(&number)
 	fmt.Println(number.Content, number.AppID)
+	number = Number{Content: "18567389409", AppID: 1}
+	db.Save(&number)
+	rs, _ := json.Marshal(number)
+	fmt.Println(string(rs))
+	fmt.Println("number.ID: ", number.ID)
 	// db.Model(&number).Where("content = ?", "18521524153").Update("content", "28521524153")
 	// db.Model(&number).Where("content = ?", "28521524153").Update("content", "18521524153")
 	// fmt.Println(number)
