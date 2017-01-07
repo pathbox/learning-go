@@ -65,18 +65,21 @@ func pool(w http.ResponseWriter, r *http.Request) {
 	// fmt.Fprintln(w, "finish")
 	number := Number{}
 	// db.Where("content = ?", "18521524153").First(&number)
-	db.Limit(2).Find(&number)
-	fmt.Println(number.Content, number.AppID)
-	number = Number{Content: "18567389411", AppID: 1}
-	err := db.Save(&number)
-	fmt.Println("++++++++++++++++",err)
-	rs, _ := json.Marshal(number)
-	fmt.Println(string(rs))
-	fmt.Println("number.ID: ", number.ID)
+	// db.Limit(2).Find(&number)
+	// fmt.Println(number.Content, number.AppID)
+	// number = Number{Content: "18567389411", AppID: 1}
+	// err := db.Save(&number)
+	// fmt.Println("++++++++++++++++",err)
+	// rs, _ := json.Marshal(number)
+	// fmt.Println(string(rs))
+	// fmt.Println("number.ID: ", number.ID)
 	// db.Model(&number).Where("content = ?", "18521524153").Update("content", "28521524153")
 	// db.Model(&number).Where("content = ?", "28521524153").Update("content", "18521524153")
 	// fmt.Println(number)
 	// r.Header.Set("Connection", "close")
+	db.Limit(1).Where("app_id = ?", 1).Find(&number)
+	rs, _ := json.Marshal(number)
+	fmt.Println(string(rs))
 }
 
 // func checkErr(err error) {
