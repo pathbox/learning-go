@@ -67,8 +67,9 @@ func pool(w http.ResponseWriter, r *http.Request) {
 	// db.Where("content = ?", "18521524153").First(&number)
 	db.Limit(2).Find(&number)
 	fmt.Println(number.Content, number.AppID)
-	number = Number{Content: "18567389409", AppID: 1}
-	db.Save(&number)
+	number = Number{Content: "18567389411", AppID: 1}
+	err := db.Save(&number)
+	fmt.Println("++++++++++++++++",err)
 	rs, _ := json.Marshal(number)
 	fmt.Println(string(rs))
 	fmt.Println("number.ID: ", number.ID)
