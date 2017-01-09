@@ -25,8 +25,8 @@ func Buf() {
 			break
 		}
 	}
-	fmt.Println(len(buffer.String()) / 4)
-	buffer.Reset()
+	fmt.Println("buffer string: ", len(buffer.String())/4)
+	fmt.Println(len(buffer.String()))
 }
 
 var count2 int64
@@ -50,7 +50,7 @@ func Join() {
 	}
 	join := strings.Join(lagerslice, "")
 	fmt.Println(len(join) / 4)
-	fmt.Println(len(lagerslice))
+	fmt.Println("join string: ", len(lagerslice))
 }
 
 // 说明： 两种方式都是拼接100w个字符串，buffer的速度和array的速度是不在一个量级上的。而且数组的方式会带来更多的开销。所以对于超长的字符串拼接，建议使用buffer的方式。当然如果是少量的拼接。还是用fmt.Sprintf&+=的方式。
