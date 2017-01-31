@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Sample of websocket with golang</title>
+		<script src="jquery-2.1.4.min.js"></script>
+		<script>
+      $(function() {
+				if (window.WebSocket != undefined) {
+	        var ws = new WebSocket("ws://localhost:8080/echo");
+					ws.onopen = function (event) {
+						console.log("connected to: " + event.currentTarget.URL);
+					};
+					ws.onclose = function () {
+						console.log("closed");
+					};
+					ws.onerror = function (event) {
+						console.log("Error: " + event.data);
+					};
+	        ws.onmessage = function(event) {
+	          console.log("receive message: " + event.data);
+	        };
+
+	        var $ul = $('#msg-list');
+	        $('#sendBtn').click(function(){
+	          var data = $('#name').val();
+	          ws.send(data);
+	          console.log("send message:" + data);
+	          $('<li>').text(data).appendTo($ul);
+	        });
+				}
+      });
+		</script>
+	</head>
+	<body>
+			<input id="name" type="text" />
+			<input type="button" id="sendBtn" value="send"></input>
+      <ul id="msg-list"></ul>
+	</body>
+</html>
