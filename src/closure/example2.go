@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-type Traveser func(ele interface{})
+type Traveser func(ele interface{}) // 定义了一个函数类型，SortByAscending SortByDescending 就是这个类型
 
 func Process(array interface{}, traveser Traveser) error {
 	if array == nil {
