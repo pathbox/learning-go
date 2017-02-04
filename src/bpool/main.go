@@ -1,45 +1,56 @@
-package bpool
+package main
 
-type SizedBufferPool struct {
-	c chan *bytes.Buffer
-	a int
+import (
+	"fmt"
+	"github.com/oxtoacart/bpool"
+)
+
+var bufpool *bpool.BufferPool
+
+func main() {
+	bufpool = bpool.NewBufferPool(48)
+	showFunction()
 }
 
-// SizedBufferPool creates a new BufferPool bounded to the given size.
-// size defines the number of buffers to be retained in the pool and alloc sets
-// the initial capacity of new buffers to minimize calls to make().
+func showFunction() error {
+	buf := bufpool.Get()
 
-func NewSizedBufferPool(size int, alloc int) (bp *SizedBufferPool) {
-	return &SizedBufferPool{
-		c: make(chan *bytes.Buffer, size),
-		a: alloc,
+	fmt.Println(buf)
+
+	// buf = []byte("nice")
+	bufpool.Put(buf)
+	return nil
+}
+
+var freeList = make(chan *Buffer, 100)
+var serverChan = make(chan *Buffer)
+
+func client() {
+	for {
+		var b *Buffer
+		// Grab a buffer if avaliable; allocate if not
+		select {
+		case b = <-freeList:
+			// Got one; nothing more to do
+		default:
+			// None free, so allocate a new one
+			b = new(Buffer)
+		}
+		load(b)         // Read next message from the net
+		serverChan <- b // Send to server
 	}
 }
 
-// Get gets a Buffer from the SizedBufferPool, or creates a new one if none are
-// available in the pool. Buffers have a pre-allocated capacity.
-
-func (bp *SizedBufferPool) Get() (b *bytes.Buffer) {
-	select {
-	case b = <-bp.c:
-		// return existing buffer
-	default:
-		// create new buffer
-		b = bytes.NewBuffer(make([]byte, 0, bp.a))
-	}
-	return
-}
-
-// Put returns the given Buffer to the SizedBufferPool.
-func (bp *SizedBufferPool) Put(b *bytes.Buffer) {
-	b.Reset()
-	// Release buffers over our maximum capacity and re-create a pre-sized
-	// buffer to replace it.
-	if cap(b.Bytes()) > bp.a {
-		b = bytes.NewBuffer(make([]byte, 0, bp.a))
-	}
-	select {
-	case bp.c <- b:
-	default: // Discard the buffer if the pool is full.
+func server() {
+	for {
+		b := <-serverChan // wait for work
+		process(b)
+		// reuse buffer if there is room
+		select {
+		case freeList <- b:
+			// buffer on free list; nothing more to do
+		default:
+			// free list full just carry on
+		}
 	}
 }
