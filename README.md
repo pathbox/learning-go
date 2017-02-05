@@ -9,4 +9,4 @@ Many things and codes about golang
 
 Nice lib and tool about golang
 
-Don't stop learn golang
+Don't stop learning golang
