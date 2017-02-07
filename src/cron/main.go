@@ -14,5 +14,5 @@ func main() {
 		log.Println("Cron runing: ", i)
 	})
 	c.Start()
-	select {}
+	select {} //阻塞主线程不退出
 }
