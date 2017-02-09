@@ -24,7 +24,7 @@ func (a *abc) cccc() { //传入的是引用，而不是值
 }
 
 func main() {
-	aobj := abc{} // new(abc)
+	aobj := abc{} // new(abc)  aobj 是一个值
 	aobj.aaaa()
 	aobj.bbbb()
 	aobj.cccc()
