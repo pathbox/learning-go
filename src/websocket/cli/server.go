@@ -12,7 +12,7 @@ func echoHadnler(ws *websocket.Conn) {
 }
 
 func main() {
-	http.Handle("/echo", websocket.Handle(echoHadnler))
+	http.Handle("/echo", websocket.Handler(echoHadnler))
 	err := http.ListenAndServe(":9090", nil)
 	if err != nil {
 		panic(err)
