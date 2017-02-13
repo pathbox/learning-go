@@ -1,0 +1,17 @@
+{
+  "Database": {
+    "Username": "root",
+    "Password": "",
+    "Name": "gowebapp",
+    "Hostname": "127.0.0.1",
+    "Port": 3306,
+    "Parameter": "?charset=utf8&parseTime=True&loc=Local"
+  },
+  "Email": {
+    "Username": "curry",
+    "Password": "nice nice",
+    "Hostname": "127.0.0.1",
+    "Port": 25,
+    "From": "smtp"
+  }
+}
