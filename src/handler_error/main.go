@@ -4,7 +4,7 @@ import (
 	"./handler"
 	"log"
 	"net/http"
-  "os"
+	"os"
 )
 
 func main() {
@@ -14,12 +14,12 @@ func main() {
 		log.Fatal(err)
 	}
 
-  env := &handler.Env{
-    DB: db,
-    Port: os.Getenv("PORT"),
-    Host: os.Getenv("HOST")
-  }
+	env := &handler.Env{
+		DB:   db,
+		Port: os.Getenv("PORT"),
+		Host: os.Getenv("HOST"),
+	}
 
-  http.Handle("/", handler.Handler{env, handler.GerIndex})
-  log.Fatal(http.ListenAndServe(":9090", nil))
+	http.Handle("/", handler.Handler{env, handler.GerIndex})
+	log.Fatal(http.ListenAndServe(":9090", nil))
 }
