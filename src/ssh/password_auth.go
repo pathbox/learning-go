@@ -16,7 +16,7 @@ func main() {
 		},
 	}
 
-	client, err := ssh.Dial("tcp", "101.201.197.101:22", config) // two: Dial conn to create client
+	client, err := ssh.Dial("tcp", "server_address_or_ip:22", config) // two: Dial conn to create client
 	if err != nil {
 		panic(err.Error())
 	}
