@@ -3,7 +3,6 @@ package main
 import (
 	"crypto/rand"
 	"time"
-
 	"github.com/grooveshark/golib/agg"
 )
 
