@@ -37,7 +37,9 @@ func upload(w http.ResponseWriter, r *http.Request) {
 		}
 		defer file.Close()
 		fmt.Fprintln(w, "%v", handler.Header)
-		f, err := os.OpenFile("./"+handler.Filename, os.O_WRONLY|os.O_CREATE, 0666) // 创建或打开了一个文件句柄
+		fmt.Println("====================")
+		fmt.Fprintln(w, "%v", handler.Filename)
+		f, err := os.OpenFile(handler.Filename, os.O_WRONLY|os.O_CREATE, 0666) // 创建或打开了一个路径的文件句柄
 		if err != nil {
 			fmt.Println(err)
 			return
