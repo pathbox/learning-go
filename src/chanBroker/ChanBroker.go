@@ -6,14 +6,14 @@ import (
 	"time"
 )
 
-type Content interface{}
+type Content interface{} // 任意值
 
-type Subscriber chan Content
+type Subscriber chan Content // 一个 channel
 
 type ChanBroker struct {
 	regSub      chan Subscriber
 	unRegSub    chan Subscriber
-	contents    chan chan Content
+	contents    chan Content
 	stop        chan bool
 	subscribers map[Subscriber]*list.List
 	timeout     time.Duration
@@ -81,7 +81,6 @@ func (self *ChanBroker) onContentPush(content Content) {
 func (self *ChanBroker) onTimerPush() {
 	for sub, clist := range self.subscribers {
 		loop := true
-		loop := true
 		for next := clist.Front(); next != nil && loop == true; {
 			cur := next
 			next = cur.Next()
@@ -142,6 +141,7 @@ func (self *ChanBroker) run() {
 	}()
 }
 
+// 返回 size 大小的 channel
 func (self *ChanBroker) RegSubscriber(size uint) (Subscriber, error) {
 	sub := make(Subscriber, size)
 	select {
@@ -152,6 +152,7 @@ func (self *ChanBroker) RegSubscriber(size uint) (Subscriber, error) {
 	}
 }
 
+// 返回 channel
 func (self *ChanBroker) UnRegSubscriber(sub Subscriber) {
 	select {
 	case <-time.After(self.timeout):
