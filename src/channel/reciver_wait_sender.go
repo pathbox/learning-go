@@ -6,8 +6,7 @@ import (
 )
 
 type UpdateOp struct {
-	key   int
-	value string
+	key int
 }
 
 func applyUpdate(data map[int]string, op UpdateOp) {
