@@ -29,3 +29,4 @@ func main() {
 // recieve(<-c) is waiting for send(c<-), it is blocking until send operator
 
 // Sends to a buffered channel block only when the buffer is full. Receives block when the buffer is empty.
+// Go在编译阶段就识别出了代码是否有死锁风险，从而编译都不通过
