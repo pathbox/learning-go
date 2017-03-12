@@ -23,7 +23,17 @@ func main() {
 
 		fmt.Printf("Hello %s!\n", *name)
 	}
+
+	flag.VisitAll(func(flag *flag.Flag) { // 类似打印你的help 设置显示。也就是将所有前面的设置 以-help的形式打印出来，very nice
+		format := "\t-%s: %s (Default: '%s')\n"
+		fmt.Printf(format, flag.Name, flag.Usage, flag.DefValue)
+	})
 }
 
 // ./example1 --spanish=true
 // ./example1 --spanish=true -name nice
+
+// Hola nice!
+//   -name: A name to say hello to (Default: 'World')
+//   -s: Use Spanish language. (Default: 'false')
+//   -spanish: Use Spanish language. (Default: 'false')
