@@ -8,7 +8,7 @@ import (
 	"context"
 )
 
-func FromRequest(req *http.request) (net.IP, error) {
+func FromRequest(req *http.Request) (net.IP, error) {
 	ip, _, err := net.SplitHostPort(req.RemoteAddr)
 	if err != nil {
 		return nil, fmt.Errorf("userip: %q is not IP:port", req.RemoteAddr)
