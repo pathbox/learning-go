@@ -43,3 +43,14 @@ func main() {
 	fmt.Println("connect success")
 	send(conn)
 }
+
+func sender2(conn net.Conn) {
+	for i := 0; i < 5; i++ {
+		words := strconv.Itoa(i) + "This is a test for long conn"
+		conn.Write([]byte(words))
+		time.Sleep(2 * time.Second)
+
+	}
+	fmt.Println("send over")
+
+}
