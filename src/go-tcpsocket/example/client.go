@@ -42,6 +42,7 @@ func main() {
 
 	fmt.Println("connect success")
 	send(conn)
+	time.Sleep(3 * time.Second)
 }
 
 func sender2(conn net.Conn) {
