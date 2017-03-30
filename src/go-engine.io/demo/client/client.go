@@ -19,7 +19,7 @@ func main() {
 
 	conn, err := dialer.Dial("http://localhost:9090/engine.io/", nil)
 	if err != nil {
-		log.Fataln("dial error: ", err)
+		log.Fatalln("dial error: ", err)
 	}
 	defer conn.Close()
 	fmt.Println(conn.ID(), conn.LocalAddr(), "->", conn.RemoteAddr(), "with", conn.RemoteHeader())
