@@ -24,3 +24,4 @@ func main() {
 
 // c <- in sub goroutinue, <- c in main goroutinue, c <- block main goroutinue
 // It is the same as example1.go
+// but no deadlock

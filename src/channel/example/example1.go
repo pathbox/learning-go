@@ -8,6 +8,7 @@ import (
 func main() {
 	c := make(chan int)
 	go func() {
+		fmt.Println("in")
 		time.Sleep(3 * time.Second)
 		fmt.Println("before received")
 		// fmt.Println(<-c) // 这里在阻塞， 这里会先执行 ready
