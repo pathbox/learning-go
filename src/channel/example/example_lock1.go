@@ -26,5 +26,5 @@ func main() {
 //   /Users/pathbox/code/learning-go/src/channel/example/example_lock1.go:16 +0x10c
 // exit status 2
 
-// sned in main goroutinue
+// send in main goroutinue
 // no receive, send the data to channel, deadlock!

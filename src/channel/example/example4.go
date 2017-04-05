@@ -24,9 +24,9 @@ func main() {
 	fmt.Println("after received")
 }
 
-// send
+// before send
 // before received
-// 1
+// print channel 1
 // after received
 
 // send is in the sub goroutinue
