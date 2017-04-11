@@ -29,5 +29,5 @@ func main() {
 		return
 	}
 
-	fmt.Println(res.Body)
+	fmt.Println(res.StatusCode)
 }
