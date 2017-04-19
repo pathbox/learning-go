@@ -30,4 +30,5 @@ func (l *Locker) Unlock() {
 
 // 使用了 chan 的特性 模拟了锁的操作
 
-// Unlock() 会阻塞 直到 l.locker <- struct{}{} 操作后，才会执行，并且继续执行下去
+// Unlock() 会阻塞 直到 l.locker <- struct{}{} 操作后，才会执行，并且继续执行下面的代码
+// 简单的记为 左  等 右
