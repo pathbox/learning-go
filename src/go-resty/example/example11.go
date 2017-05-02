@@ -1,16 +1,16 @@
-restry.SetDebug(true)
+resty.SetDebug(true)
 
 // Using your custom log writer
 logFile, _ := os.OpenFile("/Users/jeeva/go-resty.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 
-restry.SetLogger(logFile)
+resty.SetLogger(logFile)
 
-restry.SetTLSClientConfig(&tls.Config{RootCAs: roots})
+resty.SetTLSClientConfig(&tls.Config{RootCAs: roots})
 
 
-restry.SetTLSClientConfig(&tls.Config{InsecureSkipVerify: true})
+resty.SetTLSClientConfig(&tls.Config{InsecureSkipVerify: true})
 
-restry.SetTimeout(time.Duration(1 * time.Minute))
+resty.SetTimeout(time.Duration(1 * time.Minute))
 
 resty.SetHostURL("http://httpbin.org")
 
