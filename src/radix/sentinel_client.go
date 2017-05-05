@@ -25,7 +25,7 @@ func getSentinel(address string, poolSize int, names ...string) (reply *sentinel
 
 func main() {
 	s, _ := getSentinel("127.0.0.1:9090", 10, "test")
-	s, _ := s.GetMaster("test")
+	s, _ = s.GetMaster("test")
 	defer s.PutMaster("test", c)
 	c.Cmd("SET", "foo", "bar")
 }
