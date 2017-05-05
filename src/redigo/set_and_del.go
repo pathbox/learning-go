@@ -1,3 +1,5 @@
+// "redis is a good way, don't use global map store huge key/value"
+
 package main
 
 import (
