@@ -37,7 +37,7 @@ func fileExists(dir string) bool {
 		return false
 	}
 
-	return !info.IsDir()
+	return !info.IsDir() // 不是目录　就是文件了
 }
 
 // Urlencode is a helper method that converts a map into URL-encoded form data.
