@@ -100,7 +100,7 @@ func decrypt(ciphertext []byte, key []byte) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	plaintext := make([]byte, len(ciphertext).aes.BlockSize)
+	plaintext := make([]byte, len(ciphertext)-aes.BlockSize)
 	stream := cipher.NewCTR(aesCipher, ciphertext[:aes.BlockSize])
 	stream.XORKeyStream(plaintext, ciphertext[aes.BlockSize:])
 	return plaintext, nil
