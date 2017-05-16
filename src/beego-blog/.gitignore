@@ -1,0 +1,7 @@
+*.exe
+*.exe~
+*.iml
+.idea
+*.swap
+beego-blog
+/static/uploads
