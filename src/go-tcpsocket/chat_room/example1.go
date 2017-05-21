@@ -24,12 +24,15 @@ func checkError(err error, info string) (res bool) {
 //
 ////////////////////////////////////////////////////////
 
+// 每次有新的client连接产生时，执行一次
 func Handler(conn net.Conn, message chan string) {
 	fmt.Println("connection is connected from ...", conn.RemoteAddr().String())
+	fmt.Println("Handler doing")
 
 	buf := make([]byte, 1024)
 	for {
 		length, err := conn.Read(buf)
+		defer conn.Close()
 		if checkError(err, "Connection") == false {
 			conn.Close()
 			break
@@ -54,13 +57,15 @@ func Handler(conn net.Conn, message chan string) {
 ////////////////////////////////////////////////////////
 
 func echoHandler(conns *map[string]net.Conn, message chan string) {
-	for {
-		msg := <-message
+	for { // 死循环阻塞监听 <-message 的到来
+		msg := <-message // 有消息通过channel 传过来了，则继续执行，然后又回到for的开始并阻塞在这里，等待新的message
 		fmt.Println("msg: ", msg)
-
-		for key, value := range *conns {
+		// 每次有新的client消息到来时，执行一次 给所有client echo 消息
+		for key, value := range *conns { // 这里的conns为什么会有值呢，在StartServer 中，第95行给conns赋值，创建新的goroutine处理Handler，在Handler中，是处理client发送的数据，读取到之后，传给 message channel。第58行会一直阻塞等待第42行的执行，当执行第42行的时候，conns已经在之前执行了，必定有值，这里conns传的是map的指针
 			fmt.Println("connection is connected from ...", key)
+			fmt.Println("echoHandler doing")
 			_, err := value.Write([]byte(msg))
+			defer value.Close()
 			if err != nil {
 				fmt.Println(err.Error())
 				delete(*conns, key)
@@ -88,12 +93,12 @@ func StartServer(port string) {
 	go echoHandler(&conns, messages)
 
 	for {
-		fmt.Println("Listening ...")
+		fmt.Println("Listening ...") // 虽然这个在死循环for中，但其实只会在初始的时候执行一次，然后每次产生新的client连接后执行一次，因为l.Accept()
 		conn, err := l.Accept()
 		checkError(err, "Accept")
-		fmt.Println("Accepting ...")
+		fmt.Println("Accepting .......")
 		conns[conn.RemoteAddr().String()] = conn
-		go Handler(conn, messages)
+		go Handler(conn, messages) // 为什么 在死循环for中起goroutine，不会造成大量的goroutine产生吗？ 不会，当l.Accept()接收到一个conn的时候，才会继续往下执行，要不就会一直阻塞在l.Accept()这一步。 每个conn表示一个client，每个client对应一个Handler goroutine进行处理
 	}
 }
 
@@ -110,14 +115,14 @@ func chatSend(conn net.Conn) {
 	username := conn.LocalAddr().String()
 
 	for {
-		fmt.Scanln(&input)
+		fmt.Scanln(&input) // 从终端得到键盘输入的字符串
 		if input == "/quit" {
 			fmt.Println("ByeBye..")
 			conn.Close()
 			os.Exit(0)
 		}
 
-		lens, err := conn.Write([]byte(username + " Say :::" + input))
+		lens, err := conn.Write([]byte(username + " Say --:" + input)) // 将输入的字符串 通过连接conn 发送给服务端
 		fmt.Println(lens)
 		if err != nil {
 			fmt.Println(err.Error())
@@ -139,14 +144,15 @@ func StartClient(tcpaddr string) {
 	tcpAddr, err := net.ResolveTCPAddr("tcp4", tcpaddr)
 	checkError(err, "ResolveTCPAddr")
 	conn, err := net.DialTCP("tcp", nil, tcpAddr) // 服务端是 Listen and for{ Accept() } 客户端是 DialTCP
+	// conn, err := net.DialTimeout("tcp", tcpAddr, 2 * time.Second)
 	checkError(err, "DialTCP")
 	//启动客户端发送线程
 	go chatSend(conn)
-
+	defer conn.Close()
 	// 开始客户端轮训
 	buf := make([]byte, 1024)
 	for {
-		length, err := conn.Read(buf)
+		length, err := conn.Read(buf) // 循环（阻塞）监听从conn连接中读取服务端发送过来的数据
 		if checkError(err, "Connection") == false {
 			conn.Close()
 			fmt.Println("Server is dead ...ByeBye")
@@ -168,6 +174,7 @@ func StartClient(tcpaddr string) {
 
 // server: ./example1 server 9090
 // client: ./example1 client localhost:9090
+
 func main() {
 	if len(os.Args) != 3 {
 		fmt.Println("Wrong pare")
