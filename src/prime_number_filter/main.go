@@ -40,6 +40,12 @@
 */
 
 // 从2开始每找到一个素数就标记所有能被该素数整除的所有数。直到没有可标记的数，剩下的就都是素数。下面以找出10以内所有素数为例，借用 CSP 方式解决这个问题。
+// Q：goroutine 什么情况下会产生 leak?
+// A：channel 上只有 send 没有 receive
+// Q：读一个已经关闭的 channel  只会读取到 0 值，有什么办法应对？
+// A：要么在 receive 时加上第二个参数，如 v, ok :=，要么使用 v := range ch 形式接收
+// Q：写一个已经关闭的 channel 会有什么结果？
+// A：会 pannic
 
 package main
 
