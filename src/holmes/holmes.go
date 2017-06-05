@@ -75,7 +75,7 @@ func (l Logger) Stop() {
 			l.segment.Close()
 		}
 		l.segment = nil
-		l.logger = inl
+		l.logger = nil
 		atomic.StoreInt32(&started, 0)
 	}
 }
@@ -135,7 +135,7 @@ func (ls *logSegment) Write(p []byte) (n int, err error) {
 			ls.logFile.Close()
 			ls.logFile = nil
 			name := getLogFileName(current)
-			ls.logFile, err = os.Create(path.Join(ls.logFile, name))
+			ls.logFile, err = os.Create(path.Join(ls.logPath, name))
 			if err != nil {
 				fmt.Fprintln(os.Stderr, err)
 				ls.logFile = os.Stderr

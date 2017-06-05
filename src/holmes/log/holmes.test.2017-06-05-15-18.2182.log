@@ -1,0 +1,1223 @@
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:23) - Jingle bells, jingle bells,
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerEveryMinute] (holmes_test.go:24) - Jingle all the way.
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerEveryMinute] (holmes_test.go:25) - Oh! what fun it is to ride
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerEveryMinute] (holmes_test.go:26) - In a one-horse open sleigh.
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:36) - Wake up, Neo
+2017/06/05 15:18:37  WARN [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:37) - The Matrix has you...
+2017/06/05 15:18:37 ERROR [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:38) - Follow the white rabbit
+2017/06/05 15:18:37  INFO [holmes.TestFileLoggerMultipleGoroutine.func1] (holmes_test.go:39) - Knock knock!
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:57) - If by life you were deceived,
+2017/06/05 15:18:37  WARN [holmes.TestPrintStack] (holmes_test.go:58) - Don't be dismal, don't be wild!
+2017/06/05 15:18:37 ERROR [holmes.TestPrintStack] (holmes_test.go:59) - In the day of grief, be mild.
+2017/06/05 15:18:37  INFO [holmes.TestPrintStack] (holmes_test.go:60) - Merry days will come, believe.
+2017/06/05 15:18:37 goroutine 114 [running]:
+_/home/user/code/learning-go/src/holmes.Logger.Stop(0xc4201a1e50, 0x0, 0x0, 0x0, 0x54400e, 0x5, 0x34630b8a000, 0x101)
+	/home/user/code/learning-go/src/holmes/holmes.go:68 +0x17b
+_/home/user/code/learning-go/src/holmes.TestPrintStack(0xc4201780d0)
+	/home/user/code/learning-go/src/holmes/holmes_test.go:62 +0x3d1
+testing.tRunner(0xc4201780d0, 0x54d0b8)
+	/usr/local/go/src/testing/testing.go:657 +0x96
+created by testing.(*T).Run
+	/usr/local/go/src/testing/testing.go:697 +0x2ca
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc42005eb60, 0x545ace, 0xe, 0x54d0b8, 0xc420043d01)
+	/usr/local/go/src/testing/testing.go:698 +0x2f4
+testing.runTests.func1(0xc42005eb60)
+	/usr/local/go/src/testing/testing.go:882 +0x67
+testing.tRunner(0xc42005eb60, 0xc420043de0)
+	/usr/local/go/src/testing/testing.go:657 +0x96
+testing.runTests(0xc42000af80, 0x5e1d60, 0x5, 0x5, 0x48)
+	/usr/local/go/src/testing/testing.go:888 +0x2c1
+testing.(*M).Run(0xc420043f20, 0xc420043f20)
+	/usr/local/go/src/testing/testing.go:822 +0xfc
+main.main()
+	_/home/user/code/learning-go/src/holmes/_test/_testmain.go:54 +0xf7
