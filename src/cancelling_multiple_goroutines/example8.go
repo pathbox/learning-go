@@ -1,29 +1,44 @@
-func server(ctx context.Context, wg *sync.WaitGroup) {
-  defer wg.Done()
+package main
 
-  mux := http.NewServeMux()
-  mux.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request){
-    fmt.Println("server: received request")
-    time.Sleep(3 * time.Second)
-    io.WriteString(w, "Finished!\n")
-    fmt.Println("server: request finished")
-    }))
+import (
+	"context"
+	"io"
+	"log"
+	"net/http"
+	"os"
+	"os/signal"
+	"time"
+)
 
-  srv := &http.Server{Addr: ":8080", Handler: mux}
-  go func(){
-    if err := srv.ListenAndServer(); err != nil {
-      fmt.Printf("Listen : %s\n", err)
-    }
-  }()
+func main() {
 
-  <-ctx.Done()
-  fmt.Println("server: caller has told us to stop")
+	// subscribe to SIGINT signals
+	stopChan := make(chan os.Signal)
+	signal.Notify(stopChan, os.Interrupt)
 
-    // shut down gracefully, but wait no longer than 5 seconds before halting
-  shutdownCtx, cancel := context.WithTimeout(context.Background(). 5*time.Second)
-  defer cancel()
+	mux := http.NewServeMux()
 
-  srv.Shutdown(shutdownCtx)
+	mux.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		time.Sleep(5 * time.Second)
+		io.WriteString(w, "Finished!")
+	}))
 
-  fmt.Println("server gracefully stopped")
+	srv := &http.Server{Addr: ":8081", Handler: mux}
+
+	go func() {
+		// service connections
+		if err := srv.ListenAndServe(); err != nil {
+			log.Printf("listen: %s\n", err)
+		}
+	}()
+
+	<-stopChan // wait for SIGINT
+	log.Println("Shutting down server...")
+
+	// shut down gracefully, but wait no longer than 5 seconds before halting
+	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
+	srv.Shutdown(ctx)
+
+	log.Println("Server gracefully stopped")
+
 }
