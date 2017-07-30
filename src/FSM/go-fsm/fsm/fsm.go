@@ -26,7 +26,7 @@ func (f *FSM) setState(newState FSMState) {
 	f.state = newState
 }
 
-// 某状态添加事件处理方法
+// 某状态添加事件处理方法  把所有可能的类别 事件存到map中
 func (f *FSM) AddHandler(state FSMState, event FSMEvent, handler FSMHandler) *FSM {
 	if _, ok := f.handlers[state]; !ok {
 		f.handlers[state] = make(map[FSMEvent]FSMHandler) // 构造嵌套map
@@ -38,7 +38,7 @@ func (f *FSM) AddHandler(state FSMState, event FSMEvent, handler FSMHandler) *FS
 	return f
 }
 
-// 事件处理
+// 事件处理  传入事件，变更状态，变更当前状态， 使用的map的存储结构大概是： map[状态][事件]=> 状态， 可以看成  这种状态=>事件=>另一种状态
 func (f *FSM) Call(event FSMEvent) FSMState {
 	f.mu.Lock()
 	defer f.mu.Unlock()
@@ -49,7 +49,7 @@ func (f *FSM) Call(event FSMEvent) FSMState {
 
 	if fn, ok := events[event]; ok {
 		oldState := f.getState()
-		f.setState(fn())
+		f.setState(fn()) // 重置 当前状态
 		newState := f.getState()
 		fmt.Println("状态从 [", oldState, "] 变成 [", newState, "]")
 	}

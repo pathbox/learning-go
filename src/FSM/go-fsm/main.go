@@ -47,7 +47,7 @@ func main() {
 	efan := NewElectricFan(Poweroff) // 初始状态是关闭状态
 
 	// 关闭状态
-	// 关闭状态
+	// 把所有可能的类别事件 存储到map中
 	efan.AddHandler(Poweroff, PowerOffEvent, PowerOffHandler)
 	efan.AddHandler(Poweroff, FirstGearEvent, FirstGearHandler)
 	efan.AddHandler(Poweroff, SecondGearEvent, SecondGearHandler)
