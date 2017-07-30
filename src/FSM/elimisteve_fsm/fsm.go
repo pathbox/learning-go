@@ -78,3 +78,58 @@ func (e smError) BadEvent() string {
 func NewStateMachine(delegate Delegate, transitions ...Transition) StateMachine {
 	return StateMachine{delegate: delegate, transitions: transitions, currentState: &transitions[0]}
 }
+
+func (m *StateMachine) Process(event string, args ...interface{}) Error {
+	trans := m.findTransMatching(m.currentState.From, event)
+	if trans == nil {
+		trans = m.findTransMatching(m.currentState.From, Default)
+	}
+
+	if trans == nil {
+		return smError{event, m.currentState.From}
+	}
+
+	changing_states := trans.From != trans.To
+
+	if changing_states {
+		m.runAction(m.currentState.From, OnExit, args)
+	}
+
+	if trans.Action != "" {
+		m.delegate.StateMachineCallback(trans.Action, args)
+	}
+
+	if changing_states {
+		m.runAction(trans.To, OnEntry, args)
+	}
+
+	m.currentState = m.findState(trans.To)
+
+	return nil
+
+}
+
+func (m *StateMachine) findTransMatching(fromState string, event string) *Transition {
+	for _, v := range m.transitions {
+		if v.From == fromState && v.Event == event {
+			return &v
+		}
+	}
+	return nil
+}
+
+func (m *StateMachine) runAction(state string, event string, args []interface{}) {
+	if trans := m.findTransMatching(state, event); trans != nil && trans.Action != "" {
+		m.delegate.StateMachineCallback(trans.Action, args)
+	}
+}
+
+func (m *StateMachine) findState(state string) *Transition {
+	for _, v := range m.transitions {
+		if v.From == state {
+			return &v
+		}
+	}
+
+	return nil
+}
