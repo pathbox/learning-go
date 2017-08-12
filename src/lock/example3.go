@@ -1,3 +1,4 @@
+// 锁成功的例子
 package main
 
 import (

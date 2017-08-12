@@ -1,3 +1,4 @@
+// 锁成的例子
 package main
 
 import (

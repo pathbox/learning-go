@@ -1,3 +1,4 @@
+// 锁失效的例子
 package main
 
 import (
