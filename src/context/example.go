@@ -35,14 +35,15 @@ func main() {
 		}()
 		return dst //  dst channel 会 进行 <- 取操作，取出channel中的值，然后返回
 	}
-	ctx, _ := context.WithCancel(context.Background())
+	ctx, cancel := context.WithCancel(context.Background())
 	for n := range gen(ctx) {
 		fmt.Println(n)
 		if n >= 5 {
 			break
 		}
 	}
-	time.Sleep(5 * time.Second)
+	cancel()
+	time.Sleep(2 * time.Second)
 }
 
 /*
