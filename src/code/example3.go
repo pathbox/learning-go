@@ -42,7 +42,7 @@ func GetAwardGenerator(users map[string]int64) (generator func() string) {
 		sum_num += num
 		name_arr = append(name_arr, u_name)
 	}
-	generator = func() string {
+	generator = func() string { // 一个闭包
 		award_num := rand.Int63n(sum_num)
 
 		var offset_num int64
@@ -57,3 +57,24 @@ func GetAwardGenerator(users map[string]int64) (generator func() string) {
 	}
 	return
 }
+
+/*
+GetAwardGenerator 方法会执行一次，这样，得到的name_arr 是固定的。也就是 抽象的 数轴区域是固定的。 这个数轴区域是权重之和，在这里就是 90。
+在抽奖的方法中，闭包方法generator是循环执行。
+随机得到一个抽奖数 award_num，把这个抽奖数抽象成为 抽奖数轴区域中的某个点 J(award_num, 0)
+
+抽奖数轴区域的一种情况：（由于map是无序的，所以，实际在users数组中的顺序不是固定的）
+
+a (0, 0)-(10, 0)
+b (10, 0)-(15, 0)
+c (15, 0)-(30, 0)
+d (30, 0)-(50, 0)
+e (50, 0)-(60, 0)
+f (60, 0)-(90, 0)
+
+f区域所占的权重是最大的。 上面方法使用了offset_num 偏移方法是以时间换空间。每一次抽奖都要range name_arr 这个数组
+
+还有一种以空间换时间的方法，就是先构造一个 len(sum_num)的数组。数组中的值为不同区域的name。
+举个例子就是 name_arr[60:90] 区域的数组的元素都是 f。这样，只要award_num随机抽取出来了，就知道
+是谁中奖了。 name_arr[award_num] 再进行count计数。 就不会每次抽奖都要range 循环 name_arr，但是这里用了更多的内存存储空间，而不是一个变量存储空间。
+*/
