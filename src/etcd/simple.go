@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/coreos/etcd/client"
-	"golang.org/x/net/context"
+	"context"
 )
 
 func main() {
