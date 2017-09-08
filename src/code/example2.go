@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	c := make(chan bool)
+	c := make(chan bool, 1)
 
 	b := make(chan bool)
 
@@ -32,29 +32,33 @@ func main() {
 
 	c <- true
 	<-done
+	r := <-c
+	fmt.Println("========")
+	fmt.Println(r)
 }
 
 /*
-oo
-xx
-oo
-xx
-oo
-xx
-oo
-xx
-oo
-xx
-oo
-xx
-oo
-xx
-oo
-xx
-oo
-xx
-oo
-xx
+0
+0
+1
+1
+2
+2
+3
+3
+4
+4
+5
+5
+6
+6
+7
+7
+8
+8
+9
+9
+
 fatal error: all goroutines are asleep - deadlock!
 
 c := make(chan bool, 1) then no deadlock
