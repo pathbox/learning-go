@@ -20,3 +20,5 @@ func main() {
 		fmt.Println()
 	}
 }
+
+// https://jeiwan.cc/posts/building-blockchain-in-go-part-2/
