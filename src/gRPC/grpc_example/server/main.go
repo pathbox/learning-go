@@ -28,8 +28,8 @@ func main() {
     }
 
     // 建立新 gRPC服务器并注册Calculator服务
-    s := grpc.NewServer()
-    protobuf.RegisterCalculatorServer(s, &server{})
+    s := grpc.NewServer() // 新建一个grpc服务
+    protobuf.RegisterCalculatorServer(s, &server{}) // 将server 和 s 绑定，server的plus方法会在gRPC中调用
 
     // 在gRPC服务器上注册反射服务
     reflection.Register(s)
