@@ -1,0 +1,7 @@
+syntax = "proto3";
+package addressbook;
+message User {
+  int64 id = 1;
+  string name = 2;
+  string password = 3;
+}

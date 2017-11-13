@@ -1,0 +1,14 @@
+// 撰寫格式是 Proto v3。
+syntax = "proto3";
+// 生成的程式在 Golang 中將會屬於 `protobuf` 套件。
+package protobuf;
+
+// User 帶有使用者資料，如帳號、密碼。
+message User {
+    int64  id       = 1;
+    string username = 2;
+    string password = 3;
+}
+
+
+//protoc --go_out=. user.proto
