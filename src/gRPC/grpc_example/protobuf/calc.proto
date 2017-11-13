@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package protobuf;
+
+// Calculator 定义了一个计算用的服务
+service Calculator {
+  rpc Plus(CalcRequest) returns(CalcReply) {}
+}
+
+// CalcRequest 包含了两个数字，将会传送至计算服务并对两个字进行计算
+
+message CalcRequest{
+  int32 number_a = 1;
+  int32 number_b = 2;
+}
+
+message CalcReply {
+  int32 result = 1;
+}
+
+// protoc --go_out=plugins=grpc:. *.proto
