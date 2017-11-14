@@ -8,7 +8,7 @@ import (
     "google.golang.org/grpc"
     "google.golang.org/grpc/reflection"
 
-    "./../protobuf"
+    "../protobuf"
 )
 
 // server 结构体会作为 Calculator的gRPC服务器

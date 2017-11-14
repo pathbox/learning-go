@@ -6,10 +6,13 @@ Package protobuf is a generated protocol buffer package.
 
 It is generated from these files:
 	calc.proto
+	user.proto
 
 It has these top-level messages:
 	CalcRequest
 	CalcReply
+	CalcRequest1
+	CalcReply1
 */
 package protobuf
 
