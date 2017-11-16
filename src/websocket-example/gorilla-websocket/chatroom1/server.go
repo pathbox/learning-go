@@ -101,8 +101,7 @@ func (c *Client) write() {
 				c.socket.WriteMessage(websocket.CloseMessage, []byte{})
 				return
 			}
-
-			fmt.Println("websocket.TextMessage", websocket.TextMessage)
+			fmt.Println("Send Message: ", string(message))
 			c.socket.WriteMessage(websocket.TextMessage, message) // 第五步 客户端得到了写过来的数据,之后客户端将读到的数据又传到服务端, 然后触发 read操作
 		}
 	}
