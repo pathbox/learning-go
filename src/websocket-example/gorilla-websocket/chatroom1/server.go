@@ -120,7 +120,7 @@ func wsPage(res http.ResponseWriter, req *http.Request) {
 		CheckOrigin: func(r *http.Request) bool {
 			return true
 		},
-	}).Upgrade(res, req, nil)
+	}).Upgrade(res, req, nil) // 构造websocket.Upgrader 然后 Upgrade(r, q) 进行升级
 
 	if err != nil {
 		fmt.Println(err)
