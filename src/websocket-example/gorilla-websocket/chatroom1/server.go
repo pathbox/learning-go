@@ -117,7 +117,7 @@ func main() {
 
 func wsPage(res http.ResponseWriter, req *http.Request) {
 	conn, err := (&websocket.Upgrader{ // 这一步是必要的  进行 Upgrade的操作,得到 websocket 的 conn
-		CheckOrigin: func(r *http.Request) bool {
+		CheckOrigin: func(r *http.Request) bool { // An application can allow connections from any origin by specifying a function that always returns true
 			return true
 		},
 	}).Upgrade(res, req, nil) // 构造websocket.Upgrader 然后 Upgrade(r, q) 进行升级
