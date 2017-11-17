@@ -26,7 +26,7 @@ func main() {
 	}
 
 	client := &http.Client{Transport: transport}
-	resp, err := client.Get("https://127.0.0.1:9099")
+	resp, err := client.Get("https://wsecho.com:9099")
 
 	if err != nil {
 		fmt.Println("Get error:", err)
