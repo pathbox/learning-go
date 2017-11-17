@@ -27,20 +27,20 @@ func echo(w http.ResponseWriter, r *http.Request) {
 
 	defer conn.Close()
 
-	for { // 循环操作 读取客户端发送过来的数据
-		mt, message, err := conn.ReadMessage()
-		if err != nil {
-			// logger.Println("read: ", err)
-			break
-		}
+	// for { // 循环操作 读取客户端发送过来的数据
+	// 	mt, message, err := conn.ReadMessage()
+	// 	if err != nil {
+	// 		logger.Println("server read: ", err)
+	// 		break
+	// 	}
 
-		log.Printf("recv: %s", message)      // 打印读取的数据
-		err = conn.WriteMessage(mt, message) // 将收到的数据,又返回写给客户端
-		if err != nil {
-			logger.Println("write:", err)
-			break
-		}
-	}
+	// 	log.Printf("recv: %s", message)      // 打印读取的数据
+	// 	err = conn.WriteMessage(mt, message) // 将收到的数据,又返回写给客户端
+	// 	if err != nil {
+	// 		logger.Println("server write:", err)
+	// 		break
+	// 	}
+	// }
 }
 
 func home(w http.ResponseWriter, r *http.Request) {

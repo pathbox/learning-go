@@ -25,11 +25,11 @@ func main() {
 	u := url.URL{Scheme: "ws", Host: *addr, Path: "/echo"}
 	log.Printf("connecting to %s", u.String())
 
-	size := 20
+	size := 100
 	for {
 		select {
 		case <-interrupt:
-			break
+			os.Exit(-1)
 		default:
 			for i := 0; i < size; i++ {
 				go func() {
@@ -40,17 +40,11 @@ func main() {
 		}
 	}
 
-	// for i := 0; i < size; i++ {
-	// 	go func() {
-	// 		multiClient(u)
-	// 	}()
-	// }
 	// time.Sleep(time.Second * 60) // 简单的让main goroutine 阻塞
 
 }
 
 func multiClient(url url.URL) {
-	// fmt.Println("Start a new client")
 
 	var dialer *websocket.Dialer
 	conn, _, err := dialer.Dial(url.String(), nil)
@@ -59,17 +53,18 @@ func multiClient(url url.URL) {
 		fmt.Println(err)
 		return
 	}
-	go timeWriter(conn)
 	time.Sleep(time.Second * 1)
-	// for {
-	_, message, err := conn.ReadMessage()
-	if err != nil {
-		fmt.Println("read:", err)
-		return
-	}
+	// timeWriter(conn)
 
-	fmt.Printf("received: %s\n", message)
+	// _, message, err := conn.ReadMessage()
+	// if err != nil {
+	// 	fmt.Println("client read:", err)
+	// 	return
 	// }
+	// time.Sleep(time.Second * 1)
+	// fmt.Printf("received: %s\n", message)
+	// time.Sleep(time.Second * 1)
+
 }
 
 func timeWriter(conn *websocket.Conn) {
