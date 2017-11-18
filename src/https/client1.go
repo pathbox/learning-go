@@ -36,3 +36,11 @@ func main() {
 	body, err := ioutil.ReadAll(resp.Body)
 	fmt.Println("response: ", string(body))
 }
+
+/*
+   client与server进行通信时 client也要对server返回数字证书进行校验
+   因为server自签证书是无效的 为了client与server正常通信
+   通过设置客户端跳过证书校验
+   TLSClientConfig:{&tls.Config{InsecureSkipVerify: true}
+   true:跳过证书校验
+*/

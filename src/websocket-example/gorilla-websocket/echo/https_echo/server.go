@@ -10,7 +10,7 @@ import (
 	"github.com/gorilla/websocket"
 )
 
-var addr = flag.String("addr", "192.168.1.223:9090", "http service address")
+var addr = flag.String("addr", "wsecho.com:9090", "http service address")
 
 var upgrader = websocket.Upgrader{} // use defeult options
 
@@ -18,9 +18,8 @@ var file, _ = os.Create("file.log")
 var logger = log.New(file, "", log.Ldate|log.Ltime)
 
 func echo(w http.ResponseWriter, r *http.Request) {
-	logger.Println("echo-RemoteAddr: ", r.RemoteAddr, "LocalAddr: ", r.Host+r.RequestURI)
 	conn, err := upgrader.Upgrade(w, r, nil) // 升级http为websocket
-	logger.Println("websocket-RemoteAddr: ", conn.RemoteAddr(), "LocalAddr: ", conn.LocalAddr())
+	logger.Println("RemoteAddr: ", conn.RemoteAddr(), "LocalAddr: ", conn.LocalAddr())
 	if err != nil {
 		log.Print("upgrade:", err)
 		return
@@ -46,7 +45,7 @@ func echo(w http.ResponseWriter, r *http.Request) {
 
 func home(w http.ResponseWriter, r *http.Request) {
 	logger.Println("home-RemoteAddr: ", r.RemoteAddr, "LocalAddr: ", r.RequestURI)
-	homeTemplate.Execute(w, "ws://"+r.Host+"/echo")
+	homeTemplate.Execute(w, "wss://"+r.Host+"/echo")
 }
 
 func main() {
@@ -55,7 +54,8 @@ func main() {
 	http.HandleFunc("/echo", echo)
 	http.HandleFunc("/", home)
 	log.Println("Server start...")
-	log.Fatal(http.ListenAndServe(*addr, nil))
+	log.Fatalln(http.ListenAndServeTLS(*addr, "./ca_key/server.crt", "./ca_key/server.key", nil))
+
 }
 
 var homeTemplate = template.Must(template.New("").Parse(`
