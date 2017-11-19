@@ -57,7 +57,7 @@ var (
 func initClockSequence() {
 	buf := make([]byte, 2)
 	safeRandom(buf)
-	clockSequence = binary.BigEndian.Uint16
+	clockSequence = binary.BigEndian.Uint16(buf)
 }
 
 func initHardwareAddr() {
@@ -166,6 +166,9 @@ func (u UUID) Variant() uint {
 func (u UUID) Bytes() []byte {
 	return u[:]
 }
+
+// Used in string method conversion
+const dash byte = '-'
 
 // Returns canonical string representation of UUID:
 // xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.
