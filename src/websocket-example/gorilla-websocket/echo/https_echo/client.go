@@ -29,7 +29,7 @@ func main() {
 	u := url.URL{Scheme: "wss", Host: *addr, Path: "/echo"}
 	log.Printf("connecting to %s", u.String())
 
-	size := 100
+	size := 20
 	for {
 		select {
 		case <-interrupt:
