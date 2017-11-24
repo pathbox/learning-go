@@ -1,12 +1,12 @@
 package main
 
 import (
-    "log"
+	"log"
 
-    "context"
-    "google.golang.org/grpc"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
 
-    "./../protobuf"
+	"./../protobuf"
 )
 
 func main() {

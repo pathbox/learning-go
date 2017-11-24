@@ -25,8 +25,7 @@ func getHandler(w http.ResponseWriter, r *http.Request) {
 		Colors: []string{"Crimson", "Red", "Ruby", "Maroon"},
 	}
 
-	var json = jsoniter.ConfigCompatibleWithStandardLibrary
-	str, _ := json.Marshal(group)
+	str, _ := jsoniter.Marshal(group)
 
 	fmt.Println(str)
 
