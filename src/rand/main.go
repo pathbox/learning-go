@@ -1,21 +1,20 @@
-package main  
-  
-import (  
-    "fmt"  
-    "math/rand"  
-    "time"  
-    "crypto/md5"
-    "encoding/hex"
-)  
-  
-func main() {  
-    rand.Seed(time.Now().UnixNano())  
-    for i := 0; i < 10; i++ {  
-        x := rand.Intn(100)  
-        fmt.Println(x)  
-    }  
-}  
+package main
 
+import (
+	"crypto/md5"
+	"encoding/hex"
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+func main() {
+	rand.Seed(time.Now().UnixNano())
+	for i := 0; i < 4; i++ {
+		x := rand.Intn(3)
+		fmt.Println(x)
+	}
+}
 
 func createPasswd() string {
 	t := time.Now().UnixNano()
@@ -28,7 +27,7 @@ func createPasswd() string {
 	return passwd
 }
 
-func createNumber() string {   // 创建随机数字符串，保证为14位
+func createNumber() string { // 创建随机数字符串，保证为14位
 	rand.Seed(time.Now().UnixNano())
 	n := rand.Int63n(99999999999999)
 	result := fmt.Sprintf("%014d", n)
