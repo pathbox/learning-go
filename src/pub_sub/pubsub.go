@@ -89,7 +89,7 @@ func (ps *PubSub) Shutdown() {
 }
 func (ps *PubSub) start() {
 	reg := registry{
-		topisc:    make(map[string]map[chan interface{}]bool),
+		topics:    make(map[string]map[chan interface{}]bool),
 		revTopics: make(map[chan interface{}]map[string]bool),
 	}
 
@@ -148,7 +148,7 @@ func (reg *registry) add(topic string, ch chan interface{}, once bool) {
 }
 
 func (reg *registry) send(topics string, msg interface{}) {
-	for ch, once := range reg.topics[topic] {
+	for ch, once := range reg.topics[topics] {
 		ch <- msg
 		if once {
 			for topic := range reg.revTopics[ch] {
@@ -181,7 +181,7 @@ func (reg *registry) remove(topic string, ch chan interface{}) {
 	delete(reg.topics[topic], ch)
 	delete(reg.revTopics[ch], topic)
 
-	if len(reg.topics[topic] == 0) {
+	if len(reg.topics[topic]) == 0 {
 		delete(reg.topics, topic)
 	}
 
