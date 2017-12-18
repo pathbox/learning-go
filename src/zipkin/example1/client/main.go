@@ -69,7 +69,6 @@ go run server/main.go
 
 go run client/main.go
 
-http://localhost:9411/zipkin
 */
 
 /*
@@ -77,3 +76,4 @@ http://localhost:9411/zipkin
 https://github.com/openzipkin/zipkin/tree/master/zipkin-server
 https://github.com/opentracing/specification/blob/master/project_organization.md
 */
+// http://localhost:9411/zipkin
