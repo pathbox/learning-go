@@ -59,4 +59,21 @@ func main() {
 	collector.Close()
 }
 
-// http://localhost:9411/zipkin
+// curl -sSL https://zipkin.io/quickstart.sh | bash -s
+// java -jar zipkin.jar --logging.level.zipkin=DEBUG --logging.level.zipkin2=DEBUG
+
+/*
+启动两个grpc服务
+go run cache/main.go
+go run server/main.go
+
+go run client/main.go
+
+http://localhost:9411/zipkin
+*/
+
+/*
+文档资料
+https://github.com/openzipkin/zipkin/tree/master/zipkin-server
+https://github.com/opentracing/specification/blob/master/project_organization.md
+*/
