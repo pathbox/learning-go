@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.add";
+option java_outer_classname = "addProto";
+
+package add;
+
+// The greeting service definition.
+service Add {
+  // Sends a greeting
+  rpc DoAdd (AddRequest) returns (AddReply) {}
+}
+
+// The request message containing the user's name.
+message AddRequest {
+   int32 num1 = 1;
+   int32 num2 = 2;
+}
+
+// The response message containing the greetings
+message AddReply {
+  int32 result = 1;
+}

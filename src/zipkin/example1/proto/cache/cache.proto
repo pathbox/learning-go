@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.cache";
+option java_outer_classname = "cacheProto";
+
+package cache;
+
+// The greeting service definition.
+service Cache {
+  // Sends a greeting
+  rpc Get (CacheRequest) returns (CacheReply) {}
+}
+
+// The request message containing the user's name.
+message CacheRequest {
+   int32 id = 1;
+}
+
+// The response message containing the greetings
+message CacheReply {
+  int32 result = 1;
+}
