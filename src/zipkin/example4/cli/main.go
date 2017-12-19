@@ -7,8 +7,8 @@ import (
 
 	opentracing "github.com/opentracing/opentracing-go"
 
+	svc1 "../svc1"
 	zipkin "github.com/openzipkin/zipkin-go-opentracing"
-	"github.com/openzipkin/zipkin-go-opentracing/examples/cli_with_2_services/svc1"
 )
 
 const (
@@ -61,7 +61,7 @@ func main() {
 	opentracing.InitGlobalTracer(tracer)
 
 	// Create Client to svc1 Service
-	client := svc1.NewHTTPCollector(tracer, svc1Endpoint)
+	client := svc1.NewHTTPClient(tracer, svc1Endpoint)
 
 	// Create Root Span for duration of the interaction with svc1
 	span := opentracing.StartSpan("Run")
