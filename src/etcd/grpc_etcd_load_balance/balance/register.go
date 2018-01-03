@@ -24,9 +24,11 @@ var stopSignal = make(chan bool, 1)
 func Register(name, host, target string, port, ttl int, interval time.Duration) error {
 	serviceValue := fmt.Sprintf("%s:%d", host, port)
 	serviceKey = fmt.Sprintf("/%s/%s/%s", Prefix, name, serviceValue)
+	log.Println("serviceKey: ", serviceKey)
 
 	// get endpoints for register dial address
 	var err error
+	fmt.Println("target:", target)
 	cfg := etcd3.Config{
 		Endpoints: strings.Split(target, ","),
 	}
@@ -40,6 +42,7 @@ func Register(name, host, target string, port, ttl int, interval time.Duration) 
 		ticker := time.NewTicker(interval)
 		for {
 			resp, _ := client.Grant(context.Background(), int64(ttl))
+			log.Println("resp:", resp)
 			// should get first, if not exist, set it
 			_, err := client.Get(context.Background(), serviceKey)
 			if err != nil {
@@ -55,13 +58,13 @@ func Register(name, host, target string, port, ttl int, interval time.Duration) 
 						log.Printf("grpclb: refresh service '%s' with ttl to etcd3 failed: %s", name, err.Error())
 					}
 				}
-
-				// 使用select 控制for循环,中止或按照ticker间隔进行. 这样就不用sleep这样的方法了
-				select {
-				case <-stopSignal:
-					return
-				case <-ticker.C:
-				}
+			}
+			// 使用select 控制for循环,中止或按照ticker间隔进行. 这样就不用sleep这样的方法了
+			select {
+			case <-stopSignal:
+				return
+			case <-ticker.C:
+				log.Println("ticker")
 			}
 		}
 	}()
@@ -74,6 +77,7 @@ func UnRegister() error {
 	stopSignal <- true
 	stopSignal = make(chan bool, 1) // just a hack to avoid multi UnRegister deadlock
 	var err error
+	fmt.Println("client", client)
 	if _, err := client.Delete(context.Background(), serviceKey); err != nil {
 		log.Printf("grpclb: deregister '%s' failed: %s", serviceKey, err.Error())
 	} else {
