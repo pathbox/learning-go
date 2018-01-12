@@ -1,8 +1,10 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"log"
+	"time"
 
 	"github.com/sideshow/apns2"
 	"github.com/sideshow/apns2/certificate"
@@ -20,11 +22,14 @@ func main() {
 	// notification.Topic = "Morning"
 	// notification.Payload = []byte(`{"aps":{"alert":"Hello Morning!"}}`)
 
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
 	payload := payload.NewPayload().Alert("Hello Morning!").Badge(1).Custom("key", "val")
 	notification.Payload = payload
 
 	client := apns2.NewClient(cert).Development()
-	res, err := client.Push(notification)
+	// res, err := client.Push(notification)
+	res, err := client.PushWithContext(ctx, notification)
 
 	if err != nil {
 		log.Fatal("Error:", err)
