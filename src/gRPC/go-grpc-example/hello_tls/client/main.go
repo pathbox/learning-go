@@ -1,13 +1,14 @@
 package main
 
 import (
-		pb "../../proto/hello_tls" // 引入编译生成的包
+	pb "../../proto/helloworld" // 引入编译生成的包
+
+	"fmt"
 
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials" // 引入grpc认证包
 	"google.golang.org/grpc/grpclog"
-	"fmt"
 )
 
 const (
@@ -31,7 +32,7 @@ func main() {
 	defer conn.Close()
 
 	// 初始化客户端
-	client := pb.NewHelloClient(conn)
+	client := pb.NewHelloworldClient(conn)
 
 	// 调用方法
 	req := &pb.HelloRequest{Name: "gRPC"}

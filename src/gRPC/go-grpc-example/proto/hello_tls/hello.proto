@@ -1,3 +1,4 @@
+//protoc --go_out=plugins=grpc:. *.proto
 syntax = "proto3"; // 指定proto版本
 package hello;     // 指定包名
 
