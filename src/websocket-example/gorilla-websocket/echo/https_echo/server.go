@@ -12,7 +12,11 @@ import (
 
 var addr = flag.String("addr", "wsecho.com:9090", "http service address")
 
-var upgrader = websocket.Upgrader{} // use defeult options
+var upgrader = websocket.Upgrader{
+	ReadBufferSize:    2048,
+	WriteBufferSize:   2048,
+	EnableCompression: true,
+} // use defeult options
 
 var file, _ = os.Create("file.log")
 var logger = log.New(file, "", log.Ldate|log.Ltime)
