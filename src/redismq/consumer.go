@@ -228,7 +228,7 @@ func (consumer *Consumer) parseRedisAnswer(answer *redis.StringCmd) (*Package, e
 }
 
 func (consumer *Consumer) unsafeGet() (*Package, error) { // 一次get操作，会把 package 导入到consumerWorkingQueueKey，做为备份，这是一种安全的做法，防止操作失败，数据丢失
-	answer := consumer.Queue.redisClient.BRPopLPush(
+	answer := consumer.Queue.redisClient.BRPopLPush( // 使用 RPOPLPUSH 获取消息时，RPOPLPUSH 会把消息返给客户端，同时把该消息放入一个备份消息
 		queueInputKey(consumer.Queue.Name),
 		consumerWorkingQueueKey(consumer.Queue.Name, consumer.Name),
 		0,
