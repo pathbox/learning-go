@@ -17,6 +17,13 @@ type Consumer struct {
 	contextCleared <-chan struct{}
 }
 
+func (consumer *Consumer) Get() (*Package, error) {
+	if consumer.HasUnacked() {
+		return nil, fmt.Errorf("unacked Packages found")
+	}
+	return consumer.unsafeGet()
+}
+
 // NoWaitGet returns a single package from the queue (returns nil, nil if no package in queue)
 func (consumer *Consumer) NoWaitGet() (*Package, error) {
 	if consumer.HasUnacked() {
@@ -44,7 +51,7 @@ func (consumer *Consumer) MultiGet(length int) ([]*Package, error) {
 	}
 
 	// TODO maybe use transactions for rollback in case of errors?
-	reqs, err := consumer.Queue.redisClient.Pipelined(func(c *redis.Pipeline) error { // 使用了redis的Pipelined，批量传输
+	reqs, err := consumer.Queue.redisClient.Pipelined(func(c *redis.Pipeline) error { // 使用了redis的Pipelined，多个命令批量一次传输给redis
 		c.BRPopLPush(
 			queueInputKey(consumer.Queue.Name),
 			consumerWorkingQueueKey(consumer.Queue.Name, consumer.Name),
@@ -220,7 +227,7 @@ func (consumer *Consumer) parseRedisAnswer(answer *redis.StringCmd) (*Package, e
 	return p, nil
 }
 
-func (consumer *Consumer) unsafeGet() (*Package, error) {
+func (consumer *Consumer) unsafeGet() (*Package, error) { // 一次get操作，会把 package 导入到consumerWorkingQueueKey，做为备份，这是一种安全的做法，防止操作失败，数据丢失
 	answer := consumer.Queue.redisClient.BRPopLPush(
 		queueInputKey(consumer.Queue.Name),
 		consumerWorkingQueueKey(consumer.Queue.Name, consumer.Name),
