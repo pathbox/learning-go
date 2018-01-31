@@ -35,8 +35,8 @@ func main() {
 }
 
 /*
-next.ServeHTTP(w, r) 之前的代理逻辑是 队列,先进先出
-之后的逻辑是 栈 先进后出
+next.ServeHTTP(w, r) 之前的代理逻辑是 队列 List,先进先出 FIFO
+之后的逻辑是 栈 Stack 先进后出
 
 从外到内, 然后执行最后一个handler之后,再 从内到外
 */
