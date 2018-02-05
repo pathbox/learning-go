@@ -5,8 +5,6 @@ import (
 	"math/rand"
 	"runtime"
 
-	_ "net/http/pprof"
-
 	"github.com/buaazp/fasthttprouter"
 	"github.com/valyala/fasthttp"
 )
