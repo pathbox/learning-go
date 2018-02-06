@@ -1,14 +1,14 @@
 package main
 
-import(
-	"sync"
+import (
 	"fmt"
+	"sync"
 )
 
 // 闭包思想
 // worker is a func()
 type worker struct {
-  Func func()
+	Func func()
 }
 
 func main() {
@@ -16,27 +16,27 @@ func main() {
 
 	channels := make(chan worker, 10) // a simple pool
 
-	 for i := 0; i < 5; i++ {
-        wg.Add(1)
-        go func() {
-            defer wg.Done()
-            for ch := range channels {
-                //reflect.ValueOf(ch.Func).Call(ch.Args)
-                ch.Func() // 执行闭包代码
-            }
-        }()
-		}
-
-		for i := 0; i < 100; i++{
-			j := i
-			wk := worker{
-				Func: func() {
-					fmt.Println(i+j)
-				},
+	for i := 0; i < 5; i++ {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			for ch := range channels {
+				//reflect.ValueOf(ch.Func).Call(ch.Args)
+				ch.Func() // 执行闭包代码
 			}
-			channels <- wk
+		}()
+	}
+
+	for i := 0; i < 100; i++ {
+		j := i
+		wk := worker{
+			Func: func() {
+				fmt.Println(i + j)
+			},
 		}
-		close(channels)
-		wg.Wait()
+		channels <- wk
+	}
+	close(channels)
+	wg.Wait()
 
 }
