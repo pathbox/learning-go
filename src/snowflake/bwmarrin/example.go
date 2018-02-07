@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	node, err := snowflake.NewNode(1)
+	node, err := snowflake.NewNode(100)
 	if err != nil {
 		fmt.Println(err)
 		return
