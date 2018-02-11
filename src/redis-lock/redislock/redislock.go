@@ -27,8 +27,8 @@ import (
 const DefaultTimeout = 10 * time.Minute
 
 var unlockScript = redis.NewScript(1, `
-	if redis.call("get", KEYS[1]) == ARGV[1]
-	then
+	if redis.call("get", KEYS[1]) == ARGV[1]  // unlockScript.Do(lock.conn, lock.key(), lock.token)  KEY[1]为lock.key(), ARGV[1]为ARGV[1]
+	then																			// 解锁操作用了 redis script，查看lock.key 的值是否存在，存在则把这个key 删除了，释放锁
 		return redis.call("del", KEYS[1])
 	else
 		return 0
