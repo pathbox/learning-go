@@ -129,7 +129,7 @@ func (r *Reader) WriterTo(w io.Writer) (n int64, err error) {
 		return 0, nil
 	}
 	b := r.s[r.i:]
-	m, err := w.Write(b)
+	m, err := w.Write(b)  // 把还没有Wite的数据,通过从b写到w
 	if m > len(b) {
 		panic("bytes.Reader.WriteTo: invalid Write count")
 	}
