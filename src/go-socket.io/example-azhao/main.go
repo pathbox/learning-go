@@ -30,6 +30,8 @@ func main() {
 			e = so.Emit("golang", m)
 			log.Println(e)
 
+			log.Println("MSG: ", msg)
+
 			log.Println("emit error:", so.Emit("chat message", msg+"back")) // 给 chat message 名称的渠道socket发msg
 			so.BroadcastTo("chat", "chat message", msg)
 		})
