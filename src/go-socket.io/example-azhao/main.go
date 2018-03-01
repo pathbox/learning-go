@@ -16,7 +16,7 @@ func main() {
 
 	server.On("connection", func(so socketio.Socket) { // 前端进入界面就会创建connection
 		log.Println("on connection")
-		so.Join("chat")
+		so.Join("chatroom")
 		so.On("chat message", func(msg string) {
 			m := make(map[string]interface{})
 			m["a"] = "hello"
@@ -33,7 +33,7 @@ func main() {
 			log.Println("MSG: ", msg)
 
 			log.Println("emit error:", so.Emit("chat message", msg+"back")) // 给 chat message 名称的渠道socket发msg
-			so.BroadcastTo("chat", "chat message", msg)
+			so.BroadcastTo("chatroom", "chat message", msg)
 		})
 
 		so.On("chat message with ack", func(msg string) string {
