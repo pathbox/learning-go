@@ -50,6 +50,6 @@ func main() {
 
 	http.Handle("/socket.io/", server)                     // socket.io 服务
 	http.Handle("/", http.FileServer(http.Dir("./asset"))) // 网站服务
-	log.Println("Serving at localhost:5000...")
-	log.Fatal(http.ListenAndServe(":5000", nil)) // listen 5000
+	log.Println("Serving at localhost:15001...")
+	log.Fatal(http.ListenAndServe(":15001", nil)) // listen 5000
 }
