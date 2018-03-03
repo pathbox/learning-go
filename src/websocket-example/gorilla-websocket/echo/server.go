@@ -10,7 +10,7 @@ import (
 	"github.com/gorilla/websocket"
 )
 
-var addr = flag.String("addr", "127.0.0.1:9090", "http service address")
+var addr = flag.String("addr", "0.0.0.0:15001", "http service address")
 
 var upgrader = websocket.Upgrader{} // use defeult options
 
