@@ -15,7 +15,7 @@ func main() {
 	args = append(args, "/usr/bin/wkhtmltopdf")
 	args = append(args, "--encoding")
 	args = append(args, "utf-8")
-	args = append(args, "https://qii404.me/2016/07/22/wkhtmltopdf.html")
+	args = append(args, "https://qii404.me/2016/07/22/wkhtmltopdf.html") // 也可以换成是html文件
 	args = append(args, "htmlnew.pdf")
 
 	// cmd := exec.Command("xvfb-run", "--", "/usr/bin/wkhtmltopdf", "--encoding", "utf-8", "https://qii404.me/2016/07/22/wkhtmltopdf.html", "htmlnew.pdf")
