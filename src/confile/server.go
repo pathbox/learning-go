@@ -34,12 +34,12 @@ func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 func main() {
 	router := httprouter.New()
 	router.GET("/", Index)
-	router.GET("/pdf", handleHtmlPDF)
+	router.GET("/convert/html", handleConvertHtml)
 	log.Println("Server start")
 	log.Fatal(http.ListenAndServe(":9011", router))
 }
 
-func handleHtmlPDF(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
+func handleConvertHtml(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 	pa := ParseParams(ps)
 	r, bs := pa.ValidateParams()
 
@@ -90,4 +90,18 @@ func IsBlank(s string) bool {
 		return true
 	}
 	return false
+}
+
+// 去 ServerGo接口获取 html 字符串byte
+func GetHtmlString() []byte {
+	client := http.Client{}
+}
+
+// 生成PDF文件
+func CreatePDF(fileByte []byte) {
+
+}
+
+func getHTTPClient() *http.Client {
+
 }
