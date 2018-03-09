@@ -22,7 +22,7 @@ func main() {
 	c := protobuf.NewCalculatorClient(conn)
 
 	// 传送新请求到远端gRPC服务器Calculator中，并呼叫Plus函数
-	r, err := c.Plus(content.Background(), &protobuf.CalcRequest{NumberA: 32, NumberB: 88})
+	r, err := c.Plus(context.Background(), &protobuf.CalcRequest{NumberA: 32, NumberB: 88})
 	if err != nil {
 		log.Panicln(err)
 	}
