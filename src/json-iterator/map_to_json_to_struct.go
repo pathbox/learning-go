@@ -20,8 +20,7 @@ func main() {
 	b, _ := jsoniter.Marshal(m)
 	user := &User{}
 	jsoniter.Unmarshal(b, user)
-
+	fmt.Println(string(b))
 	fmt.Println(user.Name)
-	fmt.Println(user.Age)
 	fmt.Println(user)
 }
