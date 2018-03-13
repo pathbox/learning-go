@@ -1,75 +1,47 @@
-// package main
-
-// import (
-// 	"fmt"
-// 	"math/rand"
-// )
-
-// const letterBytes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-// const (
-// 	letterIdxBits = 6                    // 6 bits to represent a letter index
-// 	letterIdxMask = 1<<letterIdxBits - 1 // All 1-bits, as many as letterIdxBits
-// 	letterIdxMax  = 63 / letterIdxBits   // # of letter indices fitting in 63 bits
-// )
-
-// func RandStringBytes(n int) string {
-// 	b := make([]byte, n)
-// 	for i := range b {
-// 		b[i] = letterBytes[rand.Intn(len(letterBytes))]
-// 	}
-
-// 	return string(b)
-// }
-
-// func RandStringBytesMaskImpr(n int) string {
-// 	b := make([]byte, n)
-
-// 	for i, cache, remain := n-1, rand.Int63(), letterIdxMax; i >= 0; {
-// 		if remain == 0 {
-// 			cache, remain = rand.Int63(), letterIdxMax
-// 		}
-// 		if idx := int(cache & letterIdxMask); idx < len(letterBytes) {
-// 			b[i] = letterBytes[idx]
-// 			i--
-// 		}
-// 		cache >>= letterIdxBits
-// 		remain--
-// 	}
-// 	return string(b)
-// }
-
-// func main() {
-// 	fmt.Println(RandStringBytes(10))
-// 	fmt.Println(RandStringBytesMaskImpr(10))
-// }
-
 package main
 
 import (
 	"fmt"
+	"math/rand"
+	"time"
 )
 
-func fb(n int) int {
-	if n == 1 {
-		return 1
+const letterBytes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+const (
+	letterIdxBits = 6                    // 6 bits to represent a letter index
+	letterIdxMask = 1<<letterIdxBits - 1 // All 1-bits, as many as letterIdxBits
+	letterIdxMax  = 63 / letterIdxBits   // # of letter indices fitting in 63 bits
+)
+
+func RandStringBytes(n int) string {
+	b := make([]byte, n)
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	for i := range b {
+		b[i] = letterBytes[r.Intn(len(letterBytes))]
 	}
 
-	if n == 2 {
-		return 1
-	}
+	return string(b)
+}
 
-	if n < 0 {
-		return 0
+func RandStringBytesMaskImpr(n int) string {
+	b := make([]byte, n)
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	for i, cache, remain := n-1, r.Int63(), letterIdxMax; i >= 0; {
+		if remain == 0 {
+			cache, remain = r.Int63(), letterIdxMax
+		}
+		if idx := int(cache & letterIdxMask); idx < len(letterBytes) {
+			b[i] = letterBytes[idx]
+			i--
+		}
+		cache >>= letterIdxBits
+		remain--
 	}
-
-	s := fb(n-1) + fb(n-2)
-	return s
+	return string(b)
 }
 
 func main() {
-	n := 7
-	r := fb(n)
-	fmt.Println(r)
-
+	fmt.Println(RandStringBytes(10))
+	fmt.Println(RandStringBytesMaskImpr(10))
 }
