@@ -14,7 +14,8 @@ func main() {
 		// fmt.Println(<-c) // 这里在阻塞， 这里会先执行 ready
 	}()
 
-	c <- 1
+	<-c
+	// c <- 1  // 都会引发死锁
 	fmt.Println("after received")
 }
 
