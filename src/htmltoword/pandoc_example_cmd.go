@@ -9,7 +9,7 @@ func main() {
 	log.Println("WORD Saving...")
 
 	args := []string{}
-	args = append(args, "-f")
+	args = append(args, "-s")
 	args = append(args, "/home/user/htmlconvert/baidu.html")
 	args = append(args, "-o")
 	args = append(args, "/home/user/htmlconvert/baidu_html.docx")
