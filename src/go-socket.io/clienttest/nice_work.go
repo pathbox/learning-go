@@ -33,9 +33,11 @@ type Message struct {
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 	defer recover()
-	for i := 0; i < 10000; i++ {
+ 
+	for i := 0; i < 3000; i++ {
+		// time.Sleep(20 * time.Microsecond)
 		c, err := gosocketio.Dial(
-			gosocketio.GetUrl("192.168.1.33", 7003, false),
+			gosocketio.GetUrl("127.0.0.1", 7002, false),
 			transport.GetDefaultWebsocketTransport())
 		if err != nil {
 			log.Println(err)
@@ -81,5 +83,5 @@ func main() {
 	}
 	select {}
 
-	log.Println(" [x] Complete")
+	// log.Println(" [x] Complete")
 }
