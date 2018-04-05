@@ -1,0 +1,3 @@
+如果是单个goroutine中的某个代码或资源需要加锁，直接使用mutex
+
+如果涉及到多个goroutine直接，需要互相等待和通信的加锁，使用goroutine会是合适的选择

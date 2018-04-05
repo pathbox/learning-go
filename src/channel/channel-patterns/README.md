@@ -1,0 +1,1 @@
+http://colobu.com/2018/03/26/channel-patterns/#Lock/TryLock_%E6%A8%A1%E5%BC%8F
