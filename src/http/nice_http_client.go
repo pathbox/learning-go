@@ -13,6 +13,16 @@ import (
 )
 
 func NewHTTPClient() *http.Client {
+	// transport := http.Transport {
+	// 	Dial: dialTimeout,
+	// 	Proxy: ...,
+	// 	MaxIdleConns: ..., // 适合 访问同一个接口时，使用复用的连接
+	// 	MaxIdleConnsPerHost: ...,
+	// 	IdleConnTimeout: ...,
+	// 	ResponseHeaderTimeout: ...,
+	// 	DisableCompression:...,
+	// }
+
 	transport := &http.Transport{
 		Dial: (&net.Dialer{
 			Timeout: 30 * time.Second,
@@ -71,4 +81,10 @@ func PostForm(url string, data url.Values) (resp *Response, err error) {
 
 func (c *Client) PostForm(url string, data url.Values) (resp *Response, err error) {
 	return c.Post(url, "application/x-www-form-urlencoded", strings.NewReader(data.Encode()))
+}
+
+var timeout = time.Duration(2 * time.Second)
+
+func dialTimeout(network, addr string) (net.Conn, error) {
+	return net.DialTimeout(network, addr, timeout)
 }
