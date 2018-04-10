@@ -27,3 +27,4 @@ func BenchmarkMatchStringCompiled(b *testing.B) {
 		r.MatchString("jsmith@example.com")
 	}
 }
+// go test -bench=. -benchmem
