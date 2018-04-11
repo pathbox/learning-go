@@ -31,7 +31,6 @@ func BenchmarkConcatBuffer(b *testing.B) {
 
 	for n := 0; n < b.N; n++ {
 		buffer.WriteString("x")
-
 		i++
 		if i >= strLen {
 			i = 0
