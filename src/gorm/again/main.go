@@ -62,6 +62,7 @@ func main() {
 	addr := ":9090"
 	router := mux.NewRouter()
 	router.HandleFunc("/files", filesHandler).Methods("GET")
+	router.HandleFunc("/files/{id:[0-9]+}", filesGetHandler).Methods("GET")
 	router.HandleFunc("/files", fileCreate).Methods("POST")
 
 	log.Fatal(http.ListenAndServe(addr, router))
@@ -108,6 +109,21 @@ func fileCreate(w http.ResponseWriter, r *http.Request) {
 	rs.Result = f
 	ResponseJson(w, rs)
 
+}
+
+func filesGetHandler(w http.ResponseWriter, r *http.Request) {
+	appID := GetURLAppID(r)
+
+	v := &IvrVoice{}
+
+	err := MyDB.Where("app_id = ?", appID).First(v).Error
+
+	if err != nil {
+		log.Println(err)
+	}
+
+	rs := RespResult{"OK", "OK", v}
+	ResponseJson(w, rs)
 }
 
 func GetURLAppID(r *http.Request) string {
