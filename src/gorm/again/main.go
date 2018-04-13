@@ -29,8 +29,8 @@ type Base struct {
 	UpdatedAt time.Time `gorm:"type:timestamp;not null;default:CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"`
 }
 
-type IvrVoice struct {
-	Base
+type IvrVoice struct { // 可以在 action 层定义，就不需要Base了，用于返回json数据，但是IvrVoice 还是要复合表名的转换
+	// Base
 	AppID     string `gorm:"size:191;unique_index;not null"` // app sid
 	DefVoices string `gorm:"type:text"`
 }
@@ -64,6 +64,7 @@ func main() {
 	router.HandleFunc("/files", filesHandler).Methods("GET")
 	router.HandleFunc("/files/{id:[0-9]+}", filesGetHandler).Methods("GET")
 	router.HandleFunc("/files", fileCreate).Methods("POST")
+	router.HandleFunc("/voices", voiceList).Methods("GET")
 
 	log.Fatal(http.ListenAndServe(addr, router))
 }
@@ -148,4 +149,24 @@ func ResponseJson(w http.ResponseWriter, rs interface{}) {
 	w.Header().Set("Content-Type", "application/json;charset=utf-8")
 	log.Println("Response: ", string(rsJson))
 	w.Write(rsJson)
+}
+
+func voiceList(w http.ResponseWriter, r *http.Request) {
+	rs := RespResult{"OK", "", nil}
+
+	var voiceList []IvrVoice
+	var voiceInfoList []VoiceInfo
+
+	err := MyDB.Model(IvrVoice{}).Select([]string{"app_id", "def_voices"}).Find(&voiceList).Error
+	log.Println(err, voiceList)
+	for _, v := range voiceList {
+		m := make(map[string]interface{})
+		json.Unmarshal([]byte(v.DefVoices), &m) // don't forget & 用取地址符
+
+		vf := VoiceInfo{AppID: v.AppID, DefVoices: m}
+		voiceInfoList = append(voiceInfoList, vf)
+	}
+
+	rs.Result = voiceInfoList
+	ResponseJson(w, rs)
 }
