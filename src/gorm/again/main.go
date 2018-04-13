@@ -112,8 +112,8 @@ func fileCreate(w http.ResponseWriter, r *http.Request) {
 }
 
 type VoiceInfo struct {
-	AppID     string      `json:"AppId"`
-	DefVoices interface{} `json:"DefVoices"`
+	AppID     string                       `json:"AppId"`
+	DefVoices map[string]map[string]string `json:"DefVoices"`
 }
 
 func filesGetHandler(w http.ResponseWriter, r *http.Request) {
@@ -126,8 +126,12 @@ func filesGetHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Println(err)
 	}
+	m := make(map[string]map[string]string)
+	ms := "{\"Welcome\":{\"Type\":\"wav\", \"Content\":\"/content/hello.wav\"}}"
+	e := json.Unmarshal([]byte(ms), &m) // don't forget & 用取地址符
+	log.Println(e)
 
-	vf := VoiceInfo{AppID: v.AppID, DefVoices: v.DefVoices}
+	vf := VoiceInfo{AppID: v.AppID, DefVoices: m}
 
 	rs := RespResult{"OK", "OK", vf}
 	ResponseJson(w, rs)
