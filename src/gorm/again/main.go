@@ -31,8 +31,8 @@ type Base struct {
 
 type IvrVoice struct {
 	Base
-	AppID     string      `gorm:"size:191;unique_index;not null"` // app sid
-	DefVoices interface{} `gorm:"type:text"`
+	AppID     string `gorm:"size:191;unique_index;not null"` // app sid
+	DefVoices string `gorm:"type:text"`
 }
 
 func init() {
@@ -111,6 +111,11 @@ func fileCreate(w http.ResponseWriter, r *http.Request) {
 
 }
 
+type VoiceInfo struct {
+	AppID     string      `json:"AppId"`
+	DefVoices interface{} `json:"DefVoices"`
+}
+
 func filesGetHandler(w http.ResponseWriter, r *http.Request) {
 	appID := GetURLAppID(r)
 
@@ -122,7 +127,9 @@ func filesGetHandler(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 	}
 
-	rs := RespResult{"OK", "OK", v}
+	vf := VoiceInfo{AppID: v.AppID, DefVoices: v.DefVoices}
+
+	rs := RespResult{"OK", "OK", vf}
 	ResponseJson(w, rs)
 }
 
