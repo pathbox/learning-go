@@ -129,7 +129,7 @@ func filesGetHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	m := make(map[string]interface{})
 	// ms := "{\"Welcome\":{\"Type\":\"wav\", \"Content\":\"/content/hello.wav\"}}"
-	log.Println(v.DefVoices)
+
 	e := json.Unmarshal([]byte(v.DefVoices), &m) // don't forget & 用取地址符
 	log.Println(e)
 
@@ -137,6 +137,8 @@ func filesGetHandler(w http.ResponseWriter, r *http.Request) {
 
 	rs := RespResult{"OK", "OK", vf}
 	ResponseJson(w, rs)
+	ee := MyDB.Model(v).Where("app_id = ?", "102").Update("def_voices", nil).Error
+	log.Println(ee)
 }
 
 func GetURLAppID(r *http.Request) string {
