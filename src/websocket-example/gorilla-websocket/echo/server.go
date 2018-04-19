@@ -19,7 +19,7 @@ var logger = log.New(file, "", log.Ldate|log.Ltime)
 
 func echo(w http.ResponseWriter, r *http.Request) {
 	logger.Println("echo-RemoteAddr: ", r.RemoteAddr, "LocalAddr: ", r.Host+r.RequestURI)
-	sign := req.URL.Query().Get("sign") // 一种在 连接建立前进行鉴权的方式，如果不通过，连接不会建立，比连接建立后再鉴权是更好的方式
+	sign := req.URL.Query().Get("sign") // 一种在 连接建立前进行鉴权的方式，如果不通过，连接不会建立，比连接建立后再鉴权是更好的方式，一定程度上减少了很多不合法连接的建立，优化了资源
 	log.Info("=================Sign:", sign)
 	if sign != "udesk" {
 		log.Error("Sign fail connect not build success")
