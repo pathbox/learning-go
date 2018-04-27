@@ -1,0 +1,1 @@
+https://github.com/gopherchina/conference/blob/master/2018/2.5%20%E6%B7%B1%E5%85%A5CGO%E7%BC%96%E7%A8%8B.pdf
