@@ -39,3 +39,10 @@ func main() {
 	// Listen and serve on 0.0.0.0:8080
 	router.Run(":9090")
 }
+
+/*
+curl -v -X POST \
+  http://localhost:8080/loginJSON \
+  -H 'content-type: application/json' \
+  -d '{ "user": "manu" }'
+*/
