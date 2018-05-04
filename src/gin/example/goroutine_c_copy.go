@@ -29,7 +29,6 @@ func main() {
 		// since we are NOT using a goroutine, we do not have to copy the context
 		log.Println("Done! in path " + c.Request.URL.Path)
 	})
-
 	// Listen and serve on 0.0.0.0:8080
 	r.Run(":8080")
 }
