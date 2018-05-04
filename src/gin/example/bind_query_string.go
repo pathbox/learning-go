@@ -29,3 +29,5 @@ func startPage(c *gin.Context) {
 
 	c.String(200, "Success")
 }
+
+// $ curl -X GET "localhost:8085/testing?name=appleboy&address=xyz&birthday=1992-03-15"
