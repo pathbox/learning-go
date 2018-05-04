@@ -39,3 +39,10 @@ func UploadFiles(c *gin.Context) {
 	c.String(http.StatusOK, fmt.Sprintf("Uploaded successfully %d files with fields name=%s and email=%s.", len(files), name, email))
 
 }
+
+/*
+curl -X POST http://localhost:8080/upload \
+  -F "upload[]=@/Users/appleboy/test1.zip" \
+  -F "upload[]=@/Users/appleboy/test2.zip" \
+  -H "Content-Type: multipart/form-data"
+*/
