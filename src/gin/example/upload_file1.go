@@ -27,19 +27,26 @@ func UploadFile(c *gin.Context) {
 	c.String(http.StatusOK, fmt.Sprintf("'%s' uploaded!", file.Filename))
 }
 
-// func (c *Context) SaveUploadedFile(file *multipart.FileHeader, dst string) error {
-// 	src, err := file.Open()
-// 	if err != nil {
-// 		return err
-// 	}
-// 	defer src.Close()
+/*
+func (c *Context) SaveUploadedFile(file *multipart.FileHeader, dst string) error {
+	src, err := file.Open()
+	if err != nil {
+		return err
+	}
+	defer src.Close()
 
-// 	out, err := os.Create(dst)
-// 	if err != nil {
-// 		return err
-// 	}
-// 	defer out.Close()
+	out, err := os.Create(dst)
+	if err != nil {
+		return err
+	}
+	defer out.Close()
 
-// 	io.Copy(out, src)
-// 	return nil
-// }
+	io.Copy(out, src)
+	return nil
+}
+
+curl -X POST http://localhost:8080/upload \
+  -F "file=@/Users/appleboy/test.zip" \
+	-H "Content-Type: multipart/form-data"
+
+*/
