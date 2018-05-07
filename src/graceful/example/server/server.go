@@ -16,6 +16,7 @@ type Server struct {
 	logger *logger.Logger
 }
 
+// 新建一个listener服务通过端口地址
 func New(logger *logger.Logger, port int) (*Server, error) {
 	s := &Server{cm: NewConnectionManager(), logger: logger}
 
@@ -32,6 +33,7 @@ func New(logger *logger.Logger, port int) (*Server, error) {
 	return s, nil
 }
 
+// 新建一个listener服务，通过监听文件描述符
 func NewFromFD(logger *logger.Logger, fd uintptr) (*Server, error) {
 	s := &Server{cm: NewConnectionManager(), logger: logger}
 
@@ -54,6 +56,7 @@ func (s *Server) Stop() {
 	s.socket.SetDeadline(time.Now())
 }
 
+// 返回正在listen的socket的文件描述符Fd()指针
 func (s *Server) ListenerFD() (uintptr, error) {
 	file, err := s.socket.File()
 	if err != nil {
@@ -85,8 +88,8 @@ func (s *Server) WaitWithTimeout(duration time.Duration) error {
 }
 
 func (s *Server) StartAcceptLoop() {
-	for {
-		conn, err := s.socket.Accept()
+	for { // for{}
+		conn, err := s.socket.Accept() // accept 得到conn
 		if err != nil {
 			if nerr, ok := err.(net.Error); ok && nerr.Timeout() {
 				s.logger.Println("Stop accepting connections")
@@ -96,14 +99,14 @@ func (s *Server) StartAcceptLoop() {
 		}
 		go func() {
 			s.cm.Add(1)
-			s.handleConn(conn)
+			s.handleConn(conn) // 对conn 进行读写操作
 			s.cm.Done()
 		}()
 	}
 }
 
 func (s *Server) handleConn(conn net.Conn) {
-	tick := time.NewTicker(time.Second)
+	tick := time.NewTicker(time.Second) // 定时心跳
 	buffer := make([]byte, 64)
 	for {
 		select {
