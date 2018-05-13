@@ -7,12 +7,10 @@ import (
 )
 
 func main() {
-	log := zerolog.New(os.Stdout).With().
-		Str("foo", "bar").
-		Logger()
+	logFile, _ := os.OpenFile("test.log", os.O_CREATE|os.O_RDWR|os.O_APPEND, 0755)
 
-	stdlog.SetFlags(0)
-	stdlog.SetOutput(log)
+	logger := zerolog.New(logFile).With().Logger()
 
-	stdlog.Print("hello world")
+	logger.Info().Str("foo", "bar").Msg("Hello World")
+
 }
