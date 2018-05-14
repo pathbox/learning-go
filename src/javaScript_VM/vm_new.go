@@ -19,9 +19,11 @@ func main() {
 func todo1() {
 	// vm := otto.New()
 	vm.Set("num", 1)
-	v, _ := vm.Run(`
-			console.log("Num: " + num);
-		`)
+	// s := `console.log("Num: " + num);`
+	// s := "console.log(\"Num: \" + num);"
+	script, _ := vm.Compile("", "console.log(\"Num: \" + num);")
+	v, _ := vm.Run(script)
+	// v,_ := vm.Run(s)
 	fmt.Println("vvvvv: ", v)
 }
 
