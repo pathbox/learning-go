@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resources><string name="VideoLoading">Loading video…</string><string name="ApplicationName">这是新的ApplicationName</string></resources>
+<resources>
+  <string name="VideoLoading">Loading video…</string>
+  <string name="ApplicationName">这是新的ApplicationName</string>
+</resources>

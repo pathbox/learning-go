@@ -47,7 +47,7 @@ func main() {
 	}
 
 	// 生成 xml
-	xmlOut, outErr := xml.MarshalIndent(result, "", "")
+	xmlOut, outErr := xml.MarshalIndent(result, "", "  ")
 	if outErr == nil {
 		// 加入XML头
 		headerBytes := []byte(xml.Header)
