@@ -9,12 +9,13 @@ import (
 
 func main() {
 
-	ary := []*otto.Otto{}
-	for i := 0; i < 10000; i++ {
+	// ary := []*otto.Otto{}
+	for i := 0; i < 100000; i++ {
 		vm := otto.New()
-		ary = append(ary, vm)
+		// ary = append(ary, vm)
+		vm.Set("aassddfdjgkjldflgjfdgjdfgljflgjfgjgfg", "dsfjdiofjsdfljdsfklsjdfljsdfjfkdjl")
 	}
-	fmt.Println(len(ary))
+	// fmt.Println(len(ary))
 	fmt.Println("done")
 	time.Sleep(1000 * time.Second)
 }
