@@ -1,0 +1,126 @@
+<!--
+start
+play
+dtmf_gather
+enqueue
+hangup
+end
+
+action:
+	log
+	goto
+	assign
+-->
+
+<udesk_ivr ver="1.0">
+	<node type="start" id="1">
+		<on_entry>
+			<!-- 初始化变量 -->
+			<action name="goto" data="2"/>
+		</on_entry>
+	</node>
+
+	<!-- 放音结点 -->
+	<node type="play" id="2">
+		<attrs>
+			<item key="type" value="tts"/>
+			<item key="content" value="欢迎致电！"/>
+		</attrs>
+		<on_succ>
+			<action name="goto" data="3"/>
+		</on_succ>
+		<on_fail>
+			<action name="goto" data="5"/>
+		</on_fail>
+	</node>
+
+	<!-- 收号 -->
+	<node type="dtmf_gather" id="3">
+		<on_succ>
+			<action name="assign" data="dtmf=${DTMF}" /> <!-- 收号，dtmf变量存用户按键值 -->
+			<action name="goto" data="4"/>
+		</on_succ>
+	</node>
+
+	<node type="condition" id="4">
+		<if cond="${dtmf} eq 1">
+			<action name="goto" data="5"/>
+		</if>
+		<if/>
+    <action name="goto" data="6"/>
+		<if/>
+		<else>
+			<action name="goto" data="7"/>
+		</else>
+	</node>
+
+	<node type="enqueue" id="5">
+		<attrs>
+			<item key="queue_id" value="800${DTMF}"/>
+		</attrs>
+		<on_succ>
+			<action name="goto" data="7"/>
+		</on_succ>
+		<on_timeout>
+			<action name="goto" data="8"/>
+		</on_timeout>
+		<on_fail>
+			<action name="goto" data="6"/>
+		</on_fail>
+	</node>
+
+	<node type="vmail" id="8">
+		<attrs>
+			<item key="end_key" value="#"/>
+			<item key="timeout" value="60"/>
+		</attrs>
+		<on_succ> <action name="goto" data="6"/></on_succ>
+		<on_fail> <action name="goto" data="6"/></on_fail>
+	</node>
+
+	<node type="hangup" id="6">
+		<on_succ>
+			<action name="goto" data="7"/>
+		</on_succ>
+	</node>
+
+	<node type="end" id="7">
+		<on_entry>
+			<action name="log" data="end ${call_id}"/>
+		</on_entry>
+	</node>
+
+	<node type="webhook" id="9">
+		<attrs>
+			<request>
+				<item key="query_text" value="${query_text}"/>  <!-- 从变量query_text 取值，作为request params query_text 发起请求  如果有sign 鉴权，鉴权算法要按照文档设计，要么无法识别 -->
+				<item key="sign" value="${sign}"/>
+			</request>
+			<response>
+				<item key="resp" value="${resp}" />   <!-- 从response body中取 key 为 resp 的值，赋值给变量 resp 存在worker（这一次call）上 -->
+
+				<item key="action" value="${action}" />
+			</response>
+		</attrs>
+
+		<on_succ>
+			<action name="goto" data="10"/>
+		</on_succ>
+
+		<on_fail>
+			<action name="goto" data="7"/>
+		</on_fail>
+	</node>
+
+	<node type="condition" id="10">
+		<if cond="${action} eq end">    <!-- 如果action 是 end 说明机器人对话结束 -->
+			<action name="goto" data="7">
+		</if>
+		<if cond="${action} eq agent">  <!-- 如果 action 是agent 说明进行转客服操作  应该是 to_agent -->
+			<action name="goto" data="5">
+		</if>
+		<else>
+			<action name="goto" data="9">  <!-- 要不说明 还要继续和机器人进行交互，等待cti发的下一个通知 -->
+		</else>
+	</node>
+</udesk_ivr>
