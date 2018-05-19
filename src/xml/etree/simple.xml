@@ -22,10 +22,7 @@ action:
 
 	<!-- 放音结点 -->
 	<node type="play" id="2">
-		<attrs>
-			<item key="type" value="tts"/>
-			<item key="content" value="欢迎致电！"/>
-		</attrs>
+		<attrs type="tts" content="欢迎致电！"/>
 		<on_succ>
 			<action name="goto" data="3"/>
 		</on_succ>
