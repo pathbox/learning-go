@@ -24,7 +24,7 @@ func New(rate int, per time.Duration) *RateLimiter {
 
 	return &RateLimiter{
 		rate:      uint64(rate),
-		allowance: uint64(rate) * nano,
+		allowance: uint64(rate) * nano, // 每 per 秒 限流为rate数量
 		max:       uint64(rate) * nano,
 		unit:      nano,
 
