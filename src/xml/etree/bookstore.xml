@@ -14,7 +14,7 @@
     <p:price>29.99</p:price>
   </book>
 
-  <book category="WEB">
+  <book category="'张先生'">
     <title lang="en">XQuery Kick Start</title>
     <author>James McGovern</author>
     <author>Per Bothner</author>
