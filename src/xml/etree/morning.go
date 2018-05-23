@@ -8,6 +8,7 @@ import (
 type User struct {
 	Name string
 	Age  int
+	M    map[int]int
 }
 
 func main() {
@@ -18,15 +19,15 @@ func main() {
 		user := &User{
 			Name: "Cary",
 			Age:  i,
+			M:    make(map[int]int),
 		}
-
+		user.M[i] = i
 		m[i] = user
 	}
 	fmt.Println("Size Map: ", len(m))
 
 	time.Sleep(5 * time.Second)
 	for i := 0; i < 1000000; i++ {
-		// m[i] = nil
 		delete(m, i)
 
 	}
