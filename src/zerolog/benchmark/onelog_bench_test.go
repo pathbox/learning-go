@@ -1,4 +1,4 @@
-package onelog_benchmark
+package benchmark
 
 import (
 	"io/ioutil"
