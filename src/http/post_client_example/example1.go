@@ -29,10 +29,11 @@ func DoPost() {
 
 	var resp *http.Response
 	resp, err = http.DefaultClient.Do(request)
-	defer resp.Body.Close()
+
 	if err != nil {
 		panic(err)
 	}
+	defer resp.Body.Close()
 
 	io.Copy(ioutil.Discard, resp.Body)
 }
