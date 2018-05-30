@@ -1,6 +1,9 @@
 package main
 
 import (
+	"fmt"
+	"runtime"
+
 	"github.com/gin-gonic/gin"
 
 	"github.com/DeanThompson/ginpprof"
@@ -8,6 +11,7 @@ import (
 
 func main() {
 	router := gin.Default()
+	runtime.GC()
 
 	router.GET("/ping", func(c *gin.Context) {
 		c.String(200, "pong")
@@ -21,5 +25,7 @@ func main() {
 	// group := router.Group("/debug/pprof")
 	// ginpprof.WrapGroup(group)
 
+	n := runtime.NumGoroutine()
+	fmt.Println(n)
 	router.Run(":8080")
 }
