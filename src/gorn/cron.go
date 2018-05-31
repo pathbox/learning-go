@@ -115,8 +115,8 @@ func (c *Cron) run() {
 
 	// to figure next trig time for entries, referenced fron now
 	for _, e := range c.entries { // 轮训 cron中的所有entry
-		e.Next = e.Schedule.Next(now) // 很具 entry 各自的schedule配置，重新设置Next时间值
-	}
+		e.Next = e.Schedule.Next(now) // 根具 entry 各自的schedule配置，设置Next时间值,每一个entry的Next都一样
+
 
 	for {
 		sort.Sort(byTime(c.entries))
@@ -129,7 +129,7 @@ func (c *Cron) run() {
 		select {
 		case now = <-after(effective.Sub(now)):
 			for _, entry := range c.entries {
-				if entry.Next != effective {
+				if entry.Next != effective { // 说明 entry.Next被修改了
 					break
 				}
 				entry.Prev = now
