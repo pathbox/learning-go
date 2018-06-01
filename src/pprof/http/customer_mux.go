@@ -25,3 +25,5 @@ func main() {
 
 // _ "net/http/pprof"
 // 如果这样导入包，默认用的mux是 http.DefaultServeMux,如果要使用自定义的mux，则需要去手动定义 mux.HandleFunc("/debug/pprof/", pprof.Index) 等这些HandleFunc
+
+// go tool pprof https+insecure://localhost:8001/debug/pprof/heap将原来的http替换成https+insecure即可
