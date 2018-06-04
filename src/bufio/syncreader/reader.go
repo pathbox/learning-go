@@ -2,6 +2,7 @@ package syncreader
 
 import (
 	"bufio"
+	"fmt"
 	"io"
 	"os"
 )
@@ -20,6 +21,7 @@ func ReadFile(filePath string, bufSize int) (chan string, error) {
 		for fileReader.Scan() {
 			outChan <- fileReader.Text()
 		}
+		fmt.Println("==========")
 		close(outChan)
 	}()
 	return outChan, nil
@@ -51,4 +53,7 @@ func ReadByte(r io.Reader, bufSize int) (chan []byte, error) {
 	return outChan, nil
 }
 
-// 单独起了一个goroutine 去源 io.Reader中读取数据到缓冲outChan，主goroutine再从outChan中读取数据。spawns a goroutine to read the file, and sends the lines over the returned channel
+// 单独起了一个goroutine 去源 io.Reader中读取数据到缓冲outChan，主goroutine再从outChan中读取数据,利用多个goroutine+chan队列进行读操作，避免阻塞的读取源数据。spawns a goroutine to read the file, and sends the lines over the returned channel
+
+// goroutine Read from origin data => chan => gorotinue Read from chan
+// 这两个goroutine可以同时进行
