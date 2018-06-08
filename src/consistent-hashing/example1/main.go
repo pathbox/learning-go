@@ -84,7 +84,7 @@ func (c *Consistent) sortHashRing() {
 	for k := range c.Nodes { // 将每个真实node的虚拟节点存到hashRing环中, k 是虚拟节点的key uint32 hash值
 		c.ring = append(c.ring, k)
 	}
-	sort.Sort(c.ring)
+	sort.Sort(c.ring) // 从小到大排序
 }
 
 func (c *Consistent) joinStr(i int, node *Node) string {
@@ -108,7 +108,7 @@ func (c *Consistent) Get(key string) Node {
 
 // hash 是key字符串的hash uint32数值
 func (c *Consistent) search(hash uint32) int {
-	i := sort.Search(len(c.ring), func(i int) bool { return c.ring[i] >= hash }) // 通过二叉查找算法，找到满足 c.ring[i] >= hash 的最小的i值，如果没有找到满足条件的i，则返回最后的i值，这个i值在 0-len(c.ring)之间
+	i := sort.Search(len(c.ring), func(i int) bool { return c.ring[i] >= hash }) // 通过二叉查找算法，找到满足 c.ring[i] >= hash 的最后的i==j的时候的i值，如果没有找到满足条件的i，则返回最后的i值，这个i值在 0-len(c.ring)之间
 	if i < len(c.ring) {
 		if i == len(c.ring)-1 {
 			return 0 // 环形列表，重新回到头部
