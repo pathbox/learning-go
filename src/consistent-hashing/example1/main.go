@@ -69,7 +69,7 @@ func (c *Consistent) Add(node *Node) bool {
 		return false
 	}
 
-	count := c.numReps * node.Weight
+	count := c.numReps * node.Weight // 权重表示虚拟节点的比重
 	for i := 0; i < count; i++ {
 		str := c.joinStr(i, node)         // 根据这个node参数，得到一个字符串
 		c.Nodes[c.hashStr(str)] = *(node) // c.Nodes 中存的是虚拟node节点数量，某个真实的节点对应count(c.numReps * node.Weight)个虚拟节点, 虚拟节点的key是通过IP组合字符串hash函数得到的一个hash uint32 数值
@@ -108,7 +108,7 @@ func (c *Consistent) Get(key string) Node {
 
 // hash 是key字符串的hash uint32数值
 func (c *Consistent) search(hash uint32) int {
-	i := sort.Search(len(c.ring), func(i int) bool { return c.ring[i] >= hash }) // 通过二叉查找算法，找到满足 c.ring[i] >= hash 的最后的i==j的时候的i值，如果没有找到满足条件的i，则返回最后的i值，这个i值在 0-len(c.ring)之间
+	i := sort.Search(len(c.ring), func(i int) bool { return c.ring[i] >= hash }) // 通过二叉查找算法，找到满足 c.ring[i] >= hash 的第一个c.ring[i]值，也就是满足c.ring[i] >= hash的最小c.ring[i]，如果没有找到满足条件的i，则返回最后的i值，这个i值在 0-len(c.ring)之间 (找到第一个大于等于该hash环位置的服务key，从而得到该key需要分配的服务器) 二分查找的时间复杂度是 log(n)，sort.Search总是会执行log(n)次，源码中当 i == j的时候，跳出循环返回
 	if i < len(c.ring) {
 		if i == len(c.ring)-1 {
 			return 0 // 环形列表，重新回到头部
@@ -165,3 +165,13 @@ func main() {
 		fmt.Println("Node IP:", k, " count:", v)
 	}
 }
+
+/* 总结：
+hashRing 用[]uint32表示，可以知道hashRing的最大值就是 2^64-1。理论上2^32-1就够了。构造虚拟节点，并不表示需要构造2^32-1个。虚拟节点的key尽量随机分配在hashRing中，利于平衡性。每个虚拟节点对应一个真实节点，这里用了map结构存虚拟节点和真实节点的对应关系，key就是0-2^32-1的hash数值，value就是真实节点struct。
+
+不可或缺的hash算法：crc32.ChecksumIEEE([]byte(key)) 会得到一个0-2^32-1的hash值。用于产生虚拟节点的key，再把这个key值存到hashRing中，排序。这样，虚拟节点就在hashRing hash环上了
+
+查询key，对其也做hash算法，得到0-2^32-1的hash值。利用二叉查找算法，在hashRing中，找到第一个大于等于该hash环位置的虚拟节点的key值，得到这个虚拟节点，从而得到虚拟节点对应的真实节点值。
+
+
+*/
