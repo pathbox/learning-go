@@ -4,6 +4,7 @@ import "io"
 // the buffer as needed. The return value n is the number of bytes read. Any
 // error except io.EOF encountered during the read is also returned. If the
 // buffer becomes too large, ReadFrom will panic with ErrTooLarge
+// 循环读取，每次读512长度的字节数据。不会消耗内存
 func (b *Buffer) ReadFrom(r io.Reader) (n int64, err error) {
 	b.lastRead = opInvalid
 	for {
