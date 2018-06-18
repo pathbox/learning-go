@@ -72,4 +72,10 @@ func (b *Writer) Write(p []byte) (nn int, err error) {
 	return nn, nil
 }
 
+// Available returns how many bytes are unused in the buffer.
+func (b *Writer) Available() int { return len(b.buf) - b.n }
+
+// Buffered returns the number of bytes that have been written into the current buffer.
+func (b *Writer) Buffered() int { return b.n }
+
 // bufio 包 实际上是实现了一个缓冲层buf, 将数据先存到其缓冲buf []byte 中，之后再write 到其他io.Writer中
