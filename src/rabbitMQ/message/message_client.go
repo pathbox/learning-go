@@ -10,7 +10,7 @@ import (
 type IMessagingClient interface {
 	ConnectToBroker(connectionString string)
 	Publish(msg []byte, exchangeName string, exchangeType string) error
-	PublishOnQueue(msg []byte, queueName string) errpr
+	PublishOnQueue(msg []byte, queueName string) error
 	Subscribe(exchangeName string, exchangeType string, consumerName string, handlerFunc func(amqp.Delivery)) error
 	SubscribeToQueue(queueName string, consumerName string, handlerFunc func(amqp.Delivery)) error
 	Close()
@@ -251,7 +251,7 @@ func (m *MessagingClient) Close() {
 
 // 上面根据规则，订阅玩exchange queue之后，新开一个goroutine，监听 <-chan amqp.Delivery， 得到Delivery 传入自定义的handlerFunc中，一般操作Body数据
 func consumeLoop(deliveries <-chan amqp.Delivery, handleFunc func(d amqp.Delivery)) {
-	for d := range deliveries {
+	for d := range deliveries { // 会阻塞等待读取 <-chan amqp.Delivery
 		// Invoke the handlerFunc func we passed as parameter.
 		handleFunc(d)
 	}
