@@ -27,3 +27,5 @@ func main() {
 
 	fmt.Println("m == n?:", rr)
 }
+
+// https://www.jianshu.com/p/80f5f5173fca
