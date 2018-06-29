@@ -1,0 +1,1 @@
+https://github.com/0x5010/example/blob/master/wasm/long_running/main.go
