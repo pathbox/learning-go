@@ -1,0 +1,10 @@
+{
+  "id": 0,
+  "desc": "RGB",
+  "colors": ["red","green","blue"]
+}
+{
+  "id":1,
+  "desc": "cymk",
+  "colors": ["cyan", "magenta","yellow"]
+}
