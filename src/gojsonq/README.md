@@ -1,0 +1,1 @@
+https://hashnode.com/post/how-to-access-deeply-nested-json-data-using-go-lang-cjidni8w3000cxms18hn7f4sy
