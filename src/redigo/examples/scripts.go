@@ -7,16 +7,12 @@ import (
 )
 
 func main() {
-	c, err := dial()
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	defer c.Close()
+	c, _ := dial()
+	var getScript = redis.NewScript(1, `return redis.call('get',KEYS[1])`)
 
-	s, err := redis.Strings(c.Do("HGETALL", "album:1"))
-	fmt.Printf("%#v\n", s)
-	// s is []string{field1,value1,field2,value2...}
+	reply, _ := getScript.Do(c, "foo")
+	fmt.Printf("%v\n", reply) // byte value  49 => 1
+	fmt.Printf("%s\n", reply)
 }
 
 func dial() (redis.Conn, error) {
