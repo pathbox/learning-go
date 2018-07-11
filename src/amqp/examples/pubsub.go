@@ -56,7 +56,7 @@ func redial(ctx context.Context, url string) chan chan session {
 			if err != nil {
 				log.Fatalf("cannot create channel: %v", err)
 			}
-
+			// kind is exchange type: fanout derect topic head
 			if err = ch.ExchangeDeclare(exchange, "topic", false, true, false, false, nil); err != nil {
 				log.Fatalf("cannot declare fanout exchange: %v", err)
 			}
@@ -108,7 +108,7 @@ func publish(sessions chan chan session, messages <-chan message) {
 				// routingKey := "ignored for fanout exchanges, application dependent for other exchanges"
 				routingKey := "#"
 				fmt.Println("publish body: ", string(body))
-				err := pub.Publish(exchange, routingKey, false, false, amqp.Publishing{
+				err := pub.Publish(exchange, routingKey, false, false, amqp.Publishing{ // Publish 的是 exchange 和 routingKey
 					Body: body,
 				})
 				// Retry failed delivery on the next session
@@ -156,7 +156,7 @@ func subscribe(sessions chan chan session, messages chan<- message) {
 			log.Printf("cannot consume without a binding to exchange: %q, %v", exchange, err)
 			return
 		}
-
+		// consume from the queue
 		deliveries, err := sub.Consume(queue, "#", false, true, false, false, nil) // 从 queue 中 得到publish的数据
 		if err != nil {
 			log.Printf("cannot consume from: %q, %v", queue, err)
