@@ -13,7 +13,7 @@ import (
 	"github.com/streadway/amqp"
 )
 
-var url = flag.String("url", "amqp:///", "192.168.153.41:5672")
+var url = flag.String("url", "amqp://guest:guest@localhost:5672/")
 
 const exchange = "test.pubsub"
 
