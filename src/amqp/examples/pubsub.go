@@ -57,7 +57,7 @@ func redial(ctx context.Context, url string) chan chan session {
 				log.Fatalf("cannot create channel: %v", err)
 			}
 
-			if err = ch.ExchangeDeclare(exchange, "fanout", false, true, false, false, nil); err != nil {
+			if err = ch.ExchangeDeclare(exchange, "topic", false, true, false, false, nil); err != nil {
 				log.Fatalf("cannot declare fanout exchange: %v", err)
 			}
 
@@ -105,7 +105,8 @@ func publish(sessions chan chan session, messages <-chan message) {
 				reading = messages
 
 			case body = <-pending:
-				routingKey := "ignored for fanout exchanges, application dependent for other exchanges"
+				// routingKey := "ignored for fanout exchanges, application dependent for other exchanges"
+				routingKey := "#"
 				fmt.Println("publish body: ", string(body))
 				err := pub.Publish(exchange, routingKey, false, false, amqp.Publishing{
 					Body: body,
@@ -149,13 +150,14 @@ func subscribe(sessions chan chan session, messages chan<- message) {
 			return
 		}
 
-		routingKey := "application specific routing key for fancy toplogies"
+		// routingKey := "application specific routing key for fancy toplogies"
+		routingKey := "#"
 		if err := sub.QueueBind(queue, routingKey, exchange, false, nil); err != nil {
 			log.Printf("cannot consume without a binding to exchange: %q, %v", exchange, err)
 			return
 		}
 
-		deliveries, err := sub.Consume(queue, "", false, true, false, false, nil) // 从 queue 中 得到publish的数据
+		deliveries, err := sub.Consume(queue, "#", false, true, false, false, nil) // 从 queue 中 得到publish的数据
 		if err != nil {
 			log.Printf("cannot consume from: %q, %v", queue, err)
 			return
