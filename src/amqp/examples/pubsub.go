@@ -13,7 +13,7 @@ import (
 	"github.com/streadway/amqp"
 )
 
-var url = flag.String("url", "amqp://guest:guest@localhost:5672/")
+var url = flag.String("url", "amqp://192.168.153.41:5672", "")
 
 const exchange = "test.pubsub"
 
@@ -157,7 +157,7 @@ func subscribe(sessions chan chan session, messages chan<- message) {
 			return
 		}
 		// consume from the queue
-		deliveries, err := sub.Consume(queue, "#", false, true, false, false, nil) // 从 queue 中 得到publish的数据
+		deliveries, err := sub.Consume(queue, "MyConsumer", false, true, false, false, nil) // 从 queue 中 得到publish的数据
 		if err != nil {
 			log.Printf("cannot consume from: %q, %v", queue, err)
 			return
