@@ -116,7 +116,7 @@ func (m *Mutex) acquire(pool Pool, value string) bool {
 	return err == nil && reply == "OK"
 }
 
-var deleteScript = redis.NewScript(1, ` // ruby script ?
+var deleteScript = redis.NewScript(1, ` // lua script
 	if redis.call("GET",KEYS[1]) == ARGV[1] then
 		return redis.call("DEL", KEYS[1])
 	else
