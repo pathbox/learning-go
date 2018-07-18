@@ -38,7 +38,7 @@ func main() {
 	}
 
 	var squareNum int
-
+	// QueryRow：获取单行数据
 	err = stmtOut.QueryRow(13).Scan(&squareNum) // WHERE number = 13 Scan 的作用是将查询结果赋值给squareNum,Scan 是按顺序将得到的记录的column赋值
 	if err != nil {
 		panic(err.Error()) // proper error handling instead of panic in your app

@@ -19,7 +19,7 @@ func main() {
 	}
 	defer db.Close()
 	db.Ping()
-
+	// 获取多行数据
 	rows, err := db.Query("select id, name from users where id = ?", 1)
 
 	defer rows.Close()
