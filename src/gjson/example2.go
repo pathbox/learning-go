@@ -26,4 +26,9 @@ func main() {
 	fmt.Println(t.Get("age").IsArray())
 	fmt.Println(t.Get("age").IsObject())
 
+	ss := t.Get("go").String()
+
+	fmt.Println("ss: ", ss)
+	fmt.Println("len ", len(ss))
+
 }
