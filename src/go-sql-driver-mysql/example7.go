@@ -29,7 +29,8 @@ func main() {
 	db.SetMaxOpenConns(10)
 
 	for i := 0; i < 10000; i++ {
-		go func(i int) { // 下面的查询在不同的goroutine中执行，但是复用了连接池连接，在高并发时不会短时间产生大量的MySQL连接，和 db.Ping()的情况不同,db.Ping()产生了大量的MySQL连接,that is not good
+		go func(i int) { // 下面的查询在不同的goroutine中执行，但是复用了连接池连接，在高并发时不会短时间产生大量的MySQL连接，和 go db.Ping()的情况不同,go db.Ping()产生了大量的MySQL连接,that is not good
+			// db.Ping() // 可不需要
 			idAry := []string{"1"}
 			ids := strings.Join(idAry, "','")
 			sqlRaw := fmt.Sprintf(`SELECT id, resource_id, resource_type FROM t_resource WHERE resource_id IN ('%s') OR id IN ('%s')`, ids, ids)
