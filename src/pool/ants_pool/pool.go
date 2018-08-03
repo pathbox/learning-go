@@ -98,10 +98,6 @@ func (p *Pool) Submit(task f) error {
 	return nil
 }
 
-func (p *Pool) Running() int {
-	return int(atomic.LoadInt32(&p.running))
-}
-
 // Running returns the number of the currently running goroutines
 func (p *Pool) Running() int {
 	return int(atomic.LoadInt32(&p.running))

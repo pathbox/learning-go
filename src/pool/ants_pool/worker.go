@@ -27,7 +27,7 @@ func (w *Worker) run() {
 				w.pool.decrRunning()
 				return
 			}
-			f()
+			f() // 真实的执行worker 中存的 func
 			w.pool.putWorker(w)
 		}
 	}()
