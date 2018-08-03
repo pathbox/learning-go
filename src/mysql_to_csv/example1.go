@@ -2,24 +2,37 @@ package main
 
 import (
 	"encoding/csv"
+	"flag"
 	"fmt"
 	"os"
-	"strconv"
+	"time"
 
 	_ "github.com/go-sql-driver/mysql"
 
 	"github.com/jmoiron/sqlx"
 )
 
+var orgID = flag.String("org_id", "", "org_id value for query")
+var optTime = flag.Int("opt_time", 0, "opt_time value for query")
+
 type OpLog struct {
 	UserEmail      string `db:"user_email"`
 	Api            string `db:"api"`
 	ObjectInfoList string `db:"object_info_list"`
-	OptTime        int    `db:"opt_time"`
+	OptTime        int64  `db:"opt_time"`
 	RemoteIP       string `db:"remote_ip"`
 }
 
 func main() {
+	flag.Parse()
+
+	if len(*orgID) == 0 || *optTime == 0 {
+		fmt.Println("org_id, opt_time args wrong")
+		return
+	}
+
+	fmt.Printf("org_id: %s, opt_time: %d\n", *orgID, *optTime)
+
 	file, err := os.Create("/Users/pathbox/code/learning-go/src/mysql_to_csv/export_csv.csv") // 准备好导出文件
 	if err != nil {
 		panic(err)
@@ -48,17 +61,22 @@ func main() {
 	}
 
 	logs := []OpLog{}
-	sqlRaw := fmt.Sprintf("SELECT user_email, api, object_info_list, opt_time, remote_ip FROM t_user_opt_log WHERE org_id = '%s' AND opt_time >= %d;", "orgnaization_1", 1533031711)
+	timeLayout := "2006-01-02 15:04:05"
+	sqlRaw := fmt.Sprintf("SELECT user_email, api, object_info_list, opt_time, remote_ip FROM t_user_opt_log WHERE org_id = '%s' AND opt_time >= %d limit 1000;", *orgID, *optTime)
+
 	err = db.Select(&logs, sqlRaw)
 	if err != nil {
 		fmt.Println("db select error: ", err)
 		return
 	}
-	fmt.Println(len(logs))
+
 	for _, log := range logs {
-		opTime := strconv.Itoa(log.OptTime)
-		line := []string{"测试项目名", log.UserEmail, log.Api, log.ObjectInfoList, opTime, log.RemoteIP}
+		dateStr := time.Unix(log.OptTime, 0).Format(timeLayout)
+		line := []string{"测试项目名", log.UserEmail, log.Api, log.ObjectInfoList, dateStr, log.RemoteIP}
 		writer.Write(line)
 	}
 	writer.Flush()
 }
+
+// ./example1 -org_id=xxx -opt_time=xxx
+// ./example1 -org_id=orgnaization_1 -opt_time=1533031711
