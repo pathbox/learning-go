@@ -63,7 +63,7 @@ func main() {
 	logs := []OpLog{}
 	timeLayout := "2006-01-02 15:04:05"
 	sqlRaw := fmt.Sprintf("SELECT user_email, api, object_info_list, opt_time, remote_ip FROM t_user_opt_log WHERE org_id = '%s' AND opt_time >= %d limit 1000;", *orgID, *optTime)
-
+	// for {
 	err = db.Select(&logs, sqlRaw)
 	if err != nil {
 		fmt.Println("db select error: ", err)
@@ -76,7 +76,9 @@ func main() {
 		writer.Write(line)
 	}
 	writer.Flush()
+	// }
 }
 
 // ./example1 -org_id=xxx -opt_time=xxx
 // ./example1 -org_id=orgnaization_1 -opt_time=1533031711
+// 如果将 writer.Flush() 放到for循环中，CPU 到100% 而内存只占0.2%，说明内存只用了一次flush所需要的内存，不会导致爆内存，对内存来说是安全的
