@@ -32,11 +32,11 @@ func index(w http.ResponseWriter, r *http.Request) {
 	log.Println(json.Unmarshal(body, &m))
 	fmt.Println(m)
 
-	fmt.Fprintf(w, "HH")
+	fmt.Fprintf(w, "Hello world")
 }
 
 func main() {
 	fmt.Println("go")
 	http.HandleFunc("/", index)
-	http.ListenAndServe(":8001", nil)
+	http.ListenAndServe(":9090", nil)
 }
