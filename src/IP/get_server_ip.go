@@ -20,7 +20,6 @@ func GetIP() string {
 		// check the address type and if it is not a loopback the display it
 		if ipnet, ok := address.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
 			if ipnet.IP.To4() != nil {
-				fmt.Println("ipnet IP: ", ipnet.IP.String())
 				return ipnet.IP.String()
 			}
 		}

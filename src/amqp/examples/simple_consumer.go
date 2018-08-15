@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"oplog-collector/util/ulog"
 	"time"
 
 	"github.com/streadway/amqp"
@@ -12,9 +13,9 @@ import (
 var (
 	uri          = flag.String("uri", "amqp://guest:guest@localhost:5672/", "AMQP URI")
 	exchange     = flag.String("exchange", "test-exchange-mm", "Durable, non-auto-deleted AMQP exchange name")
-	exchangeType = flag.String("exchange-type", "direct", "Exchange type - direct|fanout|topic|x-custom")
+	exchangeType = flag.String("exchange-type", "topic", "Exchange type - direct|fanout|topic|x-custom")
 	queue        = flag.String("queue", "test-queue", "Ephemeral AMQP queue name")
-	bindingKey   = flag.String("key", "test-key", "AMQP binding key")
+	bindingKey   = flag.String("key", "#", "AMQP binding key")
 	consumerTag  = flag.String("consumer-tag", "simple-consumer", "AMQP consumer tag (should not be blank)")
 	lifetime     = flag.Duration("lifetime", 500*time.Second, "lifetime of process before shutdown (0s=infinite)")
 )
@@ -131,7 +132,10 @@ func NewConsumer(amqpURI, exchange, exchangeType, queueName, key, ctag string) (
 	if err != nil {
 		return nil, fmt.Errorf("Queue Consume: %s", err)
 	}
-
+	if err = c.channel.Qos(100, 0, false); err != nil { // 一次从queue中取100个message到consumer进行处理，如果设置autoAck为true，则自动为每次从queue取1个message进行处理
+		ulog.Errorf("mqChan.Qos Error:%s", err)
+		return
+	}
 	go handle(deliveries, c.done)
 	return c, nil
 
