@@ -1,3 +1,5 @@
+package channel_worker
+
 // Go channel的常用编程模式。使用一个两级channel系统，一个用来存放任务队列，另一个用来控制处理任务队列的并发量
 
 type PayloadCollection struct {

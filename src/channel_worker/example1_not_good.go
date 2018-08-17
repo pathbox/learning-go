@@ -1,27 +1,34 @@
+package channel_worker
+
+import (
+	"encoding/json"
+	"fmt"
+	"time"
+)
+
 type PayloadCollection struct {
-  WindowsVersion string `json:"version"`
-  Token string `json:"token"`
-  Payloads []Payload `json:"data"`
+	WindowsVersion string    `json:"version"`
+	Token          string    `json:"token"`
+	Payloads       []Payload `json:"data"`
 }
 
 type Payload struct {
-  // [redacted]
+	// [redacted]
 }
 
 func (p *Payload) UploadToS3() error {
-   storage_path := fmt.Sprintf("%v/%v", p.storageFolder, time.Now().UnixNano())
+	storage_path := fmt.Sprintf("%v/%v", p.storageFolder, time.Now().UnixNano())
 
-   bucket := S3Bucket
+	bucket := S3Bucket
 
-   b := new(bytess.Buffer)
-   encodeErr := json.NewEncoder(b).Encode(payload)
-   if encodeErr != nil {
-    return encodeErr
-   }
+	b := new(bytess.Buffer)
+	encodeErr := json.NewEncoder(b).Encode(payload)
+	if encodeErr != nil {
+		return encodeErr
+	}
 
-   var acl = s3.Private
-   var contentType = "application/octet-stream"
+	var acl = s3.Private
+	var contentType = "application/octet-stream"
 
-   return bucket.PutReader(storage_path, b, int64(b.Len()), contentType, acl, s3.Options{})
+	return bucket.PutReader(storage_path, b, int64(b.Len()), contentType, acl, s3.Options{})
 }
-
