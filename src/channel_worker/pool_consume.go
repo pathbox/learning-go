@@ -10,7 +10,7 @@ func (b *Broker) consume(deliveries <-chan amqp.Delivery, concurrency int, taskP
 	// new a goroutine to send struct{}{} to the pool
 	go func() {
 		for i := 0; i < concurrency; i++ {
-			pool <- struct{}{}
+			pool <- struct{}{}  // 1. 初始化池
 		}
 	}()
 
@@ -26,6 +26,7 @@ func (b *Broker) consume(deliveries <-chan amqp.Delivery, concurrency int, taskP
 			if concurrency > 0 {
 				// get worker from pool (blocks until one is avaliable)
 			<-pool // if pool has struct{}{}, it can go, or it blocks here until pool chan has struct{}{}
+			// 2. 从池中取一个资源，如果没有资源，要么创建一个，要么阻塞等待可用资源
  			}
 
 			b.processingWG.Add(1)
@@ -39,7 +40,7 @@ func (b *Broker) consume(deliveries <-chan amqp.Delivery, concurrency int, taskP
 
 				if concurrency > 0 {
 					// once consume is finished, then give worker back to pool
-					pool <- struct{}{}
+					pool <- struct{}{} // 3. 一次处理完毕，将资源归还池
 				}
 			}()
 
@@ -50,3 +51,14 @@ func (b *Broker) consume(deliveries <-chan amqp.Delivery, concurrency int, taskP
 }
 
 // It implements a pool modle that limit consume process concurrently with  pool chanenl, the concurrent count of goroutinues is len(pool) pool size
+
+
+
+/*
+
+Three step of pool
+
+1. 初始化池(合理大小，一般根据CPU核心数，不超过CPU核心数的3倍)
+2. 从池中取一个资源，如果没有资源，要么创建一个，要么阻塞等待可用资源
+3. 一次处理完毕，将资源归还池
+*/
