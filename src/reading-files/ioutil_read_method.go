@@ -25,10 +25,10 @@ for _, fileinfo := range filelist {
   }
 }
 
-ioutil.ReadAll() -> Takes an io-like object and returns the entire data as a byte array
-io.ReadFull()
-io.ReadAtLeast()
-io.MultiReader -> A very useful primitive to combine multiple io-like objects.
-So you can have a list of files to be read, and treat them as a single contiguous block
-of data rather than managing the complexity of switching the file objects at the end of
-each of the previous objects.
+// ioutil.ReadAll() -> Takes an io-like object and returns the entire data as a byte array
+// io.ReadFull()
+// io.ReadAtLeast()
+// io.MultiReader -> A very useful primitive to combine multiple io-like objects.
+// So you can have a list of files to be read, and treat them as a single contiguous block
+// of data rather than managing the complexity of switching the file objects at the end of
+// each of the previous objects.
