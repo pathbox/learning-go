@@ -27,3 +27,4 @@ func main() {
 }
 
 // 数据会从origin reader 读取到 p 和 writer， TeeReader将reader和writer之间建立起了联系，便捷的将reader的数据传到writer
+//可以在你读一个 Reader 的同时，将数据写入到一个 Writer 中
