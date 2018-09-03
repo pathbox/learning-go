@@ -65,6 +65,7 @@ var charTable = [...]rune{
 }
 
 func ShortenUrl(url string) []string {
+	// 取 md5 值的一部分，然后生成短链接
 	shortUrlList := make([]string, 0, 4)
 	sumData := md5.Sum([]byte(url))
 	// 把md5sum分成4份, 每份4个字节
@@ -83,3 +84,5 @@ func ShortenUrl(url string) []string {
 	}
 	return shortUrlList
 }
+
+// https://lengzzz.com/note/short-url-algorithm
