@@ -5,7 +5,7 @@ import (
 )
 
 // Return true if lhs greater than rhs
-type GreaterThanFunc func(lhs, rhs interface{}) bool
+type GreaterThanFunc func(lhs, rhs interface{}) bool // 只是定义了这样的func type，具体的func逻辑还要具体实现
 
 // Return true if lhs less than rhs
 type LessThanFunc GreaterThanFunc
