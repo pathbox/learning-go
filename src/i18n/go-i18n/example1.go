@@ -25,10 +25,12 @@ var page = template.Must(template.New("").Parse(`
 func main() {
 	bundle := &i18n.Bundle{DefaultLanguage: language.English}
 	bundle.RegisterUnmarshalFunc("toml", toml.Unmarshal)
+	bundle.MustLoadMessageFile("active.es.toml")
 	// No need to load active.en.toml since we are providing default translations.
 	// bundle.MustLoadMessageFile("active.en.toml")
-
-	bundle.MustLoadMessageFile("active.es.toml")
+	// bundle.RegisterUnmarshalFunc("json", json.Unmarshal)
+	// bundle.MustLoadMessageFile("en.json")
+	// bundle.MustLoadMessageFile("el.json")
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		lang := r.FormValue("lang")
