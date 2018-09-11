@@ -16,6 +16,7 @@ func main() {
 	sqlC := "SELECT  1 AS one FROM my_table WHERE user_id = 1 LIMIT 1;"
 
 	r, _ := db.Query(sqlC)
+	// db.QueryRow(sqlC).Scan(&isExist) // sql: no rows in result set when no record, so it is not good to do with QueryRow()
 
 	var i bool // true or false
 
