@@ -19,6 +19,12 @@ func father() {
 func son() {
 	time.Sleep(3 * time.Second)
 	fmt.Println("This is son")
+	go grandson()
+}
+
+func grandson() {
+	time.Sleep(5 * time.Second)
+	fmt.Println("This is grandson")
 }
 
 // This is father
