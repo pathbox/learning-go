@@ -49,3 +49,6 @@ func main() {
 
 	wgReceivers.Wait()
 }
+
+//  M个receivers，一个sender，sender通过关闭data channel说“不再发送”
+// 这是最简单的场景了，就只是当sender不想再发送的时候让sender关闭data 来关闭channel
