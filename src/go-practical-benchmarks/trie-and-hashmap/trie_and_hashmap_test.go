@@ -1,34 +1,51 @@
 package main
 
 import (
-	"strconv"
+	"fmt"
 	"testing"
+
+	trie "github.com/derekparker/trie"
 )
 
-func BenchmarkIfTranfer(b *testing.B) {
-	ary := make([]int, 1024)
-	s := []string{}
+func BenchmarkHashmapWrite(b *testing.B) {
+	m := make(map[string]string)
 	for n := 0; n < b.N; n++ {
-		for i := 0; i < 512; i++ { // 现在只取数组前512位
-			if ary[i] == 0 {
-				s = append(s, "0")
-			} else if ary[i] == 1 {
-				s = append(s, "1")
-			}
-		}
+		k := "/users/1/show"
+		m[k] = k
 	}
 }
 
-func BenchmarkParseTranfer(b *testing.B) {
-	ary := make([]int, 1024)
-	s := []string{}
+func BenchmarkTrieWrite(b *testing.B) {
+	t := trie.New()
 	for n := 0; n < b.N; n++ {
-		for i := 0; i < 512; i++ { // 现在只取数组前512位
-			if ary[i] == 0 || ary[i] == 1 {
-				s = append(s, strconv.Itoa(ary[i]))
-			}
-		}
+		k := "/users/1/show"
+		t.Add(k, k)
 	}
+}
+
+func BenchmarkHashmapGet(b *testing.B) {
+	m := make(map[string]string)
+	k := "/users/1/show/go/good"
+	m[k] = k
+	var r interface{}
+	b.ResetTimer()
+	for n := 0; n < b.N; n++ {
+		r = m[k]
+	}
+	fmt.Println(r)
+}
+
+func BenchmarkTrieGet(b *testing.B) {
+	t := trie.New()
+	k := "/users/1/show/go/good"
+	t.Add(k, k)
+	var r interface{}
+	b.ResetTimer()
+	for n := 0; n < b.N; n++ {
+		node, _ := t.Find(k)
+		r = node.Meta()
+	}
+	fmt.Println(r)
 }
 
 // go test -bench=. -benchmem
