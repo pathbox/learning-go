@@ -20,7 +20,7 @@ func main() {
 	key := make([]byte, 4)
 	for i := 0; i < keyCount; i++ {
 		rand.Read(key)
-		node, err := hashRing.Get(string(key))
+		node, err := hashRing.Get(string(key)) //  根据key得到一个node，相当于这个key就存到这个node上
 		if err != nil {
 			fmt.Println("error: ", err)
 			continue
