@@ -1,0 +1,9 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://gopkg.in/src-d/go-mysql-server.v0
+	fetch = +refs/heads/*:refs/remotes/origin/*
