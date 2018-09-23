@@ -32,3 +32,6 @@ func main() {
 
 	fmt.Println("Service port ", port)
 }
+
+// go run LookupPort.go tcp telnet
+// 23

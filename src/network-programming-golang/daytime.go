@@ -27,7 +27,7 @@ func main() {
 	}
 }
 
-// It is tcp server, you can't get data from Browser, just use tcp client or curl
+// It is tcp server, you can't get data from Browser, just use tcp client or curl or telnet
 
 func checkError(err error) {
 
