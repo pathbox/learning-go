@@ -27,6 +27,17 @@ func main() {
 	}()
 
 	go func() {
+		for {
+			MLock.RLock()
+			// defer MLock.RUnlock() // It create dead lock 这会导致死锁
+			for k, _ := range Cache {
+				fmt.Println(k)
+			}
+			MLock.RUnlock()
+		}
+	}()
+
+	go func() {
 		// var i int
 		for {
 			lpAry := make([]interface{}, 512)
