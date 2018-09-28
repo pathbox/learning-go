@@ -1,19 +1,15 @@
 package main
 
-import (
-	"fmt"
-)
-
 var m = map[string]string{}
 
 func main() {
 
 	for i := 0; i < 100; i++ {
-		fmt.Println(i)
+		// fmt.Println(i)
 		for j := 0; j < 100000; j++ {
 			go func() {
 				m["no"] = "1"
-				fmt.Println("no", m["no"])
+				// fmt.Println("no", m["no"])
 			}()
 		}
 	}
