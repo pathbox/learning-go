@@ -1,13 +1,14 @@
 package main
 
 import (
-	"github.com/arriqaaq/qalam"
 	"log"
 	"time"
+
+	"github.com/arriqaaq/qalam"
 )
 
 func main() {
-	config := qalam.NewConfig("./log.%Y%m%d.gz", time.Local, 1, true, 10*time.Millisecond)
+	config := qalam.NewConfig("./log.%Y%m%d.gz", time.Local, 4096, true, 10*time.Millisecond)
 	c, err := qalam.NewQalam(config)
 	if err != nil {
 		log.Fatalln(err)
