@@ -1,7 +1,10 @@
 module github.com/pathbox/learning-go
 
 require (
+	github.com/OneOfOne/xxhash v1.2.2
 	github.com/arriqaaq/qalam v0.0.0-20180728065844-48c478013079
+	github.com/arriqaaq/rbt v0.0.0-20180905140721-59445effa8a7
+	github.com/arriqaaq/xring v0.0.0-20180905140838-c1b1ea24864d
 	github.com/coreos/etcd v3.3.9+incompatible
 	github.com/coreos/go-semver v0.2.0 // indirect
 	github.com/gongo/9t v0.0.0-20180922145652-fc98dd15970b // indirect
