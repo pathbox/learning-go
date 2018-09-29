@@ -1,0 +1,9 @@
+package main
+
+import "github.com/d4l3k/go-pry/pry"
+
+func main() {
+	a := 1
+	pry.Apply(&pry.Scope{Vals:map[string]interface{}{ "main": main, "a": a, "pry": pry.Package{Name: "pry", Functions: map[string]interface{}{"Fuzz": pry.Fuzz,"Apply": pry.Apply,"Pry": pry.Pry,"Len": pry.Len,"InterpretError": pry.Type(pry.InterpretError{}),"Append": pry.Append,"Make": pry.Make,"Close": pry.Close,"ErrChanRecvFailed": pry.ErrChanRecvFailed,"ErrChanRecvInSelect": pry.ErrChanRecvInSelect,"ErrDivisionByZero": pry.ErrDivisionByZero,"DeAssign": pry.DeAssign,"ComputeBinaryOp": pry.ComputeBinaryOp,"Type": pry.Type,"JSImporter": pry.Type(pry.JSImporter{}),"Package": pry.Type(pry.Package{}),"StringToType": pry.StringToType,"ErrChanSendFailed": pry.ErrChanSendFailed,"ErrBranchBreak": pry.ErrBranchBreak,"ErrBranchContinue": pry.ErrBranchContinue,"Scope": pry.Type(pry.Scope{}),"Defer": pry.Type(pry.Defer{}),"NewScope": pry.NewScope,"Func": pry.Type(pry.Func{}),"ValuesToInterfaces": pry.ValuesToInterfaces,"Highlight": pry.Highlight,}}, }})
+	_ = a
+}
