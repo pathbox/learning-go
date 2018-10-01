@@ -1,0 +1,1 @@
+https://golangcaff.com/topics/139/bit-operation-of-go

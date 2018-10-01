@@ -9,6 +9,9 @@ require (
 	github.com/coreos/go-semver v0.2.0 // indirect
 	github.com/d4l3k/go-pry v0.0.0-20180929012351-0d2718e73ed8
 	github.com/gongo/9t v0.0.0-20180922145652-fc98dd15970b // indirect
+	github.com/gorilla/context v1.1.1 // indirect
+	github.com/gorilla/mux v1.6.2 // indirect
+	github.com/gorilla/pat v0.0.0-20180118222023-199c85a7f6d1
 	github.com/hpcloud/tail v1.0.0 // indirect
 	github.com/jasonlvhit/gocron v0.0.0-20180312192515-54194c9749d4
 	github.com/lestrrat-go/strftime v0.0.0-20180821113735-8b31f9c59b0f
