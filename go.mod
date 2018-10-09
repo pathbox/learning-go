@@ -21,6 +21,7 @@ require (
 	github.com/mattn/go-tty v0.0.0-20180907095812-13ff1204f104 // indirect
 	github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b // indirect
 	github.com/mitchellh/go-homedir v1.0.0 // indirect
+	github.com/panjf2000/ants v0.0.0-20181003125539-711dbdb7a222
 	github.com/pkg/errors v0.8.0 // indirect
 	github.com/ugorji/go/codec v0.0.0-20180927125128-99ea80c8b19a // indirect
 	golang.org/x/crypto v0.0.0-20181001203147-e3636079e1a4
