@@ -24,7 +24,7 @@ func (w *Worker) Start() {
 			select {
 			case job := <-w.Channel:
 				// do job
-				pjob.DoJob(job.Job, job.ID)
+				pjob.DoJob(job.Job, job.ID) // 处理逻辑
 			case <-w.End:
 				return
 			}

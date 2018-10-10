@@ -19,24 +19,24 @@ func StartDispatcher(workerCount int) Collector {
 	end := make(chan struct{}) // channel to spin down workers
 	collector := Collector{Job: input, End: end}
 
-	for i < workerCount {
+	for i < workerCount { // init workers 初始化 workerCount 个 worker
 		i++
 		log.Println("Starting worker: ", i)
 		worker := Worker{
 			ID:            i,
 			Channel:       make(chan Job), // receive the job
-			WorkerChannel: WorkerChannel,  // belongs to the WorkerChannel
+			WorkerChannel: WorkerChannel,  // belongs to the gloabl WorkerChannel
 			End:           make(chan struct{}),
 		}
-		worker.Start()
-		workers = append(workers, worker) // stores worker
+		worker.Start()                    // 每个worker都起一个goroutine在后台跑着
+		workers = append(workers, worker) // stores worker workers就相当于worker pool
 	}
-	go startCollect(workers, input, end)
-	return collector
+	go startCollect(workers, collector.Job, end)
+	return collector // collector的作用是，collector.Job将 input 暴露出去到逻辑层使用，job通过input传到collector
 
 }
 
-func startCollect(workers []Worker, input chan Worker, end chan struct{}) {
+func startCollect(workers []Worker, input chan Job, end chan struct{}) {
 	for {
 		select {
 		case <-end:
@@ -45,7 +45,7 @@ func startCollect(workers []Worker, input chan Worker, end chan struct{}) {
 			}
 			return
 		case job := <-input:
-			worker := <-WorkerChannel // wait for available Worker
+			worker := <-WorkerChannel // wait for available Worker channel
 			worker <- job             // dispatch work(job) to worker
 		}
 	}
