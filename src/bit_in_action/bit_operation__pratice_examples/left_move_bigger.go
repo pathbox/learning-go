@@ -9,3 +9,5 @@ func main() {
 	fmt.Printf("%08b\n", a<<2)
 	fmt.Printf("%08b\n", a<<3)
 }
+
+// 左移会按位移增大
