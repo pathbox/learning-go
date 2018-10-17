@@ -62,7 +62,7 @@ func NewJob(intervel uint64) *Job {
 
 // True if job should be run now
 func (j *Job) shouldRun() bool {
-	return time.Now().After(j.nextRun) //  the time of next run is OK？
+	return time.Now().After(j.nextRun) //  the time of next run is OK？ j.nextRun < time.Now()
 }
 
 // Run the job and immediately reschedule it
@@ -91,8 +91,8 @@ func getFunctionName(fn interface{}) string {
 // Specifies the jobFunc that should be called every time the job runs
 
 func (j *Job) Do(jobFun interface{}, params ...interface{}) {
-	typ := reflect.TypeOf(jobFun)
-	if typ.Kind() != reflect.Func {
+	typ := reflect.TypeOf(jobFun)   // 反射化得到类型
+	if typ.Kind() != reflect.Func { // 判断类型是否是 function
 		panic("only function can be schedule into the job queue.")
 	}
 
@@ -344,7 +344,7 @@ func (j *Job) Weeks() *Job {
 // jobs 队列
 type Scheduler struct {
 	// Array store jobs
-	jobs [MAXJOBNUM]*Job // job数组
+	jobs [MAXJOBNUM]*Job // job数组 在Scheduler层面，就是在调度[MAXJOBNUM]*Job 这个job数组了，在job层面就是对时间属性的操作和函数，参数的验证
 
 	// Size of jobs which jobs holding.
 	size int
@@ -373,13 +373,13 @@ func NewScheduler() *Scheduler {
 func (s *Scheduler) getRunnableJobs() (running_jobs [MAXJOBNUM]*Job, n int) {
 	runnableJobs := [MAXJOBNUM]*Job{}
 	n = 0
-	sort.Sort(s)
+	sort.Sort(s) // 每次对Scheduler的全局jobs进行进行时间的排序，时间小(说明时间到了)排在前面
 	for i := 0; i < s.size; i++ {
-		if s.jobs[i].shouldRun() {
+		if s.jobs[i].shouldRun() { // 如果next运行时间已经小于当前时间，说明时间到了，可以运行了
 			runnableJobs[n] = s.jobs[i]
 			n++
 		} else {
-			break
+			break // 不满足时，则不用接下去比较了，因为之前已经排序了，后面的job都是还没到运行时间的
 		}
 	}
 	return runnableJobs, n
@@ -394,7 +394,7 @@ func (s *Scheduler) NextRun() (*Job, time.Time) {
 	return s.jobs[0], s.jobs[0].nextRun
 }
 
-// Schedule a new periodic job
+// Schedule a new periodic job，在这里将job存到 Scheduler的全局 jobs list中
 func (s *Scheduler) Every(interval uint64) *Job {
 	job := NewJob(interval)
 	s.jobs[s.size] = job
@@ -461,7 +461,7 @@ func (s *Scheduler) Start() chan bool {
 		for {
 			select {
 			case <-ticker.C:
-				s.RunPending()
+				s.RunPending() // 每秒会取获得可运行的job，然后进行运行
 			case <-stopped:
 				return
 			}
