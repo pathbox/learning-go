@@ -1,4 +1,5 @@
-https://www.jianshu.com/p/b46b1ccd2757
+来源于：https://www.jianshu.com/p/b46b1ccd2757
+不用于商业盈利，侵删
 
 Golang的反射reflect深入理解和示例
 96  豆瓣奶茶

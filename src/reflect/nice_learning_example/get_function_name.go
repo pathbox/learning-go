@@ -19,3 +19,5 @@ func say_hello() {
 func getFunctionName(fn interface{}) string {
 	return runtime.FuncForPC(reflect.ValueOf((fn)).Pointer()).Name()
 }
+
+// function name:  main.say_hello
