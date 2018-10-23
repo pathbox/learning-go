@@ -50,6 +50,8 @@ github.com/panjf2000/ants v0.0.0-20181003125539-711dbdb7a222 h1:7CEavdJKtwFpHcRz
 github.com/panjf2000/ants v0.0.0-20181003125539-711dbdb7a222/go.mod h1:AaACblRPzq35m1g3enqYcxspbbiOJJYaxU2wMpm1cXY=
 github.com/pkg/errors v0.8.0 h1:WdK/asTD0HN+q6hsWO3/vpuAkAr+tw6aNJNDFFf0+qw=
 github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
+github.com/shirou/gopsutil v2.17.12+incompatible h1:FNbznluSK3DQggqiVw3wK/tFKJrKlLPBuQ+V8XkkCOc=
+github.com/shirou/gopsutil v2.17.12+incompatible/go.mod h1:5b4v6he4MtMOwMlS0TUMTu2PcXUg8+E1lC7eC3UO/RA=
 github.com/ugorji/go/codec v0.0.0-20180927125128-99ea80c8b19a h1:BgdofUvNP/srMxiUUpGyZm+WjX/qXpMXdl3edRf1Ta0=
 github.com/ugorji/go/codec v0.0.0-20180927125128-99ea80c8b19a/go.mod h1:VFNgLljTbGfSG7qAOspJ7OScBnGdDN/yBr0sguwnwf0=
 golang.org/x/crypto v0.0.0-20181001203147-e3636079e1a4 h1:Vk3wNqEZwyGyei9yq5ekj7frek2u7HUfffJ1/opblzc=
