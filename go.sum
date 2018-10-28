@@ -6,12 +6,16 @@ github.com/arriqaaq/rbt v0.0.0-20180905140721-59445effa8a7 h1:kb71W5Bt4QD5MTSdnl
 github.com/arriqaaq/rbt v0.0.0-20180905140721-59445effa8a7/go.mod h1:TIhzv0Khs715Tqz5qXr5PkcPCu2tkOE1Yt/tJXsIVy4=
 github.com/arriqaaq/xring v0.0.0-20180905140838-c1b1ea24864d h1:RYQK6LygtqwGhzQSBfRm0jcdnwfURyfvTJz3QFN6DxA=
 github.com/arriqaaq/xring v0.0.0-20180905140838-c1b1ea24864d/go.mod h1:b+ANILaGruqLhe7Q24Em+Xd6dLGCOqEstrV7lI6anRo=
+github.com/briandowns/spinner v0.0.0-20181027134337-d129906a7623 h1:D2EXZHm88cUjQ66r3sEm5j12rRTpMVzwU4vDA510RrU=
+github.com/briandowns/spinner v0.0.0-20181027134337-d129906a7623/go.mod h1:hw/JEQBIE+c/BLI4aKM8UU8v+ZqrD3h7HC27kKt8JQU=
 github.com/coreos/etcd v3.3.9+incompatible h1:/pWnp1yEff0z+vBEOBFLZZ22Ux5xoVozEe7X0VFyRNo=
 github.com/coreos/etcd v3.3.9+incompatible/go.mod h1:uF7uidLiAD3TWHmW31ZFd/JWoc32PjwdhPthX9715RE=
 github.com/coreos/go-semver v0.2.0 h1:3Jm3tLmsgAYcjC+4Up7hJrFBPr+n7rAqYeSw/SZazuY=
 github.com/coreos/go-semver v0.2.0/go.mod h1:nnelYz7RCh+5ahJtPPxZlU+153eP4D4r3EedlOD2RNk=
 github.com/d4l3k/go-pry v0.0.0-20180929012351-0d2718e73ed8 h1:wjtzRRQkTuKFNhNj66obNUsMd0aJLSXPWNxNc+KLCdc=
 github.com/d4l3k/go-pry v0.0.0-20180929012351-0d2718e73ed8/go.mod h1:/8AeRANJBc8yVU2pPEUDVlyy9JvNKTUHz/tfsCqQ4Vs=
+github.com/fatih/color v1.7.0 h1:DkWD4oS2D8LGGgTQ6IvwJJXSL5Vp2ffcQg58nFV38Ys=
+github.com/fatih/color v1.7.0/go.mod h1:Zm6kSWBoL9eyXnKyktHP6abPY2pDugNf5KwzbycvMj4=
 github.com/go-redis/redis v6.14.1+incompatible h1:kSJohAREGMr344uMa8PzuIg5OU6ylCbyDkWkkNOfEik=
 github.com/go-redis/redis v6.14.1+incompatible/go.mod h1:NAIEuMOZ/fxfXJIrKDQDz8wamY7mA7PouImQ2Jvg6kA=
 github.com/gongo/9t v0.0.0-20180922145652-fc98dd15970b h1:Mw7u4rEPod8L5kCESWeajM6OvuxvnvCNbWuMm4Ga1cw=

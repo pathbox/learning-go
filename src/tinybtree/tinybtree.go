@@ -25,12 +25,12 @@ type BTree struct {
 	root *node
 	length int
 }
-
+// 找到一个 >= key的item
 func (n *node) find(key string) (index int, found bool) {
 	i, j := 0, n.numItems
 	for i<j { // 二分法找key
 		h := i + (j-i)/2
-		if key  >= n.items[h].key {
+		if key >= n.items[h].key {
 			i = h+1
 		} else {
 			j = h

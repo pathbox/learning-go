@@ -5,9 +5,11 @@ require (
 	github.com/arriqaaq/qalam v0.0.0-20180728065844-48c478013079
 	github.com/arriqaaq/rbt v0.0.0-20180905140721-59445effa8a7
 	github.com/arriqaaq/xring v0.0.0-20180905140838-c1b1ea24864d
+	github.com/briandowns/spinner v0.0.0-20181027134337-d129906a7623
 	github.com/coreos/etcd v3.3.9+incompatible
 	github.com/coreos/go-semver v0.2.0 // indirect
 	github.com/d4l3k/go-pry v0.0.0-20180929012351-0d2718e73ed8
+	github.com/fatih/color v1.7.0 // indirect
 	github.com/go-redis/redis v6.14.1+incompatible
 	github.com/gongo/9t v0.0.0-20180922145652-fc98dd15970b // indirect
 	github.com/gorilla/context v1.1.1 // indirect
