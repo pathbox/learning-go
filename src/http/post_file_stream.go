@@ -6,8 +6,10 @@ import (
 	"io"
 	"io/ioutil"
 	"mime/multipart"
+	"net"
 	"net/http"
 	"os"
+	"time"
 )
 
 func main() {
@@ -69,18 +71,17 @@ func main() {
 }
 
 func NewHTTPClient() *http.Client {
-	// transport := &http.Transport{
-	// 	Dial: (&net.Dialer{
-	// 		Timeout: 30 * time.Second,
-	// 	}).Dial,
-	// 	TLSHandshakeTimeout:   15 * time.Second,
-	// 	ResponseHeaderTimeout: 30 * time.Second,
-	// }
+	transport := &http.Transport{
+		Dial: (&net.Dialer{
+			Timeout: 30 * time.Second,
+		}).Dial,
+		TLSHandshakeTimeout:   15 * time.Second,
+		ResponseHeaderTimeout: 30 * time.Second,
+	}
 
-	// client := &http.Client{
-	// 	Timeout:   30 * time.Second,
-	// 	Transport: transport,
-	// }
-	client := &http.Client{}
+	client := &http.Client{
+		Timeout:   30 * time.Second,
+		Transport: transport,
+	}
 	return client
 }
