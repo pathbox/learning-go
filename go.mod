@@ -10,8 +10,12 @@ require (
 	github.com/coreos/go-semver v0.2.0 // indirect
 	github.com/d4l3k/go-pry v0.0.0-20180929012351-0d2718e73ed8
 	github.com/fatih/color v1.7.0 // indirect
+	github.com/fogleman/ease v0.0.0-20170301025033-8da417bf1776
+	github.com/fogleman/gg v1.1.0 // indirect
 	github.com/go-redis/redis v6.14.1+incompatible
+	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
 	github.com/gongo/9t v0.0.0-20180922145652-fc98dd15970b // indirect
+	github.com/google/btree v0.0.0-20180813153112-4030bb1f1f0c // indirect
 	github.com/gorilla/context v1.1.1 // indirect
 	github.com/gorilla/mux v1.6.2 // indirect
 	github.com/gorilla/pat v0.0.0-20180118222023-199c85a7f6d1
@@ -32,6 +36,7 @@ require (
 	github.com/pkg/errors v0.8.0 // indirect
 	github.com/shirou/gopsutil v2.17.12+incompatible
 	github.com/tidwall/evio v0.1.0
+	github.com/tidwall/pinhole v0.0.0-20170713004337-171cd602c428
 	github.com/ugorji/go/codec v0.0.0-20180927125128-99ea80c8b19a // indirect
 	golang.org/x/crypto v0.0.0-20181001203147-e3636079e1a4
 	golang.org/x/net v0.0.0-20180926154720-4dfa2610cdf3
