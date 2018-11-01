@@ -22,4 +22,6 @@ func main() {
 	log.Println("公有空间文件下载 URL 是：", req.GetPublicURL(fileName))
 	log.Println("私有空间文件下载 URL 是：", req.GetPrivateURL(fileName, 24*60*60))
 	// 私有空间文件的下载地址是可用的，不传过期时间的话，默认应该是30分钟,过期时间参数好像没效果?
+	fs, _ := req.PrefixFileList("test", "", 0)
+	log.Println("File list: ", fs)
 }
