@@ -1,0 +1,1 @@
+https://colobu.com/2018/11/03/get-function-name-in-go/
