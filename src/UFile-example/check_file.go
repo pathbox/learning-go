@@ -31,4 +31,7 @@ func main() {
 	s := req.LastResponseHeader["Content-Type"]
 	fmt.Println("Response Header: ", req.LastResponseHeader, s)
 
+	fList, _ := req.PrefixFileList("test", "", 0)
+	fmt.Println("Response File List: ", fList)
+
 }
