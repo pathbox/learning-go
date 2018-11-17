@@ -31,6 +31,7 @@ func main() {
 	client := NewHTTPClient()
 	file, _ := os.Open("/Users/pathbox/edst_file/0001_done.pdf")
 	defer file.Close()
+
 	buf := &bytes.Buffer{}
 	mw := multipart.NewWriter(buf)
 
