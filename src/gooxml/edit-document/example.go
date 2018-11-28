@@ -13,7 +13,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("error opening document: %s", err)
 	}
-
+	doc.Add
 	paragraphs := []document.Paragraph{}
 	for _, p := range doc.Paragraphs() {
 		paragraphs = append(paragraphs, p)
@@ -22,11 +22,11 @@ func main() {
 	// This sample document uses structured document tags, which are not common
 	// except for in document templates.  Normally you can just iterate over the
 	// document's paragraphs.
-	for _, sdt := range doc.StructuredDocumentTags() {
-		for _, p := range sdt.Paragraphs() {
-			paragraphs = append(paragraphs, p)
-		}
-	}
+	// for _, sdt := range doc.StructuredDocumentTags() {
+	// 	for _, p := range sdt.Paragraphs() {
+	// 		paragraphs = append(paragraphs, p)
+	// 	}
+	// }
 
 	for _, p := range paragraphs {
 		for _, r := range p.Runs() {
@@ -94,6 +94,6 @@ func main() {
 			}
 		}
 	}
-
+	fmt.Println("======", len(paragraphs))
 	doc.SaveToFile("edit-document.docx")
 }
