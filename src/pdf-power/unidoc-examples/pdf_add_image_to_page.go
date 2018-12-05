@@ -25,16 +25,16 @@ func main() {
 	// Use debug logging.
 	unicommon.SetLogger(unicommon.NewConsoleLogger(unicommon.LogLevelDebug))
 
-	inputPath := "/Users/pathbox/test.pdf"
+	inputPath := "/Users/pathbox/Bussiness.pdf"
 	pageNum := 10
-	imagePath := "/Users/pathbox/test-busi.png"
+	imagePath := "/Users/pathbox/17.jpg"
 
-	xPos := float64(0)
-	yPos := float64(0)
-	iwidth := float64(600)
+	xPos := float64(100)
+	yPos := float64(150)
+	iwidth := float64(420)
 	outputPath := "./test-image-done.pdf"
 
-	fmt.Printf("xPos: %d, yPos: %d\n", xPos, yPos)
+	fmt.Printf("xPos: %v, yPos: %v\n", xPos, yPos)
 
 	err := addImageToPdf(inputPath, outputPath, imagePath, pageNum, xPos, yPos, iwidth)
 	if err != nil {
@@ -63,7 +63,7 @@ func addImageToPdf(inputPath string, outputPath string, imagePath string, pageNu
 	}
 	defer f.Close()
 
-	pdfReader, err := pdf.NewPdfReader(f)
+	pdfReader, err := pdf.NewPdfReader(f) // pdf  reader
 	if err != nil {
 		return err
 	}
@@ -75,19 +75,27 @@ func addImageToPdf(inputPath string, outputPath string, imagePath string, pageNu
 
 	// Load the page
 	for i := 0; i < numPages; i++ {
-		page, err := pdfReader.GetPage(i + 1)
+		page, err := pdfReader.GetPage(i + 1) // read every page
 		if err != nil {
 			return nil
 		}
 
 		//Add the page
-		err = c.AddPage(page)
+		err = c.AddPage(page) // add this page
 		if err != nil {
 			return err
 		}
+
+		img1, err := creator.NewImageFromFile(imagePath)
+		if err != nil {
+			return err
+		}
+		img1.ScaleToWidth(100)
+		img1.SetPos(100, 500)
 		// If the specified page, or -1, apply the image to the page
 		if i+1 == pageNum || pageNum == -1 {
-			_ = c.Draw(img)
+			_ = c.Draw(img) // draw image
+			c.Draw(img1)
 		}
 	}
 
