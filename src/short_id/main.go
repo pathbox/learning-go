@@ -30,6 +30,7 @@ func NewShortID() (string, error) {
 	}
 
 	h := md5.New()
+	fmt.Println(u4.String())
 
 	io.WriteString(h, u4.String())
 
