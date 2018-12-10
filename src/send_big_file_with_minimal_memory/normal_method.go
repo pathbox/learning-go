@@ -8,6 +8,7 @@ import (
 	"os"
 )
 
+//一般方法
 func NormalMethod(filePath, url string) error {
 	buf := new(bytes.Buffer)
 	writer := multipart.NewWriter(buf)
