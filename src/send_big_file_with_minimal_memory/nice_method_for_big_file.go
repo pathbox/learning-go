@@ -1,6 +1,7 @@
 package send_big_file_with_minimal_memory
 
 import (
+	"fmt"
 	"io"
 	"mime/multipart"
 	"net/http"
@@ -17,18 +18,21 @@ func NiceMethod(filePath, url string) error {
 
 		part, err := m.CreateFormFile("myFile", "foo.txt")
 		if err != nil {
-			retuen err
+			fmt.Println(err)
+			return
 		}
 
 		file, err := os.Open(filePath)
 		if err != nil {
-			return err
+			fmt.Println(err)
+			return
 		}
 
 		defer file.Close()
 
 		if _, err = io.Copy(part, file); err != nil {
-			return err
+			fmt.Println(err)
+			return
 		}
 	}()
 
