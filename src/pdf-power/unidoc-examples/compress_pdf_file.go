@@ -19,14 +19,13 @@ import (
 	unicommon "github.com/unidoc/unidoc/common"
 	"github.com/unidoc/unidoc/pdf/creator"
 	pdf "github.com/unidoc/unidoc/pdf/model"
-	"github.com/unidoc/unidoc/pdf/model/optimize"
 )
 
 func main() {
 	// Use debug logging.
 	unicommon.SetLogger(unicommon.NewConsoleLogger(unicommon.LogLevelDebug))
 
-	inputPath := "/Users/pathbox/busi.pdf"
+	inputPath := "/Users/pathbox/tech_service_econtract.pdf"
 	pageNum := 9
 	imagePath := "/Users/pathbox/busi.png"
 
@@ -49,15 +48,15 @@ func main() {
 // is the width of the image in PDF document dimensions (height/width ratio is maintained).
 func addImageToPdf(inputPath string, outputPath string, imagePath string, pageNum int, xPos float64, yPos float64, iwidth float64) error {
 	c := creator.New()
-	optim := optimize.New(optimize.Options{
-		CombineDuplicateDirectObjects:   true,
-		CombineIdenticalIndirectObjects: true,
-		ImageUpperPPI:                   100.0,
-		UseObjectStreams:                true,
-		ImageQuality:                    50,
-		CombineDuplicateStreams:         true,
-	})
-	c.SetOptimizer(optim)
+	// optim := optimize.New(optimize.Options{
+	// 	CombineDuplicateDirectObjects:   true,
+	// 	CombineIdenticalIndirectObjects: true,
+	// 	ImageUpperPPI:                   200.0,
+	// 	UseObjectStreams:                true,
+	// 	ImageQuality:                    100,
+	// 	CombineDuplicateStreams:         true,
+	// })
+	// c.SetOptimizer(optim)
 	// Prepare the image.
 	img, err := c.NewImageFromFile(imagePath)
 	if err != nil {

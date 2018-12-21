@@ -47,13 +47,13 @@ type Message struct {
 
 func main() {
 	mail := &SendMail{
-		user:     "YOUR_DOMAIN_USER",
-		password: "YOUR_SMTP_PASSWORD", // smpt 的授权码，不一定是邮箱登入密码
+		user:     "postmaster@YOUR_DOMAIN",
+		password: "password", // smpt 的授权码，不一定是邮箱登入密码
 		host:     "smtp.mailgun.org",
 		port:     "587",
 	}
-	from := "USERNAME@DOMAIN"
-	toEmail := ""
+	from := "from@DOMAIN"
+
 	subject, err := ioutil.ReadFile(subjectPath)
 	if err != nil {
 		fmt.Println(err)
@@ -67,7 +67,8 @@ func main() {
 
 	bodyStr := string(body)
 	subjectStr := string(subject)
-
+	b64 := base64.NewEncoding("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/")
+	subjectStr = fmt.Sprintf("=?UTF-8?B?%s?=", b64.EncodeToString([]byte(subjectStr)))
 	xlFile, err := xlsx.OpenFile(excelFileName)
 	if err != nil {
 		panic(err)
@@ -78,14 +79,17 @@ func main() {
 				for index, cell := range row.Cells {
 					text := cell.String()
 					if index == 0 {
-						fmt.Println(rowNum, text)
+						fmt.Println(rowNum+1, text)
 						toEmail := text
-						message := NewMessage(from, toEmail, subjectStr, bodyStr)
-						err = mail.Send(message)
-						if err != nil {
-							fmt.Println(err)
+
+						if strings.TrimSpace(toEmail) != "" {
+							message := NewMessage(from, toEmail, subjectStr, bodyStr)
+							err = mail.Send(message)
+							if err != nil {
+								fmt.Println(err)
+							}
+							fmt.Println("=Send Success=")
 						}
-						fmt.Println("=Send Success=")
 					}
 				}
 			}
@@ -122,7 +126,7 @@ func (mail SendMail) Send(message Message) error {
 			buffer.WriteString(attachment)
 
 			//拼接成html
-			imgsrc += "<p><img src=\"cid:" + graphname + "\" height=500 width=500></p><br>\r\n\t\t\t"
+			imgsrc += "<p><img src=\"cid:" + graphname + "\" height=300 width=500></p><br>\r\n\t\t\t"
 
 			defer func() {
 				if err := recover(); err != nil {
@@ -137,8 +141,8 @@ func (mail SendMail) Send(message Message) error {
 	var template = `
     <html>
         <body>
-            <p>%s</p><br><br>
-            <p>%s</p>
+            %s<br><br>
+            %s
         </body>
     </html>
     `

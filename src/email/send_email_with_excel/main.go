@@ -100,7 +100,7 @@ func (mail *SendMail) Auth() {
 func (mail SendMail) Send(message Message) error {
 	mail.Auth()
 	buffer := bytes.NewBuffer(nil)
-	boundary := "Boundary"
+	boundary := "GoBoundary"
 	Header := make(map[string]string)
 	Header["From"] = message.from
 	Header["To"] = strings.Join(message.to, ";")
@@ -122,7 +122,7 @@ func (mail SendMail) Send(message Message) error {
 			buffer.WriteString(attachment)
 
 			//拼接成html
-			imgsrc += "<p><img src=\"cid:" + graphname + "\" height=500 width=500></p><br>\r\n\t\t\t"
+			imgsrc += "<p><img src=\"cid:" + graphname + "\" height=200 width=300></p><br>\r\n\t\t\t"
 
 			defer func() {
 				if err := recover(); err != nil {
@@ -137,8 +137,8 @@ func (mail SendMail) Send(message Message) error {
 	var template = `
     <html>
         <body>
-            <p>%s</p><br><br>
-            <p>%s</p>
+            <p>text:%s</p><br>
+            %s
         </body>
     </html>
     `
@@ -149,10 +149,8 @@ func (mail SendMail) Send(message Message) error {
 	buffer.WriteString(body)
 
 	buffer.WriteString("\r\n--" + boundary + "--")
-	err := smtp.SendMail(mail.host+":"+mail.port, mail.auth, message.from, message.to, buffer.Bytes())
-	if err != nil {
-		return err
-	}
+	fmt.Println(buffer.String())
+	smtp.SendMail(mail.host+":"+mail.port, mail.auth, message.from, message.to, buffer.Bytes())
 	return nil
 }
 
@@ -169,7 +167,7 @@ func (mail SendMail) writeHeader(buffer *bytes.Buffer, Header map[string]string)
 func (mail SendMail) writeFile(buffer *bytes.Buffer, fileName string) {
 	file, err := ioutil.ReadFile(fileName)
 	if err != nil {
-		fmt.Println(err.Error())
+		panic(err.Error())
 	}
 	payload := make([]byte, base64.StdEncoding.EncodedLen(len(file)))
 	base64.StdEncoding.Encode(payload, file)
