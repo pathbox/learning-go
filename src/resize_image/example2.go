@@ -16,7 +16,7 @@ import (
 
 func main() {
 	// imagePath := "/Users/pathbox/bbcc.jpeg"
-	imagePath := "/Users/pathbox/send_email_with_mailgun_from_excel/image.jpg"
+	imagePath := "/Users/pathbox/econtract_tmp_file/user_photo/200000437-IDPhotoBack.jpeg"
 	stream, err := ioutil.ReadFile(imagePath)
 	if err != nil {
 		log.Fatal(err)

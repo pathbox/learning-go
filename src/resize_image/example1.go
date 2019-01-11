@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"image/jpeg"
+	"image/png"
 	"log"
 	"os"
 	"time"
@@ -11,20 +12,20 @@ import (
 )
 
 func main() {
-	file, err := os.Open("/Users/pathbox/bbcc.jpeg")
+	file, err := os.Open("/Users/pathbox/busi.png")
 	if err != nil {
 		log.Fatal(err)
 	}
 	t := time.Now()
-	img, err := jpeg.Decode(file)
+	img, err := png.Decode(file)
 	if err != nil {
 		log.Fatal(err)
 	}
 	file.Close()
 
-	m := resize.Resize(600, 0, img, resize.Lanczos3)
+	m := resize.Resize(1000, 0, img, resize.Lanczos3)
 
-	out, err := os.Create("./test_bbcc.jpg")
+	out, err := os.Create("/Users/pathbox/test_bbcc.png")
 	if err != nil {
 		log.Fatal(err)
 	}
