@@ -1,7 +1,11 @@
 package cache
 
 import (
+	"encoding/gob"
 	"fmt"
+	"io"
+	"os"
+	"runtime"
 	"sync"
 	"time"
 )
@@ -90,7 +94,7 @@ func (c *cache) Add(k string, x interface{}, d time.Duration) error {
 		c.mu.Unlock()
 		return fmt.Errorf("Item %s already exists", k)
 	}
-	c.set(k, v, d)
+	c.set(k, x, d)
 	c.mu.Unlock()
 	return nil
 }
@@ -144,7 +148,7 @@ func (c *cache) GetWithExpiration(k string) (interface{}, time.Time, bool) {
 	if item.Expiration > 0 {
 		if time.Now().UnixNano() > item.Expiration {
 			c.mu.RUnlock()
-			return nil, item.Time{}, false
+			return nil, time.Time{}, false
 		}
 
 		c.mu.RUnlock()
@@ -943,6 +947,7 @@ func (c *cache) OnEvicted(f func(string, interface{})) {
 	c.onEvicted = f
 	c.mu.Unlock()
 }
+
 // Write the cache's items (using Gob) to an io.Writer.
 //
 // NOTE: This method is deprecated in favor of c.Items() and NewFrom() (see the
@@ -990,7 +995,8 @@ func (c *cache) SaveFile(fname string) error {
 func (c *cache) Load(r io.Reader) error {
 	dec := gob.NewDecoder(r)
 	items := map[string]Item{}
-	err := dec.Decode(&items)if err == nil {
+	err := dec.Decode(&items)
+	if err == nil {
 		c.mu.Lock()
 		defer c.mu.Unlock()
 		for k, v := range items {
@@ -1064,9 +1070,9 @@ func (j *janitor) Run(c *cache) {
 	ticker := time.NewTicker(j.Interval)
 	for {
 		select {
-		case <- ticker.C:
+		case <-ticker.C:
 			c.DeleteExpired() // 间隔时间，删除过期key值
-		case <- j.stop:
+		case <-j.stop:
 			ticker.Stop()
 			return
 		}
