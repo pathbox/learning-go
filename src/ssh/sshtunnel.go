@@ -107,3 +107,10 @@ func main() {
 	tunnel.Start()
 
 }
+
+/*
+- client - the client that needs resource from remote server
+- local server - a server accessible by the client
+- intermediate server - a server accessible by the local server and remote/target server
+- remote/target server - a server running behind the intermediate server network
+*/
