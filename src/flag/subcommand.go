@@ -56,3 +56,9 @@ func main() {
 	}
 
 }
+
+/*
+go run subcommand.go ask -question=siri
+go run subcommand.go send -message=siri -recipient=Hary
+
+*/
