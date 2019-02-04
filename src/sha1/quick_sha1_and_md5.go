@@ -8,8 +8,13 @@ import (
 
 func main() {
 	passwd := "123456789"
-	sha1Str := sha1.Sum([]byte(passwd))
-	md5Str := md5.Sum([]byte(passwd))
+	shaHash := sha1.New()
+	shaHash.Write([]byte(passwd))
+	sha1Str := sha1.Sum(nil)
+
+	md5Hash := md5.New()
+	md5Hash.Write([]byte(passwd))
+	md5Str := md5.Sum(nil)
 	fmt.Println("sha1 password: ", sha1Str)
 	fmt.Println("md5 password: ", md5Str)
 	fmt.Printf("sha1 password: %s\n", sha1Str)
