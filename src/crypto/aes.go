@@ -92,7 +92,8 @@ func AESECBDecrypt(cypted []byte, key []byte) ([]byte, error) {
 }
 
 func PKCS5Padding(ciphertext []byte, blockSize int) []byte {
-	padding := blockSize - len(ciphertext)%blockSize // 最后一个block中占多少size
+	// 假设待加密数据长度为x，那么将会在后面padding的字节数目为8-(x%8)，每个padding的字节值是8-(x%8)  //https://blog.csdn.net/test1280/article/details/75268255
+	padding := blockSize - len(ciphertext)%blockSize
 	padtext := bytes.Repeat([]byte{byte(padding)}, padding)
 	return append(ciphertext, padtext...)
 }
