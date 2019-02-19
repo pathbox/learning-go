@@ -1,0 +1,7 @@
+github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
+github.com/campoy/chat v0.0.0-20190215081719-851184504427 h1:sOqINTuxUkSAcLS9mzSIILcpuBvmrDx1FNwk4RtpJk4=
+github.com/campoy/chat v0.0.0-20190215081719-851184504427/go.mod h1:LKINQHs+httkLDmUetYeoOIsutwTF15UF3Io5xjx/PU=
+github.com/golang/net v0.0.0-20190213061140-3a22650c66bd h1:csDe9bk66ilRldyDxPBPKfQJwPd11g7Fgj6/fW5+Xxg=
+github.com/golang/net v0.0.0-20190213061140-3a22650c66bd/go.mod h1:98y8FxUyMjTdJ5eOj/8vzuiVO14/dkJ98NYhEPG8QGY=
+github.com/gorilla/websocket v1.4.0/go.mod h1:E7qHFY5m1UJ88s3WnNqhKjPHQ0heANvMoAMk2YaljkQ=
+golang.org/x/net v0.0.0-20190213061140-3a22650c66bd/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=

@@ -96,6 +96,7 @@ func Encrypt(publickey []byte, data []byte) ([]byte, error) {
 		return nil, err
 	}
 	pub := pubInterface.(*rsa.PublicKey)
+	// 用公钥加密
 	return rsa.EncryptPKCS1v15(rand.Reader, pub, data)
 }
 
