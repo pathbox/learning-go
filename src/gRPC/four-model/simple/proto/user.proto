@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+// 简单模式的 gRPC
+// 客户端发起一个请求到服务端，服务端返回一个响应
+// 与函数调用相同，一次调用一次返回
+
+package grpc.simple;
+
+service UserService {
+  rpc GetUserInfo(UserRequest) returns (UserResponse);
+}
+
+// 客户端请求的格式
+message UserRequest {
+  int32 ID=1;
+}
+
+// 服务端相应格式
+message UserResponse {
+  string name = 1;
+  int32 age = 2;
+}
+// protoc -I . --go_out=plugins=grpc:. user.proto
