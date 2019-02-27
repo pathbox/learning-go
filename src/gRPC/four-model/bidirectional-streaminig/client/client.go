@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 	"log"
+	"time"
 
 	pb "../proto"
-
 	"google.golang.org/grpc"
 )
 
@@ -22,24 +22,20 @@ func main() {
 
 	// 创建 gRPC 客户端实例
 	grpcClient := pb.NewUserServiceClient(conn)
-
-	// 向服务端发送流数据
 	stream, err := grpcClient.GetUserInfo(context.Background())
-
-	var i int32
-	// 模拟的数据库中有 3 条记录，ID 分别为 1 2 3
-	for i = 1; i < 4; i++ {
-		err := stream.Send(&pb.UserRequest{ID: i})
-		if err != nil {
-			log.Fatalf("send error: %v", err)
-		}
-	}
-
-	// 接收服务端的响应
-	resp, err := stream.CloseAndRecv()
 	if err != nil {
-		log.Fatalf("recevie resp error: %v", err)
+		log.Fatalf("receive stream error: %v", err)
 	}
 
-	log.Printf("[RECEIVED RESPONSE]: %v\n", resp) // 输出响应
+	// 向服务端发送数据流，并处理响应流
+	var i int32
+	for i = 1; i < 4; i++ {
+		stream.Send(&pb.UserRequest{ID: i})
+		time.Sleep(1 * time.Second)
+		resp, err := stream.Recv()
+		if err != nil {
+			log.Fatalf("resp error: %v", err)
+		}
+		log.Printf("[RECEIVED RESPONSE]: %v\n", resp) // 输出响应
+	}
 }

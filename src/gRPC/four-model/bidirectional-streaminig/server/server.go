@@ -10,27 +10,30 @@ import (
 	"google.golang.org/grpc"
 )
 
+// 模拟的数据库查询结果
 var users = map[int32]pb.UserResponse{
 	1: {Name: "Dennis MacAlistair Ritchie", Age: 70},
 	2: {Name: "Ken Thompson", Age: 75},
 	3: {Name: "Rob Pike", Age: 62},
 }
 
-type clientSideStreamServer struct{}
+type bidirectionalStreamServer struct{}
 
-func (s *clientSideStreamServer) GetUserInfo(stream pb.UserService_GetUserInfoServer) error {
-	var lastID int32
+// bidirectionalStreamServer 实现了 user.pb.go 中的 UserServiceServer 接口
+func (s *bidirectionalStreamServer) GetUserInfo(stream pb.UserService_GetUserInfoServer) error {
 	for {
 		req, err := stream.Recv()
-		// 客户端数据流发送完毕
 		if err == io.EOF {
-			// 返回最后一个 ID 的用户信息
-			if u, ok := users[lastID]; ok {
-				stream.SendAndClose(&u)
-				return nil
-			}
+			return nil
 		}
-		lastID = req.ID
+		if err != nil {
+			return err
+		}
+		u := users[req.ID]
+		err = stream.Send(&u)
+		if err != nil {
+			return err
+		}
 		log.Printf("[RECEVIED REQUEST]: %v\n", req)
 	}
 	return nil
@@ -50,7 +53,7 @@ func main() {
 	grpcServer := grpc.NewServer()
 
 	// 向 gRPC 服务器注册服务
-	pb.RegisterUserServiceServer(grpcServer, &clientSideStreamServer{})
+	pb.RegisterUserServiceServer(grpcServer, &bidirectionalStreamServer{})
 
 	// 启动 gRPC 服务器
 	// 阻塞等待客户端的调用

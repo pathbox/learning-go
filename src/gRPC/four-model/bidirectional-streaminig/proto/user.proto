@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+// 双向数据流模式的 gRPC
+// 客户端将连续的数据流发送到服务端，服务端返回交互的数据流
+package grpc.bidirectional.stream;
+
+// 定义 UserService 微服务
+service UserService {
+    // 微服务中获取用户信息的 RPC 函数
+    // stream 关键字表示此函数请求和响应均使用数据流
+    rpc GetUserInfo (stream UserRequest) returns (stream UserResponse);
+}
+
+// 客户端请求的格式
+message UserRequest {
+    int32 ID = 1;
+}
+
+// 服务端响应的格式
+message UserResponse {
+    string name = 1;
+    int32 age = 2;
+}
+
+// 生成 user.pb.go
+// protoc -I . --go_out=plugins=grpc:. user.proto
