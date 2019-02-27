@@ -1,6 +1,3 @@
-// Binary gaugedemo displays a couple of Gauge widgets.
-// Exist when 'q' is pressed
-
 package main
 
 import (
@@ -10,9 +7,9 @@ import (
 	"github.com/mum4k/termdash"
 	"github.com/mum4k/termdash/cell"
 	"github.com/mum4k/termdash/container"
-	"github.com/mum4k/termdash/draw"
+	"github.com/mum4k/termdash/linestyle"
 	"github.com/mum4k/termdash/terminal/termbox"
-	"github.com/mum4k/termdash/terminalapi"
+	"github.com/mum4k/termdash/terminal/terminalapi"
 	"github.com/mum4k/termdash/widgets/gauge"
 )
 
@@ -73,40 +70,55 @@ func main() {
 	defer t.Close()
 
 	ctx, cancel := context.WithCancel(context.Background())
-	slim := gauge.New(
+	slim, err := gauge.New(
 		gauge.Height(1),
-		gauge.Border(draw.LineStyleLight),
+		gauge.Border(linestyle.Light),
 		gauge.BorderTitle("Percentage progress"),
 	)
+	if err != nil {
+		panic(err)
+	}
 	go playGauge(ctx, slim, 10, 500*time.Millisecond, playTypePercent)
-	absolute := gauge.New(
+
+	absolute, err := gauge.New(
 		gauge.Height(1),
 		gauge.Color(cell.ColorBlue),
-		gauge.Border(draw.LineStyleLight),
+		gauge.Border(linestyle.Light),
 		gauge.BorderTitle("Absolute progress"),
 	)
+	if err != nil {
+		panic(err)
+	}
 	go playGauge(ctx, absolute, 17, 500*time.Millisecond, playTypeAbsolute)
-	noProgress := gauge.New(
+
+	noProgress, err := gauge.New(
 		gauge.Height(1),
-		gauge.Border(draw.LineStyleLight, cell.FgColor(cell.ColorMagenta)),
+		gauge.Border(linestyle.Light, cell.FgColor(cell.ColorMagenta)),
 		gauge.BorderTitle("Without progress text"),
 		gauge.HideTextProgress(),
 	)
+	if err != nil {
+		panic(err)
+	}
 	go playGauge(ctx, noProgress, 5, 250*time.Millisecond, playTypePercent)
-	withLabel := gauge.New(
+
+	withLabel, err := gauge.New(
 		gauge.Height(3),
 		gauge.TextLabel("你好，世界! text label and no border"),
 		gauge.Color(cell.ColorRed),
 		gauge.FilledTextColor(cell.ColorBlack),
 		gauge.EmptyTextColor(cell.ColorYellow),
 	)
+	if err != nil {
+		panic(err)
+	}
 	go playGauge(ctx, withLabel, 3, 500*time.Millisecond, playTypePercent)
 
 	c, err := container.New(
 		t,
 		container.SplitVertical(
 			container.Left(
-				container.Border(draw.LineStyleLight),
+				container.Border(linestyle.Light),
 				container.BorderTitle("PRESS Q TO QUIT"),
 				container.SplitHorizontal(
 					container.Top(
