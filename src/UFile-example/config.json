@@ -1,0 +1,7 @@
+{
+  "public_key": "TOKEN_c306ee85-f059-4f71-ac1b-2621e25d0a39",
+  "private_key": "a6d14160-d6dc-4b66-8b88-1f46a5d8506c",
+  "bucket_name": "e-pdf-test",
+  "file_host": "cn-sh2.ufileos.com",
+  "bucket_host": "http://api.ucloud.cn"
+}
