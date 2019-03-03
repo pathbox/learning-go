@@ -1,0 +1,1 @@
+分析 io.Pipe 源码可知，PipeWriter 和 PipeReader 通过 pipe 的 data []byte 来进行数据传输，其中 lock 机制保证了 Pipe 在同一时刻只能有一个操作，并且 writer 主动写入必须阻塞到有 reader 读取，reader 主动读取必须阻塞到有 writer 写入
