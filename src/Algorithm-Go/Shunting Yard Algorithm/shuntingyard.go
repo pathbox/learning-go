@@ -195,3 +195,6 @@ func main() {
 	result := CalExpression(str)
 	fmt.Printf("The result: %f\n", result)
 }
+
+// 优化
+// 可以构造一个符号优先级map，用于优先级比较
