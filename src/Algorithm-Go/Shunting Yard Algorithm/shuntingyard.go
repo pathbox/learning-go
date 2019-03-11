@@ -11,10 +11,10 @@ type Node struct {
 	opt      byte
 }
 
-//调度场算法，返回后缀表达式即逆波兰式
+//调度场算法，返回后缀表达式即逆波兰式。
 func ShuntingYard(str string) []*Node {
+	//去除所有的空格。
 	str = strings.Replace(str, " ", "", -1)
-
 	//当前位是否可以输入数字。
 	canNumber := true
 	//当前数字的符号，因为有可能一上来就是一个-
@@ -27,7 +27,7 @@ func ShuntingYard(str string) []*Node {
 	p := 0
 	N := len(str)
 	for p < N {
-
+		//按字符读入的是数字或者小数点.
 		if (str[p] >= '0' && str[p] <= '9') || str[p] == '.' {
 			if canNumber {
 				//当前正在读取的这个数的值
@@ -45,19 +45,17 @@ func ShuntingYard(str string) []*Node {
 					} else {
 						if hasDot {
 							w *= 0.1
-							val += float64(str[p]-'0') * w // 处理小数
+							val += float64(str[p]-'0') * w
 						} else {
-							val = val*10 + float64(str[p]-'0') // 处理整数
+							val = val*10 + float64(str[p]-'0')
 						}
 					}
 					p++
 				}
 				p--
-
 				if str[p] == '.' {
 					panic("一个小数点，不能作为数字")
 				}
-
 				queue = append(queue, &Node{isNumber: true, val: val * float64(sign)})
 				sign = 1
 				canNumber = false
@@ -135,10 +133,11 @@ func ShuntingYard(str string) []*Node {
 	return queue
 }
 
+//打印逆波兰式
 func PrintNodes(queue []*Node) {
 	for i := 0; i < len(queue); i++ {
 		if queue[i].isNumber {
-			fmt.Printf("%v", queue[i].val)
+			fmt.Printf("%v ", queue[i].val)
 		} else {
 			fmt.Printf("%c ", queue[i].opt)
 		}
@@ -146,13 +145,14 @@ func PrintNodes(queue []*Node) {
 	fmt.Println()
 }
 
-//计算逆波兰式  利用栈stack
+//计算逆波兰式
 func CalNodes(queue []*Node) float64 {
 	var stack []float64
+	PrintNodes(queue)
 
 	for _, v := range queue {
 		if v.isNumber {
-			// 数字直接入栈
+			//数字直接入栈
 			stack = append(stack, v.val)
 		} else {
 			switch v.opt {
@@ -178,20 +178,20 @@ func CalNodes(queue []*Node) float64 {
 			}
 		}
 	}
-	return stack[0] // 最终的结果值
+	return stack[0]
 }
 
+//计算表达式.
 func CalExpression(str string) float64 {
 	var queue []*Node
 	queue = ShuntingYard(str)
 	res := CalNodes(queue)
 	fmt.Printf("%v = %v \n", str, res)
 	return res
-
 }
 
 func main() {
-	str := " 3 + 3* ( 6 - 1 2 ) / 4 - 1+2.5+5.678"
+	str := " 3 + 3 * ( 6 - 1 * 2 ) / 4 - 1"
 	result := CalExpression(str)
 	fmt.Printf("The result: %f\n", result)
 }
