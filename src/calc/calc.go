@@ -279,7 +279,7 @@ func NewParser(l *Lexer) *Parser {
 
 func (p *Parser) ParseExpression(precedence int) Expression {
 	prefix := p.prefixParseFns[p.curToken.Type]
-	returnExp := prefix()
+	returnExp := prefix() // 执行prefix函数 返回了 expression
 
 	for precedence < p.peekPrecedence() {
 		infix := p.infixParseFns[p.peekToken.Type]
