@@ -24,3 +24,5 @@ func newSelectUserByID() selectUserByID {
 		return "Cary"
 	}
 }
+
+// 依赖注入是为了 解耦

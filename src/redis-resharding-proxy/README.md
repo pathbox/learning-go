@@ -1,0 +1,1 @@
+https://github.com/smira/redis-resharding-proxy
