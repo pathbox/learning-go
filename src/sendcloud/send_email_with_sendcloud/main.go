@@ -16,11 +16,11 @@ const (
 )
 
 func main() {
-	from := "xxx@domain"
-	apiUser := "xxx"
-	apiKey := "xxx"
+	from := "alan@domain"
+	apiUser := "user"
+	apiKey := "key"
 	sendcloud.UpdateApiInfo(apiUser, apiKey)
-	tplName := "xxxtemplate"
+	tplName := "Alan"
 
 	xlFile, err := xlsx.OpenFile(excelFileName)
 	if err != nil {
@@ -39,9 +39,9 @@ func main() {
 							to[0] = map[string]string{"to": toEmail, "%url%": ""}
 							_, err, result := sendcloud.SendTemplateMail(tplName, from, from, from, "", to, nil)
 							if err != nil {
-								fmt.Printf("Send Error: %s-result:%s\n", err, result)
+								fmt.Printf("Send to <%s> Error: %s-result:%s\n", toEmail, err, result)
 							}
-							fmt.Printf("=Send Success=result:%s", result)
+							fmt.Printf("=Send to <%s> Success=  result:%s\n", toEmail, result)
 						}
 					}
 				}
