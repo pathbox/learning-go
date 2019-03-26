@@ -130,7 +130,7 @@ func lexEnv(l *lexer) stateFn {
 	case r == eof:
 		l.emit(itemEOF)
 		return nil
-	case isAlphaNumberic(r):
+	case isAlphaNumeric(r):
 		return lexVariable
 	case r == '#':
 		return lexComment
