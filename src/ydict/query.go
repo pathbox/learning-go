@@ -142,7 +142,7 @@ func query(words []string, withVoice, withMore, isQuiet, isMulti bool) {
 		}
 		fmt.Println()
 	}
-
+	fmt.Println("withVoice:", withVoice)
 	if withVoice && isAvailableOS() {
 		playVoice(voiceBody)
 	}

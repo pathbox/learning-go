@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 )
 
@@ -23,5 +24,6 @@ func main() {
 	}
 
 	words, withVoice, withMore, isQuiet := parseArgs(os.Args[1:]) // os.Args[0] 是命令，os.Args[1:] 之后的所有是 word
+	fmt.Println(words, withVoice, withMore, isQuiet)
 	query(words, withVoice, withMore, isQuiet, len(words) > 1)
 }
