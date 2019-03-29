@@ -2,6 +2,8 @@ github.com/PuerkitoBio/goquery v1.5.0 h1:uGvmFXOA73IKluu/F84Xd1tt/z07GYm8X49XKHP
 github.com/PuerkitoBio/goquery v1.5.0/go.mod h1:qD2PgZ9lccMbQlc7eEOjaeRlFQON7xY8kdmcsrnKqMg=
 github.com/andybalholm/cascadia v1.0.0 h1:hOCXnnZ5A+3eVDX8pvgl4kofXv2ELss0bKcqRySc45o=
 github.com/andybalholm/cascadia v1.0.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
+github.com/axw/gocov v0.0.0-20170322000131-3a69a0d2a4ef h1:kh7Fi8sfEY7aCl42VEEvGv7lez2YCOmO120N1fASWGc=
+github.com/axw/gocov v0.0.0-20170322000131-3a69a0d2a4ef/go.mod h1:pc6XrbIn8RLeVSNzXCZKXNst+RTE5Ju/nySYl1Wc0B4=
 github.com/briandowns/spinner v0.0.0-20190319032542-ac46072a5a91 h1:GMmnK0dvr0Sf0gx3DvTbln0c8DE07B7sPVD9dgHOqo4=
 github.com/briandowns/spinner v0.0.0-20190319032542-ac46072a5a91/go.mod h1:hw/JEQBIE+c/BLI4aKM8UU8v+ZqrD3h7HC27kKt8JQU=
 github.com/fatih/color v1.7.0 h1:DkWD4oS2D8LGGgTQ6IvwJJXSL5Vp2ffcQg58nFV38Ys=
@@ -10,6 +12,8 @@ github.com/hashicorp/golang-lru v0.5.1 h1:0hERBMJE1eitiLkihrMvRVBYAkpHzc/J3QdDN+
 github.com/hashicorp/golang-lru v0.5.1/go.mod h1:/m3WP610KZHVQ1SGc6re/UDhFvYD7pJ4Ao+sR/qLZy8=
 github.com/joho/godotenv v1.3.0 h1:Zjp+RcGpHhGlrMbJzXTrZZPrWj+1vfm90La1wgB6Bhc=
 github.com/joho/godotenv v1.3.0/go.mod h1:7hK45KPybAkOC6peb+G5yklZfMxEjkZhHbwpqxOKXbg=
+github.com/matm/gocov-html v0.0.0-20160206185555-f6dd0fd0ebc7 h1:IpusRbIZ1Z5j96YpxRD7vTwpfR7Cv3vgETmilcHF5BE=
+github.com/matm/gocov-html v0.0.0-20160206185555-f6dd0fd0ebc7/go.mod h1:2amKdhwK7Jz2kRhLYmUH2NIOeBs6Tmhpy5UgDXhRbHc=
 github.com/mattn/go-colorable v0.1.1 h1:G1f5SKeVxmagw/IyvzvtZE4Gybcc4Tr1tf7I8z0XgOg=
 github.com/mattn/go-colorable v0.1.1/go.mod h1:FuOcm+DKB9mbwrcAfNl7/TZVBZ6rcnceauSikq3lYCQ=
 github.com/mattn/go-isatty v0.0.5/go.mod h1:Iq45c/XA43vh69/j3iqttzPXn0bhXyGjM0Hdxcsrc5s=
