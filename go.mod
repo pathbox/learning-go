@@ -5,6 +5,7 @@ require (
 	github.com/axw/gocov v0.0.0-20170322000131-3a69a0d2a4ef
 	github.com/briandowns/spinner v0.0.0-20190319032542-ac46072a5a91
 	github.com/fatih/color v1.7.0
+	github.com/golang/protobuf v1.3.1 // indirect
 	github.com/hashicorp/golang-lru v0.5.1
 	github.com/joho/godotenv v1.3.0
 	github.com/matm/gocov-html v0.0.0-20160206185555-f6dd0fd0ebc7
