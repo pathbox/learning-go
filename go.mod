@@ -11,5 +11,7 @@ require (
 	github.com/matm/gocov-html v0.0.0-20160206185555-f6dd0fd0ebc7
 	github.com/mattn/go-colorable v0.1.1 // indirect
 	github.com/mattn/go-isatty v0.0.7 // indirect
+	github.com/yireyun/go-queue v0.0.0-20180809062148-5e6897360dac
 	golang.org/x/net v0.0.0-20190327025741-74e053c68e29
+	google.golang.org/grpc v1.19.1
 )
