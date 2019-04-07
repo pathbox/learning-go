@@ -18,13 +18,14 @@ func main() {
 		AddButton("保存", func() {
 			_, title := form.GetFormItem(0).(*tview.DropDown).GetCurrentOption()
 			userName := form.GetFormItem(1).(*tview.InputField).GetText()
+			cw := form.GetFormItem(2).(*tview.Checkbox).GetLabel()
 
-			alert(pages, "alert-dialog", fmt.Sprintf("保存成功，%s %s！", userName, title))
+			alert(pages, "alert-dialog", fmt.Sprintf("保存成功，%s %s %s！", userName, title, cw))
 		}).
 		AddButton("退出", func() {
 			app.Stop()
 		})
-	form.SetBorder(true).SetTitle("输入一些内容").SetTitleAlign(tview.AlignLeft)
+	form.SetBorder(true).SetTitle("输入一些内容").SetTitleAlign(tview.AlignCenter)
 	pages.AddPage("base", form, true, true)
 
 	if err := app.SetRoot(pages, true).Run(); err != nil {
