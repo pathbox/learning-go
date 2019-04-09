@@ -30,8 +30,8 @@ func main() {
 	})
 }
 
-// ./example1 --spanish=true
-// ./example1 --spanish=true -name nice
+// ./example1 -spanish=true
+// ./example1 -spanish=true -name nice
 
 // Hola nice!
 //   -name: A name to say hello to (Default: 'World')
