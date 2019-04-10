@@ -8,6 +8,7 @@ import (
 func main() {
 	b := []byte("data[title]")
 	pat := `^data[[a-z]]$`
+	regexp.Matc
 	reg1 := regexp.MustCompile(pat)
 	r := reg1.Find(b)
 	fmt.Println(string(r))
