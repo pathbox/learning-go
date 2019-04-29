@@ -36,7 +36,7 @@ func Info(o interface{}) {
 
 	for i := 0; i < t.NumField(); i++ { // NumField取出这个接口所有的字段数量
 		f := t.Field(i)                                   // 获得结构体的第i个字段
-		val := v.Field(i).Interface()                     // 获得接口子弹的值
+		val := v.Field(i).Interface()                     // 获得接口子字段的值
 		fmt.Printf("%6s: %v = %v\n", f.Name, f.Type, val) //第i个字段第名称,类型,值
 	}
 
