@@ -14,7 +14,7 @@ func main() {
 	n := Num{i: "EDDYCJY", j: 1}
 	nPointer := unsafe.Pointer(&n)
 
-	niPointer := (*string)(unsafe.Pointer(nPointer)) // 直接取出指针转为Pointer 再强制转为字符串类型指针值
+	niPointer := (*string)(unsafe.Pointer(nPointer)) // 直接取出指针转为Pointer 再强制转为字符串类型指针值,第一个field就是地址初始位置
 	*niPointer = "鸡翅"
 
 	njPointer := (*int64)(unsafe.Pointer(uintptr(nPointer) + unsafe.Offsetof(n.j))) //j 为第二个成员变量。需要进行偏移量计算，才可以对其内存地址进行修改。在进行了偏移运算后，当前地址已经指向第二个成员变量。接着重复转换赋值即可
