@@ -60,4 +60,6 @@ func main() {
 	// 	},
 	// })
 	t.Render()
+	t.RenderHTML()
+	t.RenderMarkdown()
 }
