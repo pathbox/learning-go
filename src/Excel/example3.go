@@ -12,8 +12,8 @@ func main() {
 	fmt.Printf("%+v", m)
 }
 
-func ReadCustomerFromExcel(xlsxFile string) (map[string][]map[string]interface{}, error) {
-	m := map[string][]map[string]interface{}{}
+func ReadCustomerFromExcel(xlsxFile string) (map[string][]map[string]string, error) {
+	m := map[string][]map[string]string{}
 	xFile, err := excelize.OpenFile(xlsxFile)
 	if err != nil {
 		fmt.Println(err)
@@ -22,7 +22,7 @@ func ReadCustomerFromExcel(xlsxFile string) (map[string][]map[string]interface{}
 
 	for _, name := range xFile.GetSheetMap() {
 		rows, _ := xFile.GetRows(name)
-		cuSlice := make([]map[string]interface{}, 0)
+		cuSlice := make([]map[string]string, 0)
 		for index, row := range rows {
 			if index == 0 {
 				continue
@@ -32,7 +32,7 @@ func ReadCustomerFromExcel(xlsxFile string) (map[string][]map[string]interface{}
 			row = append(row, url)
 			// fmt.Println(row)
 
-			cu := map[string]interface{}{}
+			cu := map[string]string{}
 			cu["Name"] = row[0]
 			cu["University"] = row[1]
 			cu["CraduateYear"] = row[2]
