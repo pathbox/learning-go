@@ -42,7 +42,7 @@ func GetMembers(i interface{}) {
 		for i := 0; i < t.NumMethod(); i++ {
 			fmt.Println(t.Method(i).Name)
 		}
-		if t.Kind() == reflect.Ptr {
+		if t.Kind() == reflect.Ptr { // 如果t类别是指针，则可以调用Elem()方法，获得指针所指的真正元素
 			t = t.Elem()
 		} else {
 			break
