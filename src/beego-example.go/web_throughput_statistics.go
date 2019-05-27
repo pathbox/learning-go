@@ -92,7 +92,6 @@ func For_IP(valuex string) (bool, string) {
 
 func (this *Index) Cookie_session() int { //id统计  PV  这样统计只能针对单个浏览器有效
 	pv := 0
-	=====================
 	Cookie 统计法
 	cook := this.Ctx.GetCookie("countnum") //获取Cookie
 	if cook == "" {
@@ -108,7 +107,6 @@ func (this *Index) Cookie_session() int { //id统计  PV  这样统计只能针�
 		}
 	}
 	// return pv
-	//=====================
 	//session 统计法
 	sess, _ := globalSessions.SessionStart(this.Ctx.ResponseWriter, this.Ctx.Request)
 	ct := sess.Get("countnum")
