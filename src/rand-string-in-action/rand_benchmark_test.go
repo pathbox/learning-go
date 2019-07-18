@@ -121,13 +121,13 @@ func BenchmarkBytesMaskImprSrc(b *testing.B) {
 		RandStringBytesMaskImprSrc(n)
 	}
 }
-
+// 加入uuid + sha256 但速度不够快 即使是单独的uuid也不够快
 func BenchmarkRandStringUUID(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		RandStringUUID()
 	}
 }
-// 加入uuid + sha256 但速度不够快
+
 
 // go test -bench=. rand_string_benchmark_test.go
 /*
