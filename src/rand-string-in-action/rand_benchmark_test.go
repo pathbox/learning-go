@@ -1,18 +1,17 @@
 package main
-
 import (
 	"math/rand"
 	"testing"
 	"time"
+	"github.com/nu7hatch/gouuid"
+	"crypto/sha256"
+	"encoding/hex"
 )
-
 // Implementations
 func init() {
 	rand.Seed(time.Now().UnixNano())
 }
-
 var letterRunes = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
-
 func RandStringRunes(n int) string {
 	b := make([]rune, n)
 	for i := range b {
@@ -20,14 +19,12 @@ func RandStringRunes(n int) string {
 	}
 	return string(b)
 }
-
 const letterBytes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const (
 	letterIdxBits = 6                    // 6 bits to represent a letter index
 	letterIdxMask = 1<<letterIdxBits - 1 // All 1-bits, as many as letterIdxBits
 	letterIdxMax  = 63 / letterIdxBits   // # of letter indices fitting in 63 bits
 )
-
 func RandStringBytes(n int) string {
 	b := make([]byte, n)
 	for i := range b {
@@ -68,9 +65,7 @@ func RandStringBytesMaskImpr(n int) string {
 	}
 	return string(b)
 }
-
 var src = rand.NewSource(time.Now().UnixNano())
-
 func RandStringBytesMaskImprSrc(n int) string {
 	b := make([]byte, n)
 	// A src.Int63() generates 63 random bits, enough for letterIdxMax characters!
@@ -88,9 +83,14 @@ func RandStringBytesMaskImprSrc(n int) string {
 	return string(b)
 }
 
+func RandStringUUID() string {
+	uuidStr1, _ := uuid.NewV4()
+	hk := sha256.New()
+		hk.Write([]byte(uuidStr1.String()))
+		return hex.EncodeToString(hk.Sum(nil))
+}
 // Benchmark functions
-const n = 16
-
+const n = 64
 func BenchmarkRunes(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		RandStringRunes(n)
@@ -122,17 +122,22 @@ func BenchmarkBytesMaskImprSrc(b *testing.B) {
 	}
 }
 
-// go test -bench=. rand_benchmark_test.go
+func BenchmarkRandStringUUID(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		RandStringUUID()
+	}
+}
+// 加入uuid + sha256 但速度不够快
 
+// go test -bench=. rand_string_benchmark_test.go
 /*
 goos: darwin
 goarch: amd64
-BenchmarkRunes-4                 2000000               808 ns/op              96 B/op          2 allocs/op
-BenchmarkBytes-4                 2000000               613 ns/op              32 B/op          2 allocs/op
-BenchmarkBytesRmndr-4            3000000               501 ns/op              32 B/op          2 allocs/op
-BenchmarkBytesMask-4             2000000               594 ns/op              32 B/op          2 allocs/op
-BenchmarkBytesMaskImpr-4        10000000               178 ns/op              32 B/op          2 allocs/op
-BenchmarkBytesMaskImprSrc-4     10000000               138 ns/op              32 B/op          2 allocs/op
-PASS
-ok      command-line-arguments  11.615s
+BenchmarkRunes-4                  300000              6138 ns/op
+BenchmarkBytes-4                  300000              5120 ns/op
+BenchmarkBytesRmndr-4             500000              2391 ns/op
+BenchmarkBytesMask-4              500000              3086 ns/op
+BenchmarkBytesMaskImpr-4         2000000               525 ns/op
+BenchmarkBytesMaskImprSrc-4      5000000               391 ns/op
+BenchmarkRandStringUUID-4        1000000              1733 ns/op
 */

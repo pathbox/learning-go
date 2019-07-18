@@ -6,7 +6,7 @@ import (
 	sqle "github.com/src-d/go-mysql-server"
   auth	"github.com/src-d/go-mysql-server/auth"
 	mem "github.com/src-d/go-mysql-server/mem"
-	server "github.com/src-d/go-mysql-server/server"
+	sqle "github.com/src-d/go-mysql-server/server"
 	"github.com/src-d/go-mysql-server/sql"
 )
 
