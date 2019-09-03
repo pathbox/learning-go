@@ -1,0 +1,1 @@
+https://github.com/muesli/gitomatic/blob/master/main.go
