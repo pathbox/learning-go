@@ -20,6 +20,8 @@ func (it *Iterator) Next() {
 	it.node = it.node.getNext(0)
 }
 
+// 往前移动一个节点
+// Advances to the previous p	osition.
 func (it *Iterator) Prev() {
 	it.list.mu.RLock()
 	defer it.list.mu.RUnlock()
@@ -30,6 +32,7 @@ func (it *Iterator) Prev() {
 	}
 }
 
+// 找到目标key
 func (it *Iterator) Seek(target interface{}) {
 	it.list.mu.RLock()
 	defer it.list.mu.RUnlock()

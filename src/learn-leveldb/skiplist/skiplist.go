@@ -13,10 +13,10 @@ const (
 )
 
 type SkipList struct {
-	maxHeight int
-	head *Node
+	maxHeight  int
+	head       *Node
 	comparator utils.Comparator // 比较器  函数
-	mu sync.RWMutex
+	mu         sync.RWMutex
 }
 
 func New(comp utils.Comparator) *SkipList {
@@ -34,13 +34,13 @@ func (list *SkipList) Insert(key interface{}) {
 	_, prev := list.findGreaterOrEqual(key)
 	height := list.randomHeight()
 	if height > list.maxHeight {
-		for i := list.maxHeight; i < height; i++{
+		for i := list.maxHeight; i < height; i++ {
 			prev[i] = list.head
 		}
 		list.maxHeight = height
 	}
 	x := newNode(key, height)
-	for i := 0; i < height; i++{
+	for i := 0; i < height; i++ {
 		x.setNext(i, prev[i].getNext(i))
 		prev[i].setNext(i, x)
 	}
@@ -72,7 +72,7 @@ func (list *SkipList) randomHeight() int {
 }
 
 func (list *SkipList) keyIsAfterNode(key interface{}, n *Node) bool {
-	return (n != nil ) && (list.comparator(n.key, key) < 0)
+	return (n != nil) && (list.comparator(n.key, key) < 0)
 }
 
 func (list *SkipList) findGreaterOrEqual(key interface{}) (*Node, [kMaxHeight]*Node) {
@@ -124,7 +124,7 @@ func (list *SkipList) findlast() *Node {
 			} else {
 				level--
 			}
-		}else {
+		} else {
 			x = next
 		}
 	}
