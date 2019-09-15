@@ -45,7 +45,7 @@ func main() {
 	// 消费者根据路由的队列名
 	msgs, err := ch.Consume(
 		queue.Name, 
-		"cpmsumer name", 
+		"comsumer name", 
 		false, // auto-ask
 		false, //exclusive
 		false, // no-local
