@@ -1,6 +1,6 @@
 package main
 
-import github.com/tidwall/shardmap
+import "github.com/tidwall/shardmap"
 
 func main() {
 	var m shardmap.Map

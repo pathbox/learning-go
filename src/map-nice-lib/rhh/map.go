@@ -66,7 +66,7 @@ func New(cap int) *Map {
 // new 一个新的map 为map扩容
 func (m *Map) resize(newCap int) {
 	nmap := New(newCap)
-	for i := 0; i < len(m.buckets); i++{
+	for i := 0; i < len(m.buckets); i++{ // 循环所有的buckets 将值移到新的new map上完成扩容
 		if m.buckets[i].dib() > 0 {
 			nmap.set(m.buckets[i].hash(), m.buckets[i].key, m.buckets[i].value)
 		}
