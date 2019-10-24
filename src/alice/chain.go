@@ -15,11 +15,10 @@ type Chain struct {
 	constructors []Constructor
 }
 
-//New creates a new chain,
+// New creates a new chain,
 // memorizing the given list of middleware constructors.
 // New serves no other function,
 // constructors are only called upon a call to Then().
-
 func New(constructors ...Constructor) Chain {
 	return Chain{append(([]Constructor)(nil), constructors...)}
 }
@@ -42,8 +41,7 @@ func New(constructors ...Constructor) Chain {
 // For proper middleware, this should cause no problems.
 //
 // Then() treats nil as http.DefaultServeMux.
-
-func (c chain) Then(h http.Handler) http.Handler {
+func (c Chain) Then(h http.Handler) http.Handler {
 	if h == nil {
 		h = http.DefaultServeMux
 	}
@@ -51,7 +49,23 @@ func (c chain) Then(h http.Handler) http.Handler {
 	for i := range c.constructors {
 		h = c.constructors[len(c.constructors)-1-i](h)
 	}
+
 	return h
+}
+
+// ThenFunc works identically to Then, but takes
+// a HandlerFunc instead of a Handler.
+//
+// The following two statements are equivalent:
+//     c.Then(http.HandlerFunc(fn))
+//     c.ThenFunc(fn)
+//
+// ThenFunc provides all the guarantees of Then.
+func (c Chain) ThenFunc(fn http.HandlerFunc) http.Handler {
+	if fn == nil {
+		return c.Then(nil)
+	}
+	return c.Then(fn)
 }
 
 // Append extends a chain, adding the specified constructors
@@ -85,13 +99,13 @@ func (c Chain) Append(constructors ...Constructor) Chain {
 //
 // Another example:
 //  aHtmlAfterNosurf := alice.New(m2)
-//  aHtml := alice.New(m1, func(h http.Handler) http.Handler {
-//    csrf := nosurf.New(h)
-//    csrf.SetFailureHandler(aHtmlAfterNosurf.ThenFunc(csrfFail))
-//    return csrf
-//  }).Extend(aHtmlAfterNosurf)
-//    // requests to aHtml hitting nosurfs success handler go m1 -> nosurf -> m2 -> target-handler
-//    // requests to aHtml hitting nosurfs failure handler go m1 -> nosurf -> m2 -> csrfFail
+// 	aHtml := alice.New(m1, func(h http.Handler) http.Handler {
+// 		csrf := nosurf.New(h)
+// 		csrf.SetFailureHandler(aHtmlAfterNosurf.ThenFunc(csrfFail))
+// 		return csrf
+// 	}).Extend(aHtmlAfterNosurf)
+//		// requests to aHtml hitting nosurfs success handler go m1 -> nosurf -> m2 -> target-handler
+//		// requests to aHtml hitting nosurfs failure handler go m1 -> nosurf -> m2 -> csrfFail
 func (c Chain) Extend(chain Chain) Chain {
 	return c.Append(chain.constructors...)
 }
