@@ -19,7 +19,7 @@ func (h HOTP) At(counter uint64) string {
 	binary.BigEndian.PutUint64(counterBytes, counter)
 	hash := hmac.New(sha1.New, h.secret)
 	hash.Write(counterBytes)
-	hs := hash.Sum(nil)
+	hs := hash.Sum(nil) // hmac 算法得到hs值 是一个字符串
 	offset := hs[19] & 0x0f
 	binCodeBytes := make([]byte, 4) // 4字节长度
 	binCodeBytes[0] = hs[offset] & 0x7f
@@ -54,7 +54,7 @@ func NewHOTP(secret []byte, digits int) (h *HOTP) {
 
 // Verify verify OTP code
 func (h HOTP) Verify(code string, counter uint64) bool {
-	realCode := h.At(counter) // code是客户端传过来的code 6位数字字符串  realCode是服务端算法生成的code
+	realCode := h.At(counter) // code是客户端传过来的code 6位数字字符串  realCode是服务端算法生成的code, counter是一个随机整数
 	if realCode == code {
 		return true
 	}
