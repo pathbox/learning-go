@@ -16,7 +16,7 @@ func NewTOTP(secret []byte, digits, x int) (t *TOTP) {
 }
 
 func (t TOTP) At(timestamp int64) string {
-	counter := uint64(timestamp / t.x) // counter 是对应时间戳组成
+	counter := uint64(timestamp / t.x) // counter = 时间戳 / 步长(过期时间) 是整除，所以在t.x的误差内， 理论上客户端App和服务端得到的counter的值是一样的，got it  nice way，这样算法的参数是一样的，就能进行校验比对了
 	return t.HOTP.At(counter)
 }
 
