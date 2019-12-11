@@ -16,3 +16,5 @@ func (e *errorString) Error() string {
     return e.s
 }
 ```
+
+https://golangbot.com
