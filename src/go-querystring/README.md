@@ -1,5 +1,7 @@
 https://github.com/google/go-querystring
 
+### go-querystring is Go library for encoding structs into URL query parameters.
+
 ```go
 // Package query implements encoding of structs into URL query parameters.
 //
