@@ -16,6 +16,7 @@ require (
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/justinas/alice v0.0.0-20171023064455-03f45bd4b7da
 	github.com/justinas/nosurf v0.0.0-20190416172904-05988550ea18
+	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/lib/pq v1.2.0
 	github.com/mediocregopher/okq-go v0.0.0-20160211201133-048e319dd5ee
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9 // indirect
