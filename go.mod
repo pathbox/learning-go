@@ -22,6 +22,7 @@ require (
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9 // indirect
 	github.com/pascaldekloe/redis v1.3.0
 	github.com/pborman/uuid v1.2.0 // indirect
+	github.com/pkg/profile v1.4.0
 	github.com/pquerna/otp v1.2.0
 	github.com/rakyll/pb v0.0.0-20160123035540-8d46b8b097ef // indirect
 	github.com/stretchr/testify v1.4.0
