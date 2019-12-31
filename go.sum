@@ -22,6 +22,8 @@ github.com/grooveshark/golib v0.1.0 h1:qwoIMNWar7svJr7B8rMvp+Q1RMOMBQFeRjoVbzoB+
 github.com/grooveshark/golib v0.1.0/go.mod h1:/KMmDAQsWnAwmbcCGlM9g/CuHCCLqm8kxsMA9Pv5PxM=
 github.com/hashicorp/golang-lru v0.5.3 h1:YPkqC67at8FYaadspW/6uE0COsBxS2656RLEr8Bppgk=
 github.com/hashicorp/golang-lru v0.5.3/go.mod h1:iADmTwqILo4mZ8BN3D2Q6+9jd8WM5uGBxy+E8yxSoD4=
+github.com/huandu/skiplist v0.0.0-20191129113331-b90e16040d86 h1:BpFBbfJiFaeO5ibH7aZVupZjI9M+agCDseD1laS654Y=
+github.com/huandu/skiplist v0.0.0-20191129113331-b90e16040d86/go.mod h1:A5pG4uawZYu5R/NaZrbqOjHwKLlytQRmXuamk040MAQ=
 github.com/jmoiron/sqlx v1.2.0 h1:41Ip0zITnmWNR/vHV+S4m+VoUivnWY5E4OJfLZjCJMA=
 github.com/jmoiron/sqlx v1.2.0/go.mod h1:1FEQNm3xlJgrMD+FBdI9+xvCksHtbpVBBw5dYhBSsks=
 github.com/justinas/alice v0.0.0-20171023064455-03f45bd4b7da h1:5y58+OCjoHCYB8182mpf/dEsq0vwTKPOo4zGfH0xW9A=

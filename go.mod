@@ -13,6 +13,7 @@ require (
 	github.com/gorilla/mux v1.7.3
 	github.com/grooveshark/golib v0.1.0 // indirect
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
+	github.com/huandu/skiplist v0.0.0-20191129113331-b90e16040d86
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/justinas/alice v0.0.0-20171023064455-03f45bd4b7da
 	github.com/justinas/nosurf v0.0.0-20190416172904-05988550ea18
