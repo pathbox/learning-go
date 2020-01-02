@@ -26,6 +26,7 @@ require (
 	github.com/pkg/profile v1.4.0
 	github.com/pquerna/otp v1.2.0
 	github.com/rakyll/pb v0.0.0-20160123035540-8d46b8b097ef // indirect
+	github.com/sirupsen/logrus v1.4.2
 	github.com/stretchr/testify v1.4.0
 	github.com/throttled/throttled v2.2.4+incompatible
 	gopkg.in/throttled/throttled.v1 v1.0.0
