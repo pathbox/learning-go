@@ -81,6 +81,8 @@ github.com/throttled/throttled v2.2.4+incompatible/go.mod h1:0BjlrEGQmvxps+HuXLs
 github.com/tinylib/msgp v1.1.0 h1:9fQd+ICuRIu/ue4vxJZu6/LzxN0HwMds2nq/0cFvxHU=
 github.com/tinylib/msgp v1.1.0/go.mod h1:+d+yLhGm8mzTaHzB+wgMYrodPfmZrzkirds8fDWklFE=
 github.com/willf/bitset v1.1.10/go.mod h1:RjeCKbqT1RxIR/KWY6phxZiaY1IyutSBfGjNPySAYV4=
+github.com/yangwenmai/ratelimit v0.0.0-20180104140304-44221c2292e1 h1:q6c//IMJug6THoqsseZ+Z/zq53HQvADPh5a66E9hb+I=
+github.com/yangwenmai/ratelimit v0.0.0-20180104140304-44221c2292e1/go.mod h1:Rl8MvKI/yVRGN91gMEZAIf/92QtFQBSG/QFRHWQZtmo=
 golang.org/x/sys v0.0.0-20190422165155-953cdadca894 h1:Cz4ceDQGXuKRnVBDTS23GTn/pU5OE2C0WrNTOYK1Uuc=
 golang.org/x/sys v0.0.0-20190422165155-953cdadca894/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
