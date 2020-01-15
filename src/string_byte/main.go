@@ -7,7 +7,12 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello")
+	bs := []byte{71, 111, 111, 100, 32, 109, 111, 114, 110, 105, 110, 103} // []byte("Good morning")
+	s := BytesToString(bs)
+	fmt.Println(s)
+
+	b := StringToBytes(s)
+	fmt.Println(b)
 }
 
 func BytesToString(b []byte) string {
