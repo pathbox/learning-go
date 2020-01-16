@@ -3,6 +3,7 @@ module github.com/pathbox/learning-go
 go 1.12
 
 require (
+	github.com/BurntSushi/toml v0.3.1
 	github.com/PuerkitoBio/boom v0.0.0-20140219125548-fecdef1c97ca // indirect
 	github.com/RoaringBitmap/roaring v0.4.21
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc
@@ -23,6 +24,7 @@ require (
 	github.com/lib/pq v1.2.0
 	github.com/mediocregopher/okq-go v0.0.0-20160211201133-048e319dd5ee
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9 // indirect
+	github.com/mitchellh/go-homedir v1.1.0
 	github.com/pascaldekloe/redis v1.3.0
 	github.com/pborman/uuid v1.2.0 // indirect
 	github.com/pkg/profile v1.4.0

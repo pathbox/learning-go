@@ -1,3 +1,5 @@
+github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
+github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/PuerkitoBio/boom v0.0.0-20140219125548-fecdef1c97ca h1:jv7AlMqwTYg92zzES80+2pXD0bPY5kGT3AhFKdXLLdI=
 github.com/PuerkitoBio/boom v0.0.0-20140219125548-fecdef1c97ca/go.mod h1:BUNf81ELJpN4dRN2LS5r1fkTSLkczJubIXjJv04ib70=
 github.com/RoaringBitmap/roaring v0.4.21 h1:WJ/zIlNX4wQZ9x8Ey33O1UaD9TCTakYsdLFSBcTwH+8=
@@ -53,6 +55,8 @@ github.com/mediocregopher/okq-go v0.0.0-20160211201133-048e319dd5ee h1:3/zcvN/Fa
 github.com/mediocregopher/okq-go v0.0.0-20160211201133-048e319dd5ee/go.mod h1:SZ7NR0lb/jf+Cb3I0txtqZq8x9YIPCMouM0d6EJgzjw=
 github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9 h1:ViNuGS149jgnttqhc6XQNPwdupEMBXqCx9wtlW7P3sA=
 github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9/go.mod h1:fLRUbhbSd5Px2yKUaGYYPltlyxi1guJz1vCmo1RQL50=
+github.com/mitchellh/go-homedir v1.1.0 h1:lukF9ziXFxDFPkA1vsr5zpc1XuPDn/wFntq5mG+4E0Y=
+github.com/mitchellh/go-homedir v1.1.0/go.mod h1:SfyaCUpYCn1Vlf4IUYiD9fPX4A5wJrkLzIz1N1q0pr0=
 github.com/mschoch/smat v0.0.0-20160514031455-90eadee771ae/go.mod h1:qAyveg+e4CE+eKJXWVjKXM4ck2QobLqTDytGJbLLhJg=
 github.com/pascaldekloe/redis v1.3.0 h1:xc0sSKVoAANz2qz8jwrp8e1t8kHBprYK133dzinesqE=
 github.com/pascaldekloe/redis v1.3.0/go.mod h1:cbce+eZBwgwg28UOGb0MySy3uIOsljFZ8VFi769fqEw=
