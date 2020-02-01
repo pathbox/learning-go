@@ -1,8 +1,12 @@
 package pool
 
-import "sync"
+import (
+	"sync"
 
-var DefaultPool = New(128, 65536, nil)
+	"github.com/gobwas/pool/internal/pmath"
+)
+
+var DefaultPool = New(128, 65536)
 
 // Get pulls object whose generic size is at least of given size. It also
 // returns a real size of x for further pass to Put(). It returns -1 as real
@@ -12,62 +16,72 @@ var DefaultPool = New(128, 65536, nil)
 // Note that size could be ceiled to the next power of two.
 //
 // Get is a wrapper around DefaultPool.Get().
+func Get(size int) (interface{}, int) { return DefaultPool.Get(size) }
 
-func Get(size int) (interface{}, int) {
-	return DefaultPool.Get(size)
-}
+// Put takes x and its size for future reuse.
+// Put is a wrapper around DefaultPool.Put().
+func Put(x interface{}, size int) { DefaultPool.Put(x, size) }
 
-func Put(x interface{}, size int) {
-	DefaultPool.Put(x, size)
-}
-
+// Pool contains logic of reusing objects distinguishable by size in generic
+// way.
 type Pool struct {
 	pool map[int]*sync.Pool
-	init func(int) interface{}
+	size func(int) int
 }
 
-// New optionally specifies a function to generate
-// a value when Get would otherwise return nil.
-// It may not be changed concurrently with calls to Get.
-func New(min, max int, init func(int) interface{}) *Pool {
-	return &Pool{
-		pool: MakePoolMap(min, max),
-		init: init,
-	}
-}
-
-// Get pulls object whose generic size is at least of given size. It also
-// returns a real size of x for further pass to Put(). It returns -1 as real
-// size for nil x. Size >-1 does not mean that x is non-nil, so checks must be
-// done.
+// New creates new Pool that reuses objects which size is in logarithmic range
+// [min, max].
 //
-// Note that size could be ceiled to the next power of two.
+// Note that it is a shortcut for Custom() constructor with Options provided by
+// WithLogSizeMapping() and WithLogSizeRange(min, max) calls.
+func New(min, max int) *Pool {
+	return Custom(
+		WithLogSizeMapping(),
+		WithLogSizeRange(min, max),
+	)
+}
 
+// Custom creates new Pool with given options.
+func Custom(opts ...Option) *Pool {
+	p := &Pool{
+		pool: make(map[int]*sync.Pool),
+		size: pmath.Identity,
+	}
+
+	c := (*poolConfig)(p)
+	for _, opt := range opts {
+		opt(c)
+	}
+
+	return p
+}
+
+// Get pulls object whose generic size is at least of given size.
+// It also returns a real size of x for further pass to Put() even if x is nil.
+// Note that size could be ceiled to the next power of two.
 func (p *Pool) Get(size int) (interface{}, int) {
-	n := CeilToPowerOfTwo(size)
-	pool, ok := p.pool[n]
-	if ok {
-		if x := pool.Get(); x != nil {
-			return x, n
-		}
+	n := p.size(size)
+	if pool := p.pool[n]; pool != nil {
+		return pool.Get(), n
 	}
-	if p.init == nil {
-		// Nothing more to do.
-		return nil, -1
-	}
-	if ok {
-		// There is a pool for such size.
-		// So init padded.
-		return p.init(n), n
-	}
-	// There are no pool for such size.
-	// So init with raw size.
-	return p.init(size), size
+	return nil, size
 }
 
 // Put takes x and its size for future reuse.
 func (p *Pool) Put(x interface{}, size int) {
-	if pool, ok := p.pool[size]; ok {
+	if pool := p.pool[size]; pool != nil {
 		pool.Put(x)
 	}
+}
+
+type poolConfig Pool
+
+// AddSize adds size n to the map.
+func (p *poolConfig) AddSize(n int) {
+	p.pool[n] = new(sync.Pool)
+}
+
+// SetSizeMapping sets up incoming size mapping function.
+func (p *poolConfig) SetSizeMapping(size func(int) int) {
+	p.size = size
 }

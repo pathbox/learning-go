@@ -7,6 +7,7 @@ require (
 	github.com/PuerkitoBio/boom v0.0.0-20140219125548-fecdef1c97ca // indirect
 	github.com/RoaringBitmap/roaring v0.4.21
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc
+	github.com/bramvdbogaerde/go-scp v0.0.0-20200119201711-987556b8bdd7 // indirect
 	github.com/djimenez/iconv-go v0.0.0-20160305225143-8960e66bd3da
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
 	github.com/garyburd/redigo v1.6.0

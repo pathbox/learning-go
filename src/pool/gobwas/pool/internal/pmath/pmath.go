@@ -1,21 +1,10 @@
-package pool
-
-import "sync"
+package pmath
 
 const (
 	bitsize       = 32 << (^uint(0) >> 63)
 	maxint        = int(1<<(bitsize-1) - 1)
 	maxintHeadBit = 1 << (bitsize - 2)
 )
-
-// MakePoolMap makes map[int]*sync.Pool where map keys are logarithmic range
-// from min to max.
-func MakePoolMap(min, max int) map[int]*sync.Pool {
-	ret := make(map[int]*sync.Pool)
-	LogarithmicRange(min, max, func(n int) {
-		ret[n] = new(sync.Pool)
-	})
-}
 
 // LogarithmicRange iterates from ceiled to power of two min to max,
 // calling cb on each iteration.
@@ -31,6 +20,11 @@ func LogarithmicRange(min, max int, cb func(int)) {
 // IsPowerOfTwo reports whether given integer is a power of two.
 func IsPowerOfTwo(n int) bool {
 	return n&(n-1) == 0
+}
+
+// Identity is identity.
+func Identity(n int) int {
+	return n
 }
 
 // CeilToPowerOfTwo returns the least power of two integer value greater than
