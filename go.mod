@@ -11,6 +11,7 @@ require (
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
 	github.com/garyburd/redigo v1.6.0
 	github.com/go-sql-driver/mysql v1.4.0
+	github.com/gobwas/pool v0.2.0
 	github.com/golang/groupcache v0.0.0-20191002201903-404acd9df4cc // indirect
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/gorilla/mux v1.7.3
