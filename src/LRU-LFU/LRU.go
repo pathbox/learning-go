@@ -6,17 +6,17 @@ import "sync"
 
 // 原则：若数据在最近一段时间内都未使用（读取或更新），则以后使用几率也很低，应被淘汰
 
-//使用链表：由于缓存读写删都是高频操作，考虑使用写删都为 O(1) 的链表，而非写删都为 O(N) 的数组。
+//使用双向链表：由于缓存读写删都是高频操作，考虑使用写删都为 O(1) 的链表，而非写删都为 O(N) 的数组。
 // 使用双链表：选用删除操作为 O(1) 的双链表而非删除为 O(N) 的单链表。
 // 维护额外哈希表：链表查找必须遍历 O(N) 读取，可在缓存中维护 map[key]*Node 的哈希表来实现O(1) 的链表查找。
 type Node struct {
 	key        string
 	val        interface{}
-	prev, next *Node
+	prev, next *Node // 双向链表
 }
 
 type List struct {
-	head, tail *Node
+	head, tail *Node // 双向链表
 	size       int
 }
 

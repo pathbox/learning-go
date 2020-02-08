@@ -306,7 +306,7 @@ func (l *Log) Write(index uint64, data []byte) error {
 		l.cycle()
 	}
 	l.appendEntry(index, data)
-	if l.opts.Durability >= Mudium || len(l.buffer) >= 4096 {
+	if l.opts.Durability >= Medium || len(l.buffer) >= 4096 {
 		l.flush()
 	}
 	l.lastIndex = index
