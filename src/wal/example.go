@@ -16,7 +16,10 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-
+	f, _ := log.FirstIndex()
+	l,_ := log.LastIndex()
+	println(f)
+	println(l)
 	// close the log
 	log.Close()		
 

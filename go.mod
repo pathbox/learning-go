@@ -37,6 +37,7 @@ require (
 	github.com/stretchr/testify v1.4.0
 	github.com/stvp/tempredis v0.0.0-20181119212430-b82af8480203
 	github.com/throttled/throttled v2.2.4+incompatible
+	github.com/tidwall/wal v0.1.1
 	github.com/yangwenmai/ratelimit v0.0.0-20180104140304-44221c2292e1
 	gopkg.in/throttled/throttled.v1 v1.0.0
 )

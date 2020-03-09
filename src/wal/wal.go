@@ -523,40 +523,6 @@ func (l *Log) Read(index uint64) (data []byte, err error) {
 		}
 		return edata, nil
 	}
-
-	// Read next entry from reader
-	for {
-		eindex, edata, err := l.readEntry(r)
-		if err == io.EOF {
-			// Reached the end of the segment.
-			if r.sindex == len(l.segments)-1 {
-				// At the end of the last segment file.
-				if len(l.buffer) > 0 {
-					// But the segment has a buffer, flush it and try again
-					must(l.file.Write(l.buffer))
-					l.buffer = l.buffer[:0]
-					continue
-				}
-				// Log is missing some final entries, consider is corrput
-				l.closeReader(r)
-				return nil, ErrCorrupt
-			}
-			// Close the old reader and open a new one
-			l.closeReader(r)
-			return l.openReader(index)
-		}
-		if eindex != index {
-			// Log has gaps or is out of order, corrupt file.
-			l.closeReader(r)
-			return nil, ErrCorrupt
-		}
-		r.nindex++
-		if r.nindex == l.lastIndex+1 {
-			// read the last entry, close the reader
-			l.closeReader(r)
-		}
-		return edata, nil
-	}
 }
 
 // openReader opens a new reader and returns the data belong to entry at index.

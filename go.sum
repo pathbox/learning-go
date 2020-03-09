@@ -96,6 +96,16 @@ github.com/stvp/tempredis v0.0.0-20181119212430-b82af8480203 h1:QVqDTf3h2WHt08Yu
 github.com/stvp/tempredis v0.0.0-20181119212430-b82af8480203/go.mod h1:oqN97ltKNihBbwlX8dLpwxCl3+HnXKV/R0e+sRLd9C8=
 github.com/throttled/throttled v2.2.4+incompatible h1:aVKdoH/qT5Mo1Lm/678OkX2pFg7aRpHlTn1tfgaSKxs=
 github.com/throttled/throttled v2.2.4+incompatible/go.mod h1:0BjlrEGQmvxps+HuXLsyRdqpSRvJpq0PNIsOtqP9Nos=
+github.com/tidwall/gjson v1.5.0 h1:QCssIUI7J0RStkzIcI4A7O6P8rDA5wi5IPf70uqKSxg=
+github.com/tidwall/gjson v1.5.0/go.mod h1:P256ACg0Mn+j1RXIDXoss50DeIABTYK1PULOJHhxOls=
+github.com/tidwall/match v1.0.1 h1:PnKP62LPNxHKTwvHHZZzdOAOCtsJTjo6dZLCwpKm5xc=
+github.com/tidwall/match v1.0.1/go.mod h1:LujAq0jyVjBy028G1WhWfIzbpQfMO8bBZ6Tyb0+pL9E=
+github.com/tidwall/pretty v1.0.0 h1:HsD+QiTn7sK6flMKIvNmpqz1qrpP3Ps6jOKIKMooyg4=
+github.com/tidwall/pretty v1.0.0/go.mod h1:XNkn88O1ChpSDQmQeStsy+sBenx6DDtFZJxhVysOjyk=
+github.com/tidwall/tinylru v1.0.2 h1:W4mp7iUz4cnVMqAvWy2zbzC35ASv5sqdyyEjoQKKBFg=
+github.com/tidwall/tinylru v1.0.2/go.mod h1:HDVL7TsWeezQ4g44Um84TOVBMFcq7Xa9giqNc805KJ8=
+github.com/tidwall/wal v0.1.1 h1:fbbutv7p0qmAg2jhNfwPi2G8tW5ItQMyaEJhSb0v3V8=
+github.com/tidwall/wal v0.1.1/go.mod h1:y+DAA4Jsa55jOlwqBdmD8rCR9j3MCh/663IAZ8KwgSU=
 github.com/tinylib/msgp v1.1.0 h1:9fQd+ICuRIu/ue4vxJZu6/LzxN0HwMds2nq/0cFvxHU=
 github.com/tinylib/msgp v1.1.0/go.mod h1:+d+yLhGm8mzTaHzB+wgMYrodPfmZrzkirds8fDWklFE=
 github.com/willf/bitset v1.1.10/go.mod h1:RjeCKbqT1RxIR/KWY6phxZiaY1IyutSBfGjNPySAYV4=
