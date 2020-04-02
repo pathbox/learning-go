@@ -8,11 +8,13 @@ require (
 	github.com/RoaringBitmap/roaring v0.4.21
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc
 	github.com/bramvdbogaerde/go-scp v0.0.0-20200119201711-987556b8bdd7 // indirect
+	github.com/cirocosta/gupload v0.0.0-20180103143842-e6d8fa4fdf4c
 	github.com/djimenez/iconv-go v0.0.0-20160305225143-8960e66bd3da
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
 	github.com/garyburd/redigo v1.6.0
 	github.com/go-sql-driver/mysql v1.4.0
 	github.com/gobwas/pool v0.2.0
+	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/golang/groupcache v0.0.0-20191002201903-404acd9df4cc // indirect
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/gorilla/mux v1.7.3
@@ -31,9 +33,11 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/pascaldekloe/redis v1.3.0
 	github.com/pborman/uuid v1.2.0 // indirect
+	github.com/pkg/errors v0.8.1
 	github.com/pkg/profile v1.4.0
 	github.com/pquerna/otp v1.2.0
 	github.com/rakyll/pb v0.0.0-20160123035540-8d46b8b097ef // indirect
+	github.com/rs/zerolog v1.18.0
 	github.com/sirupsen/logrus v1.4.2
 	github.com/stretchr/testify v1.4.0
 	github.com/stvp/tempredis v0.0.0-20181119212430-b82af8480203
@@ -41,5 +45,8 @@ require (
 	github.com/tidwall/wal v0.1.1
 	github.com/willf/bitset v1.1.10
 	github.com/yangwenmai/ratelimit v0.0.0-20180104140304-44221c2292e1
+	golang.org/x/net v0.0.0-20190620200207-3b0461eec859
+	golang.org/x/text v0.3.2 // indirect
+	google.golang.org/grpc v1.28.0
 	gopkg.in/throttled/throttled.v1 v1.0.0
 )
