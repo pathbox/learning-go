@@ -45,6 +45,7 @@ require (
 	github.com/tidwall/wal v0.1.1
 	github.com/willf/bitset v1.1.10
 	github.com/yangwenmai/ratelimit v0.0.0-20180104140304-44221c2292e1
+	go.uber.org/zap v1.14.1
 	golang.org/x/net v0.0.0-20190620200207-3b0461eec859
 	golang.org/x/text v0.3.2 // indirect
 	google.golang.org/grpc v1.28.0
