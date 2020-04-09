@@ -31,6 +31,7 @@ require (
 	github.com/mediocregopher/okq-go v0.0.0-20160211201133-048e319dd5ee
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9 // indirect
 	github.com/mitchellh/go-homedir v1.1.0
+	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/pascaldekloe/redis v1.3.0
 	github.com/pborman/uuid v1.2.0 // indirect
 	github.com/pkg/errors v0.8.1
@@ -49,5 +50,6 @@ require (
 	golang.org/x/net v0.0.0-20190620200207-3b0461eec859
 	golang.org/x/text v0.3.2 // indirect
 	google.golang.org/grpc v1.28.0
+	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
 	gopkg.in/throttled/throttled.v1 v1.0.0
 )
