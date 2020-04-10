@@ -59,3 +59,15 @@ func simpleHttpGet(url string) {
 		resp.Body.Close()
 	}
 }
+
+// ``` 需要自己写定时Rotate的方法
+// c := make(chan os.Signal, 1)
+// signal.Notify(c, syscall.SIGHUP)
+
+// go func() {
+//     for {
+//         <-c
+//         l.Rotate()
+//     }
+// }()
+// ```
