@@ -37,6 +37,32 @@ func Benchmark_Reflect(b *testing.B) {
 	}
 }
 
+func Benchmark_Parallel_Assert(b *testing.B) {
+	val := getInterface()
+	// 重置计时器
+	b.ResetTimer()
+	// 停止计时器
+	// b.StopTimer()
+	// // 开始计时器
+	// b.StartTimer()
+	b.RunParallel(func(pb *testing.PB) {
+		for pb.Next() {
+			valueToStringSlice(val)
+		}
+	})
+}
+
+func Benchmark_Parallel_Reflect(b *testing.B) {
+	val := getInterface()
+	b.ResetTimer()
+
+	b.RunParallel(func(pb *testing.PB) {
+		for pb.Next() {
+			ReflectToSlice(val)
+		}
+	})
+}
+
 func valueToStringSlice(value interface{}) []string {
 	strSlice := make([]string, 0)
 	switch v := value.(type) {
@@ -129,6 +155,7 @@ func getInterface() interface{} {
 	return st.Action
 }
 
+//
 /* go test -v -bench=. -benchmem bench_assert_reflect_test.go
 goos: darwin
 goarch: amd64
