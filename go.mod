@@ -16,6 +16,7 @@ require (
 	github.com/gobwas/pool v0.2.0
 	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/golang/groupcache v0.0.0-20191002201903-404acd9df4cc // indirect
+	github.com/golang/mock v1.1.1
 	github.com/golang/protobuf v1.3.3
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/gorilla/mux v1.7.3
