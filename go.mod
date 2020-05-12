@@ -33,6 +33,7 @@ require (
 	github.com/mediocregopher/okq-go v0.0.0-20160211201133-048e319dd5ee
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9 // indirect
 	github.com/mitchellh/go-homedir v1.1.0
+	github.com/mushroomsir/blog v0.0.0-20200505101759-e70efefe73a5
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/pascaldekloe/redis v1.3.0
 	github.com/pborman/uuid v1.2.0 // indirect
