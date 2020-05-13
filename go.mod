@@ -14,11 +14,13 @@ require (
 	github.com/garyburd/redigo v1.6.0
 	github.com/go-sql-driver/mysql v1.4.0
 	github.com/gobwas/pool v0.2.0
+	github.com/gocraft/web v0.0.0-20190207150652-9707327fb69b
 	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/golang/groupcache v0.0.0-20191002201903-404acd9df4cc // indirect
 	github.com/golang/mock v1.1.1
 	github.com/golang/protobuf v1.3.3
 	github.com/gomodule/redigo v2.0.0+incompatible
+	github.com/gorilla/context v1.1.1
 	github.com/gorilla/mux v1.7.3
 	github.com/grooveshark/golib v0.1.0 // indirect
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
@@ -49,6 +51,7 @@ require (
 	github.com/tidwall/wal v0.1.1
 	github.com/willf/bitset v1.1.10
 	github.com/yangwenmai/ratelimit v0.0.0-20180104140304-44221c2292e1
+	github.com/zenazn/goji v0.9.0
 	go.uber.org/zap v1.14.1
 	golang.org/x/net v0.0.0-20190620200207-3b0461eec859
 	golang.org/x/text v0.3.2 // indirect
