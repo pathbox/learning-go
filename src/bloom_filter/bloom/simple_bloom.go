@@ -46,6 +46,7 @@ type SimpleHash struct {
 	seed uint
 }
 
+// 一个很简单的hash func
 func (s SimpleHash) hash(value string) uint {
 	var result uint = 0
 	for i := 0; i < len(value); i++ {
