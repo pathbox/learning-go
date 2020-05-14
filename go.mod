@@ -45,6 +45,7 @@ require (
 	github.com/rakyll/pb v0.0.0-20160123035540-8d46b8b097ef // indirect
 	github.com/rs/zerolog v1.18.0
 	github.com/sirupsen/logrus v1.4.2
+	github.com/spaolacci/murmur3 v1.1.0
 	github.com/stretchr/testify v1.4.0
 	github.com/stvp/tempredis v0.0.0-20181119212430-b82af8480203
 	github.com/throttled/throttled v2.2.4+incompatible
