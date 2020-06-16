@@ -6,6 +6,7 @@ require (
 	github.com/BurntSushi/toml v0.3.1
 	github.com/PuerkitoBio/boom v0.0.0-20140219125548-fecdef1c97ca // indirect
 	github.com/RoaringBitmap/roaring v0.4.21
+	github.com/Shopify/sarama v1.26.4
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc
 	github.com/bramvdbogaerde/go-scp v0.0.0-20200119201711-987556b8bdd7 // indirect
 	github.com/cirocosta/gupload v0.0.0-20180103143842-e6d8fa4fdf4c
@@ -54,7 +55,7 @@ require (
 	github.com/yangwenmai/ratelimit v0.0.0-20180104140304-44221c2292e1
 	github.com/zenazn/goji v0.9.0
 	go.uber.org/zap v1.14.1
-	golang.org/x/net v0.0.0-20190620200207-3b0461eec859
+	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
 	golang.org/x/text v0.3.2 // indirect
 	google.golang.org/grpc v1.28.0
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
