@@ -38,6 +38,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mushroomsir/blog v0.0.0-20200505101759-e70efefe73a5
 	github.com/natefinch/lumberjack v2.0.0+incompatible
+	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d
 	github.com/pascaldekloe/redis v1.3.0
 	github.com/pborman/uuid v1.2.0 // indirect
 	github.com/pkg/errors v0.8.1

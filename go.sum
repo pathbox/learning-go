@@ -145,6 +145,8 @@ github.com/mushroomsir/blog v0.0.0-20200505101759-e70efefe73a5 h1:lHvsu/4Y+mOXag
 github.com/mushroomsir/blog v0.0.0-20200505101759-e70efefe73a5/go.mod h1:UEzzRjmYmRpzfJEw2YB1ONaUoj7A+70fGTGqMwyFLtc=
 github.com/natefinch/lumberjack v2.0.0+incompatible h1:4QJd3OLAMgj7ph+yZTuX13Ld4UpgHp07nNdFX7mqFfM=
 github.com/natefinch/lumberjack v2.0.0+incompatible/go.mod h1:Wi9p2TTF5DG5oU+6YfsmYQpsTIOm0B1VNzQg9Mw6nPk=
+github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d h1:VhgPp6v9qf9Agr/56bj7Y/xa04UccTW04VP0Qed4vnQ=
+github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d/go.mod h1:YUTz3bUH2ZwIWBy3CJBeOBEugqcmXREj14T+iG/4k4U=
 github.com/pascaldekloe/goe v0.1.0/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
 github.com/pascaldekloe/redis v1.3.0 h1:xc0sSKVoAANz2qz8jwrp8e1t8kHBprYK133dzinesqE=
 github.com/pascaldekloe/redis v1.3.0/go.mod h1:cbce+eZBwgwg28UOGb0MySy3uIOsljFZ8VFi769fqEw=
