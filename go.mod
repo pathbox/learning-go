@@ -7,8 +7,10 @@ require (
 	github.com/PuerkitoBio/boom v0.0.0-20140219125548-fecdef1c97ca // indirect
 	github.com/RoaringBitmap/roaring v0.4.21
 	github.com/Shopify/sarama v1.26.4
+	github.com/benmanns/goworker v0.1.3
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc
 	github.com/bramvdbogaerde/go-scp v0.0.0-20200119201711-987556b8bdd7 // indirect
+	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575 // indirect
 	github.com/cirocosta/gupload v0.0.0-20180103143842-e6d8fa4fdf4c
 	github.com/djimenez/iconv-go v0.0.0-20160305225143-8960e66bd3da
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
@@ -54,6 +56,7 @@ require (
 	github.com/tidwall/wal v0.1.1
 	github.com/willf/bitset v1.1.10
 	github.com/yangwenmai/ratelimit v0.0.0-20180104140304-44221c2292e1
+	github.com/youtube/vitess v2.1.1+incompatible // indirect
 	github.com/zenazn/goji v0.9.0
 	go.uber.org/zap v1.14.1
 	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
