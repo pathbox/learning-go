@@ -92,12 +92,12 @@ func (this *ServiceReg) PutService(key, val string) error {
 
 func main() {
 	ser, _ := NewServiceReg([]string{"127.0.0.1:2379"}, 5) // 127.0.0.1:2379 etcd的服务地址
-	ser.PutService("server/001", "127.0.0.1:1212")
+	ser.PutService("/node/001", "127.0.0.1:1212")
 	select {}
 }
 
 /*
 etcd的 租约模式:客户端申请 一个租约 并设置 过期时间，每隔一段时间 就要 请求 etcd 申请续租。客户端可以通过租约存key。如果不续租 ，过期了，etcd 会删除这个租约上的 所有key-value。类似于心跳模式。
 
-一般相同的服务存的 key 的前缀是一样的 比如 “server/001"=> "127.0.0.1:1212" 和 ”server/002"=>"127.0.0.1:1313" 这种模式，然后 客户端 就直接 匹配 “server/” 这个key
+一般相同的服务存的 key 的前缀是一样的 比如 “/node/001"=> "127.0.0.1:1212" 和 ”server/002"=>"127.0.0.1:1313" 这种模式，然后 客户端 就直接 匹配 “server/” 这个key
 */
