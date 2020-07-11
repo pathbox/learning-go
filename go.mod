@@ -12,6 +12,9 @@ require (
 	github.com/bramvdbogaerde/go-scp v0.0.0-20200119201711-987556b8bdd7 // indirect
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575 // indirect
 	github.com/cirocosta/gupload v0.0.0-20180103143842-e6d8fa4fdf4c
+	github.com/coreos/etcd v3.3.22+incompatible // indirect
+	github.com/coreos/go-semver v0.3.0 // indirect
+	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
 	github.com/djimenez/iconv-go v0.0.0-20160305225143-8960e66bd3da
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
 	github.com/garyburd/redigo v1.6.0
@@ -58,6 +61,7 @@ require (
 	github.com/yangwenmai/ratelimit v0.0.0-20180104140304-44221c2292e1
 	github.com/youtube/vitess v2.1.1+incompatible // indirect
 	github.com/zenazn/goji v0.9.0
+	go.etcd.io/etcd v3.3.22+incompatible
 	go.uber.org/zap v1.14.1
 	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
 	golang.org/x/text v0.3.2 // indirect
