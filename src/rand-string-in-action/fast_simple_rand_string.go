@@ -1,12 +1,20 @@
 package main
 
-import "unsafe"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+	"unsafe"
+)
 
 const letterBytes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const (
 	letterIdxBits = 6                    // 6 bits to represent a letter index
 	letterIdxMask = 1<<letterIdxBits - 1 // All 1-bits, as many as letterIdxBits
+	letterIdxMax  = 63 / letterIdxBits
 )
+
+var src = rand.NewSource(time.Now().UnixNano())
 
 func RandStringBytesMaskImprSrcUnsafe(n int) string {
 	b := make([]byte, n)
@@ -24,4 +32,8 @@ func RandStringBytesMaskImprSrcUnsafe(n int) string {
 	}
 
 	return *(*string)(unsafe.Pointer(&b))
+}
+
+func main() {
+	fmt.Println("result:", RandStringBytesMaskImprSrcUnsafe(64))
 }
