@@ -63,6 +63,7 @@ require (
 	github.com/zenazn/goji v0.9.0
 	go.etcd.io/etcd v3.3.22+incompatible
 	go.uber.org/zap v1.14.1
+	golang.org/x/exp v0.0.0-20190121172915-509febef88a4
 	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
 	golang.org/x/text v0.3.2 // indirect
 	google.golang.org/grpc v1.28.0
