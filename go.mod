@@ -1,8 +1,9 @@
 module github.com/pathbox/learning-go
 
-go 1.12
+go 1.14
 
 require (
+  github.com/dlclark/regexp2 v1.2.0
 	github.com/BurntSushi/toml v0.3.1
 	github.com/PuerkitoBio/boom v0.0.0-20140219125548-fecdef1c97ca // indirect
 	github.com/RoaringBitmap/roaring v0.4.21
@@ -25,7 +26,6 @@ require (
 	github.com/golang/groupcache v0.0.0-20191002201903-404acd9df4cc // indirect
 	github.com/golang/mock v1.1.1
 	github.com/golang/protobuf v1.3.3
-	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/gorilla/context v1.1.1
 	github.com/gorilla/mux v1.7.3
 	github.com/grooveshark/golib v0.1.0 // indirect
