@@ -3,6 +3,7 @@ module github.com/pathbox/learning-go
 go 1.14
 
 require (
+  github.com/ory/ladon v1.2.0
   github.com/dlclark/regexp2 v1.2.0
 	github.com/BurntSushi/toml v0.3.1
 	github.com/PuerkitoBio/boom v0.0.0-20140219125548-fecdef1c97ca // indirect

@@ -127,8 +127,8 @@ func main() {
 	// // "Hellooo 世界！123 Gooo."
 
 	matches = []string{}
-	t := "oss:go:GetBucketStat"
-	reg = regexp2.MustCompile(`oss:[\w]+:GetBucketStat`, 0)
+	t := "oss:dsds:GetBucketStat"
+	reg = regexp2.MustCompile(`oss:.*:GetBucketStat`, 0)
 	isMatch, _ := reg.MatchString(t)
 	fmt.Println(isMatch)
 	// // 特殊字符的查找
