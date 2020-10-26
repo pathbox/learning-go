@@ -3,8 +3,6 @@ module github.com/pathbox/learning-go
 go 1.14
 
 require (
-  github.com/ory/ladon v1.2.0
-  github.com/dlclark/regexp2 v1.2.0
 	github.com/BurntSushi/toml v0.3.1
 	github.com/PuerkitoBio/boom v0.0.0-20140219125548-fecdef1c97ca // indirect
 	github.com/RoaringBitmap/roaring v0.4.21
@@ -18,9 +16,11 @@ require (
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
 	github.com/djimenez/iconv-go v0.0.0-20160305225143-8960e66bd3da
+	github.com/dlclark/regexp2 v1.2.0
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
 	github.com/garyburd/redigo v1.6.0
 	github.com/go-sql-driver/mysql v1.4.0
+	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/gobwas/pool v0.2.0
 	github.com/gocraft/web v0.0.0-20190207150652-9707327fb69b
 	github.com/gogo/protobuf v1.3.1 // indirect
@@ -45,6 +45,7 @@ require (
 	github.com/mushroomsir/blog v0.0.0-20200505101759-e70efefe73a5
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d
+	github.com/ory/ladon v1.2.0
 	github.com/pascaldekloe/redis v1.3.0
 	github.com/pborman/uuid v1.2.0 // indirect
 	github.com/pkg/errors v0.8.1
