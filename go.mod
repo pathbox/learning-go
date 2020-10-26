@@ -20,7 +20,7 @@ require (
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
 	github.com/garyburd/redigo v1.6.0
 	github.com/go-sql-driver/mysql v1.4.0
-	github.com/gobwas/glob v0.2.3 // indirect
+	github.com/gobwas/glob v0.2.3
 	github.com/gobwas/pool v0.2.0
 	github.com/gocraft/web v0.0.0-20190207150652-9707327fb69b
 	github.com/gogo/protobuf v1.3.1 // indirect
