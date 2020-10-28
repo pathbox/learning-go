@@ -15,6 +15,8 @@ require (
 	github.com/coreos/etcd v3.3.22+incompatible // indirect
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
+	github.com/cornelk/hashmap v1.0.1
+	github.com/dchest/siphash v1.2.2
 	github.com/djimenez/iconv-go v0.0.0-20160305225143-8960e66bd3da
 	github.com/dlclark/regexp2 v1.2.0
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
