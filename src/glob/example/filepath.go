@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"path/filepath"
+
+	"github.com/gobwas/glob"
 )
 
 func main() {
@@ -43,4 +45,10 @@ func main() {
 
 	b, err = filepath.Match(p6, t6)
 	fmt.Println(b, err)
+
+	t7 := "urn:oss:22:200000456:myphotos"
+	p7 := "urn:oss:*:200000456:myphotos"
+
+	g, _ := glob.Compile(p7)
+	fmt.Println("ggg:", g.Match(t7))
 }

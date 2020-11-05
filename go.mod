@@ -10,9 +10,10 @@ require (
 	github.com/benmanns/goworker v0.1.3
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc
 	github.com/bramvdbogaerde/go-scp v0.0.0-20200119201711-987556b8bdd7 // indirect
+	github.com/bwmarrin/snowflake v0.3.0
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575 // indirect
 	github.com/cirocosta/gupload v0.0.0-20180103143842-e6d8fa4fdf4c
-	github.com/coreos/etcd v3.3.22+incompatible // indirect
+	github.com/coreos/etcd v3.3.20+incompatible
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
 	github.com/cornelk/hashmap v1.0.1
@@ -27,11 +28,12 @@ require (
 	github.com/gocraft/web v0.0.0-20190207150652-9707327fb69b
 	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/golang/groupcache v0.0.0-20191002201903-404acd9df4cc // indirect
-	github.com/golang/mock v1.1.1
+	github.com/golang/mock v1.2.0
 	github.com/golang/protobuf v1.3.3
 	github.com/gorilla/context v1.1.1
 	github.com/gorilla/mux v1.7.3
 	github.com/grooveshark/golib v0.1.0 // indirect
+	github.com/grpc-ecosystem/go-grpc-middleware v1.2.2 // indirect
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/hashicorp/raft v1.1.2
 	github.com/huandu/skiplist v0.0.0-20191129113331-b90e16040d86
@@ -40,6 +42,7 @@ require (
 	github.com/justinas/alice v0.0.0-20171023064455-03f45bd4b7da
 	github.com/justinas/nosurf v0.0.0-20190416172904-05988550ea18
 	github.com/kelseyhightower/envconfig v1.4.0
+	github.com/kinwyb/go v0.0.0-20201029032031-48239eb7299c
 	github.com/lib/pq v1.2.0
 	github.com/mediocregopher/okq-go v0.0.0-20160211201133-048e319dd5ee
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9 // indirect
@@ -50,7 +53,7 @@ require (
 	github.com/ory/ladon v1.2.0
 	github.com/pascaldekloe/redis v1.3.0
 	github.com/pborman/uuid v1.2.0 // indirect
-	github.com/pkg/errors v0.8.1
+	github.com/pkg/errors v0.9.1
 	github.com/pkg/profile v1.4.0
 	github.com/pquerna/otp v1.2.0
 	github.com/rakyll/pb v0.0.0-20160123035540-8d46b8b097ef // indirect
@@ -67,10 +70,11 @@ require (
 	github.com/zenazn/goji v0.9.0
 	go.etcd.io/etcd v3.3.22+incompatible
 	go.uber.org/zap v1.14.1
-	golang.org/x/exp v0.0.0-20190121172915-509febef88a4
-	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
+	golang.org/x/exp v0.0.0-20200331195152-e8c3332aa8e5
+	golang.org/x/net v0.0.0-20200421231249-e086a090c8fd
 	golang.org/x/text v0.3.2 // indirect
-	google.golang.org/grpc v1.28.0
+	google.golang.org/grpc v1.29.1
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
 	gopkg.in/throttled/throttled.v1 v1.0.0
+	sigs.k8s.io/yaml v1.2.0 // indirect
 )
