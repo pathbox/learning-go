@@ -11,6 +11,7 @@ require (
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc
 	github.com/bramvdbogaerde/go-scp v0.0.0-20200119201711-987556b8bdd7 // indirect
 	github.com/bwmarrin/snowflake v0.3.0
+	github.com/c3mb0/go-do-work v0.0.0-20160309135746-a33fd02143e1
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575 // indirect
 	github.com/cirocosta/gupload v0.0.0-20180103143842-e6d8fa4fdf4c
 	github.com/coreos/etcd v3.3.20+incompatible
@@ -20,6 +21,7 @@ require (
 	github.com/dchest/siphash v1.2.2
 	github.com/djimenez/iconv-go v0.0.0-20160305225143-8960e66bd3da
 	github.com/dlclark/regexp2 v1.2.0
+	github.com/eapache/channels v1.1.0
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
 	github.com/garyburd/redigo v1.6.0
 	github.com/go-sql-driver/mysql v1.4.0
