@@ -21,6 +21,7 @@ require (
 	github.com/dchest/siphash v1.2.2
 	github.com/djimenez/iconv-go v0.0.0-20160305225143-8960e66bd3da
 	github.com/dlclark/regexp2 v1.2.0
+	github.com/dovejb/quicktag v0.0.0-20190829080553-340537080f34
 	github.com/eapache/channels v1.1.0
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
 	github.com/garyburd/redigo v1.6.0
