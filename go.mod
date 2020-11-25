@@ -33,6 +33,7 @@ require (
 	github.com/golang/groupcache v0.0.0-20191002201903-404acd9df4cc // indirect
 	github.com/golang/mock v1.2.0
 	github.com/golang/protobuf v1.3.3
+	github.com/google/pprof v0.0.0-20201117184057-ae444373da19 // indirect
 	github.com/gorilla/context v1.1.1
 	github.com/gorilla/mux v1.7.3
 	github.com/grooveshark/golib v0.1.0 // indirect
@@ -75,6 +76,7 @@ require (
 	go.uber.org/zap v1.14.1
 	golang.org/x/exp v0.0.0-20200331195152-e8c3332aa8e5
 	golang.org/x/net v0.0.0-20200421231249-e086a090c8fd
+	golang.org/x/sys v0.0.0-20201119102817-f84b799fce68 // indirect
 	golang.org/x/text v0.3.2 // indirect
 	google.golang.org/grpc v1.29.1
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
