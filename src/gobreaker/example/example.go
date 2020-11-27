@@ -20,7 +20,8 @@ func init() {
 	// 	return counts.Requests >= 3 && failureRatio >= 0.6
 	// }
 	st.MaxRequests = 3
-	st.Interval = 1 * time.Second
+	// st.Interval = 100 * time.Second
+	st.Timeout = 2 * time.Second
 	cb = gobreaker.NewCircuitBreaker(st)
 }
 
@@ -43,7 +44,7 @@ func Get(url string) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-
+	fmt.Println("===:", cb.State().String())
 	return body.([]byte), nil
 }
 
