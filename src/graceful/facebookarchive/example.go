@@ -1,22 +1,34 @@
-该功能是手动graceful 重启http server
-新版本编译好后，利用这种方式重启服务，能够避免老的connecttion 不会因为重启而中断，而是会继续处理完成
+package main
 
-测试结果：
+import (
+	"net/http"
+	"time"
 
-对于修改配置文件，平滑重启可以读取新的配置文件，或类似的全局变量数据
+	"github.com/facebookgo/grace/gracehttp"
+)
 
-而重新编译的二进制程序，是无法使用的。fork的新进程的代码还是使用原有的
+func main() {
+	gracehttp.Serve(
+		&http.Server{Addr: ":5001", Handler: newGraceHandler()},
+		&http.Server{Addr: ":5002", Handler: newGraceHandler()},
+	)
+}
 
+func newGraceHandler() http.Handler {
+	mux := http.NewServeMux()
+	mux.HandleFunc("/sleep", func(w http.ResponseWriter, r *http.Request) {
+		duration, err := time.ParseDuration(r.FormValue("duration"))
+		if err != nil {
+			http.Error(w, err.Error(), 400)
+			return
+		}
+		time.Sleep(duration)
+		w.Write([]byte("Hello World"))
+	})
+	return mux
+}
 
-
-endless:
-
-nice lib
-
-能够实现重新编译的二进制程序， 能够用于平滑更新新的代码
-
-
-### grace的实际操作例子描述
+// 旧API不会断掉，会执行原来的逻辑，pid会变化
 // curl "http://127.0.0.1:5001/sleep?duration=60s" &
 
 /*
