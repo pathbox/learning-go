@@ -56,4 +56,20 @@ COMMAND   PID    USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 example 65870 pathbox    8u  IPv6 0x4ce79a57ef2f44a3      0t0  TCP *:commplex-link (LISTEN)
 
 总结： grace重启后，旧的服务进程和新的服务进程同时存在，旧的服务进程在其原有的连接请求执行完后释放，新的请求会请求到新的服务进程进行处理
+
+- 监听信号
+- 收到信号时fork子进程（使用相同的启动命令），将服务监听的socket文件描述符传递给子进程
+- 子进程监听父进程的socket，这个时候父进程和子进程都可以接收请求
+- 子进程启动成功之后，父进程停止接收新的连接，等待旧连接处理完成（或超时）
+- 父进程退出，升级完成
+
+
+grace	Hello world	Hello Harry	2096	3100	旧API不会断掉，会执行原来的逻辑，pid会变化
+endless	Hello world	Hello Harry	22072	22365	旧API不会断掉，会执行原来的逻辑，pid会变化
+overseer	Hello world	Hello Harry	28300	28300	旧API不会断掉，会执行原来的逻辑，主进程pid不会变化
+overseer是与grace和endless有些不同，主要是两点：
+
+overseer添加了Fetcher，当Fetcher返回有效的二进位流(io.Reader) 时，主进程会将它保存到临时位置并验证它，替换当前的二进制文件并启动。
+Fetcher运行在一个goroutine中，预先会配置好检查的间隔时间。Fetcher支持File、GitHub、HTTP和S3的方式。详细可查看包package fetcher
+overseer添加了一个主进程管理平滑重启。子进程处理连接，能够保持主进程pid不变
 */
