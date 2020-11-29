@@ -29,14 +29,13 @@ require (
 	github.com/facebookgo/stats v0.0.0-20151006221625-1b76add642e4 // indirect
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
 	github.com/garyburd/redigo v1.6.0
-	github.com/go-sql-driver/mysql v1.4.0
+	github.com/go-sql-driver/mysql v1.5.0
 	github.com/gobwas/glob v0.2.3
 	github.com/gobwas/pool v0.2.0
 	github.com/gocraft/web v0.0.0-20190207150652-9707327fb69b
 	github.com/gogo/protobuf v1.3.1 // indirect
-	github.com/golang/groupcache v0.0.0-20191002201903-404acd9df4cc // indirect
 	github.com/golang/mock v1.4.4
-	github.com/golang/protobuf v1.3.3
+	github.com/golang/protobuf v1.4.0
 	github.com/google/pprof v0.0.0-20201117184057-ae444373da19 // indirect
 	github.com/gorilla/context v1.1.1
 	github.com/gorilla/mux v1.7.3
@@ -66,9 +65,10 @@ require (
 	github.com/pquerna/otp v1.2.0
 	github.com/rakyll/pb v0.0.0-20160123035540-8d46b8b097ef // indirect
 	github.com/rs/zerolog v1.18.0
-	github.com/sirupsen/logrus v1.4.2
+	github.com/sirupsen/logrus v1.6.0
+	github.com/sjwhitworth/golearn v0.0.0-20201127221938-294d65fca392 // indirect
 	github.com/spaolacci/murmur3 v1.1.0
-	github.com/stretchr/testify v1.4.0
+	github.com/stretchr/testify v1.5.1
 	github.com/stvp/tempredis v0.0.0-20181119212430-b82af8480203
 	github.com/throttled/throttled v2.2.4+incompatible
 	github.com/tidwall/wal v0.1.1
