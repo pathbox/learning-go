@@ -50,6 +50,7 @@ require (
 	github.com/justinas/nosurf v0.0.0-20190416172904-05988550ea18
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/kinwyb/go v0.0.0-20201029032031-48239eb7299c
+	github.com/klauspost/reedsolomon v1.9.9 // indirect
 	github.com/lib/pq v1.2.0
 	github.com/mediocregopher/okq-go v0.0.0-20160211201133-048e319dd5ee
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9 // indirect
@@ -70,9 +71,13 @@ require (
 	github.com/spaolacci/murmur3 v1.1.0
 	github.com/stretchr/testify v1.5.1
 	github.com/stvp/tempredis v0.0.0-20181119212430-b82af8480203
+	github.com/templexxx/cpufeat v0.0.0-20180724012125-cef66df7f161 // indirect
+	github.com/templexxx/xor v0.0.0-20191217153810-f85b25db303b // indirect
 	github.com/throttled/throttled v2.2.4+incompatible
 	github.com/tidwall/wal v0.1.1
+	github.com/tjfoc/gmsm v1.3.2 // indirect
 	github.com/willf/bitset v1.1.10
+	github.com/xtaci/kcp-go v5.4.20+incompatible // indirect
 	github.com/yangwenmai/ratelimit v0.0.0-20180104140304-44221c2292e1
 	github.com/youtube/vitess v2.1.1+incompatible // indirect
 	github.com/zenazn/goji v0.9.0
