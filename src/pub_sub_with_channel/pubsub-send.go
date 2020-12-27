@@ -8,7 +8,7 @@ import (
 
 type Pubsub struct {
 	mu     sync.RWMutex
-	subs   map[string][]chan string // 每个topic 对应一个channel数组
+	subs   map[string][]chan string
 	closed bool
 }
 
@@ -25,22 +25,23 @@ func (ps *Pubsub) Subscribe(topic string) <-chan string {
 
 	ch := make(chan string, 1)
 	ps.subs[topic] = append(ps.subs[topic], ch)
-	return ch // 得到该topic的 channel返回
+	return ch
 }
 
 func (ps *Pubsub) Publish(topic string, msg string) {
-	ps.mu.Lock()
-	defer ps.mu.Unlock()
+	ps.mu.RLock()
+	defer ps.mu.RUnlock()
 
 	if ps.closed {
 		return
 	}
 
-	for _, ch := range ps.subs[topic] { // 将msg 发送到该topic的所有channel
-		ch <- msg
+	for _, ch := range ps.subs[topic] {
+		go func(ch chan string) { // 每个channel 使用一个goroutine
+			ch <- msg
+		}(ch)
 	}
 }
-
 func (ps *Pubsub) Close() {
 	ps.mu.Lock()
 	defer ps.mu.Unlock()
@@ -49,12 +50,11 @@ func (ps *Pubsub) Close() {
 		ps.closed = true
 		for _, subs := range ps.subs {
 			for _, ch := range subs {
-				close(ch) // 关掉所有topic的所有channel
+				close(ch)
 			}
 		}
 	}
 }
-
 func main() {
 	ps := NewPubsub()
 	ch1 := ps.Subscribe("tech")
@@ -79,7 +79,6 @@ func main() {
 	}
 
 	time.Sleep(50 * time.Millisecond)
-	pub("health", "vitamins")
 	pub("tech", "tablets")
 	pub("health", "vitamins")
 	pub("tech", "robots")
@@ -90,5 +89,4 @@ func main() {
 	time.Sleep(50 * time.Millisecond)
 	ps.Close()
 	time.Sleep(50 * time.Millisecond)
-
 }
