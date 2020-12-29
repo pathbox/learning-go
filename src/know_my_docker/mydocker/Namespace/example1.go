@@ -8,8 +8,10 @@ import (
 )
 
 func main() {
-	cmd := exec.Command("sh")
-	cmd.SysProcAttr = &syscall.SysProcAttr{}
+	cmd := exec.Command("sh") // fork出新的进程
+	cmd.SysProcAttr = &syscall.SysProcAttr{
+		Cloneflags: syscall.CLONE_NEWUTS | syscall.CLONE_NEWIPC | syscall.CLONE_NEWNS,
+	}
 
 	cmd.Stdin = os.Stdin
 	cmd.Stdout = os.Stdout
