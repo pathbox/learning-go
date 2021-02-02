@@ -54,6 +54,7 @@ require (
 	github.com/lib/pq v1.2.0
 	github.com/mediocregopher/okq-go v0.0.0-20160211201133-048e319dd5ee
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9 // indirect
+	github.com/mitchellh/cli v1.1.2 // indirect
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mushroomsir/blog v0.0.0-20200505101759-e70efefe73a5
 	github.com/natefinch/lumberjack v2.0.0+incompatible
@@ -69,7 +70,7 @@ require (
 	github.com/sirupsen/logrus v1.6.0
 	github.com/sjwhitworth/golearn v0.0.0-20201127221938-294d65fca392 // indirect
 	github.com/spaolacci/murmur3 v1.1.0
-	github.com/stretchr/testify v1.5.1
+	github.com/stretchr/testify v1.6.1
 	github.com/stvp/tempredis v0.0.0-20181119212430-b82af8480203
 	github.com/templexxx/cpufeat v0.0.0-20180724012125-cef66df7f161 // indirect
 	github.com/templexxx/xor v0.0.0-20191217153810-f85b25db303b // indirect
