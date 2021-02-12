@@ -1,0 +1,1 @@
+selector 是在client端实现的，在client实现负载均衡，得到或过滤出需要访问的node服务地址
