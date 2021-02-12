@@ -7,6 +7,7 @@ require (
 	github.com/PuerkitoBio/boom v0.0.0-20140219125548-fecdef1c97ca // indirect
 	github.com/RoaringBitmap/roaring v0.4.21
 	github.com/Shopify/sarama v1.26.4
+	github.com/asim/go-micro/v3 v3.5.0 // indirect
 	github.com/benmanns/goworker v0.1.3
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc
 	github.com/bramvdbogaerde/go-scp v0.0.0-20200119201711-987556b8bdd7 // indirect
@@ -31,11 +32,11 @@ require (
 	github.com/garyburd/redigo v1.6.0
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/gobwas/glob v0.2.3
-	github.com/gobwas/pool v0.2.0
+	github.com/gobwas/pool v0.2.1
 	github.com/gocraft/web v0.0.0-20190207150652-9707327fb69b
 	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/golang/mock v1.4.4
-	github.com/golang/protobuf v1.4.0
+	github.com/golang/protobuf v1.4.2
 	github.com/google/pprof v0.0.0-20201117184057-ae444373da19 // indirect
 	github.com/gorilla/context v1.1.1
 	github.com/gorilla/mux v1.7.3
