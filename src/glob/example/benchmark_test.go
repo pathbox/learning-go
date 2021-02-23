@@ -19,18 +19,20 @@ const (
 	fixture_prefix_suffix_mismatch = "af"
 )
 
-func BenchmarkPrefixFilepathMatch(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		_, _ = filepath.Match("urn:oss:*:200000456:myphotos/hangzhou/2015/*", "urn:oss:b:200000456:myphotos/hangzhou/2015/aaa")
-	}
-}
+
 
 func BenchmarkPrefixRegexpMatch(b *testing.B) {
-	m := regexp.MustCompile("^urn:oss:.*:200000456:myphotos/hangzhou/2015/.*$")
-	f := []byte("urn:oss:b:200000456:myphotos/hangzhou/2015/aaa")
+	m := regexp.MustCompile("^aaa:bbb:.*:cccccc:myphotos/hangzhou/2015/.*$")
+	f := []byte("aaa:bbb:b:cccccc:myphotos/hangzhou/2015/aaa")
 
 	for i := 0; i < b.N; i++ {
 		_ = m.Match(f)
+	}
+}
+
+func BenchmarkPrefixFilepathMatch(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		_, _ = filepath.Match("aaa:bbb:*:cccccc:myphotos/hangzhou/2015/*", "aaa:bbb:b:cccccc:myphotos/hangzhou/2015/aaa")
 	}
 }
 
@@ -38,24 +40,26 @@ func BenchmarkPrefixGlobMatch(b *testing.B) {
 	var g glob.Glob
 
 	// create simple glob
-	g = glob.MustCompile("urn:oss:*:200000456:myphotos/hangzhou/2015/*")
+	g = glob.MustCompile("aaa:bbb:*:cccccc:myphotos/hangzhou/2015/*")
 
 	for i := 0; i < b.N; i++ {
-		g.Match("urn:oss:b:200000456:myphotos/hangzhou/2015/aaa") // true
+		g.Match("aaa:bbb:b:cccccc:myphotos/hangzhou/2015/aaa") // true
+	}
+}
+
+
+func BenchmarkSuffixRegexpMatch(b *testing.B) {
+	m := regexp.MustCompile("^.*:aaa:abcabcabc")
+	f := []byte("123:aaa:abcabcabc")
+
+	for i := 0; i < b.N; i++ {
+		_ = m.Match(f)
 	}
 }
 
 func BenchmarkSuffixFilepathMatch(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		_, _ = filepath.Match("*:oss:ListBuckets", "ucs:oss:ListBuckets")
-	}
-}
-func BenchmarkSuffixRegexpMatch(b *testing.B) {
-	m := regexp.MustCompile("^.*:oss:ListBuckets")
-	f := []byte("ucs:oss:ListBuckets")
-
-	for i := 0; i < b.N; i++ {
-		_ = m.Match(f)
+		_, _ = filepath.Match("*:aaa:abcabcabc", "123:aaa:abcabcabc")
 	}
 }
 
@@ -63,24 +67,26 @@ func BenchmarkSuffixGlobMatch(b *testing.B) {
 	var g glob.Glob
 
 	// create simple glob
-	g = glob.MustCompile("*:oss:ListBuckets")
+	g = glob.MustCompile("*:aaa:abcabcabc")
 
 	for i := 0; i < b.N; i++ {
-		g.Match("ucs:oss:ListBuckets") // true
+		g.Match("123:aaa:abcabcabc") // true
+	}
+}
+
+
+func BenchmarkPrefixSuffixRegexpMatch(b *testing.B) {
+	m := regexp.MustCompile(regexp_prefix_suffix)
+	f := []byte(fixture_prefix_suffix_match)
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		_ = m.Match(f)
 	}
 }
 
 func BenchmarkPrefixSuffixFilepathMatch(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		_, _ = filepath.Match(pattern_prefix_suffix, fixture_prefix_suffix_match)
-	}
-}
-func BenchmarkPrefixSuffixRegexpMatch(b *testing.B) {
-	m := regexp.MustCompile(regexp_prefix_suffix)
-	f := []byte(fixture_prefix_suffix_match)
-	// b.ResetTimer()
-	for i := 0; i < b.N; i++ {
-		_ = m.Match(f)
 	}
 }
 
