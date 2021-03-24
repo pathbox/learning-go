@@ -7,7 +7,7 @@ import (
 
 type slot struct {
 	id int
-	elements map[interface{}]interface{} // 底层是一个map
+	elements map[interface{}]interface{} // 底层是一个map, 在论文中时间轮的slot是一个链表结构
 }
 
 type element struct {
@@ -53,8 +53,8 @@ func New(tickDuration time.Duration, ticksPerWheel int, f handler) *TimeWheel {
 	ticksPerWheel++
 	t := &TimeWheel{
 		tickDuration:     tickDuration,
-		ticksPerWheel:    ticksPerWheel,
-		onTick:           f,
+		ticksPerWheel:    ticksPerWheel, // 时间轮的刻度
+		onTick:           f,// 回调函数
 		currentTickIndex: 0,
 		taskChan:         make(chan interface{}),
 		quitChan:         make(chan interface{}),
@@ -71,12 +71,12 @@ func New(tickDuration time.Duration, ticksPerWheel int, f handler) *TimeWheel {
 
 
 func (t *TimeWheel) Start() {
-	t.ticker = time.NewTicker(t.tickDuration)
+	t.ticker = time.NewTicker(t.tickDuration) // 定时器
 	go t.run()
 }
 
 func (t *TimeWheel) Add(c interface{}) {
-	t.taskChan <- &element{c,t.ticksPerWheel-1}
+	t.taskChan <- &element{c,t.ticksPerWheel-1} // t.ticksPerWheel-1 相当于是尾部
 }
 
 func (t *TimeWheel) AddWithRemainingTime(c interface{}, remainingTime int) {
@@ -105,26 +105,26 @@ func (t *TimeWheel) run() {
 		case <-t.quitChan:
 			t.ticker.Stop()
 			break
-		case <- t.ticker.C:
-			if t.ticksPerWheel == t.currentTickIndex {
+		case <- t.ticker.C: // ⏲  每个tick去尝试取出slot的元素进行函数执行
+			if t.ticksPerWheel == t.currentTickIndex { // 循环的方式，另一种是取余的方式
 				t.currentTickIndex = 0
 			}
 
-			slot := t.wheel[t.currentTickIndex]
-			for _, v := range slot.elements {
+			slot := t.wheel[t.currentTickIndex] // 取出当前轮询到的slot
+			for _, v := range slot.elements { // 遍历slot中的所有元素, 取出该元素，
 				slot.remove(v)
 				delete(t.indicator, v)
-				t.onTickv
+				t.onTick(v) // 将元素参数代入，执行回调函数
 			}
 
-			t.currentTickIndex++
+			t.currentTickIndex++ // 索引继续向前
 		case v := <-t.taskChan:
 			element, ok := v.(*element)
 			if !ok {
 				return
 			}
 			t.Remove(element.v)
-
+			// 将新的任务需要的参数加入到 wheel
 			elementIdx := t.getCurrentTickIndex()+element.remainingTime
 			if elementIdx > t.ticksPerWheel {
 				elementIdx = elementIdx - t.ticksPerWheel
