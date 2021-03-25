@@ -1,5 +1,5 @@
 
-
+    uintptr <= unsafe.Pointer => *T
 
 指针类型：
 
