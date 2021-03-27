@@ -19,4 +19,5 @@ func main() {
 /*
 Len: &s => pointer => uintptr => pointer => *int => int
 Cap: &s => pointer => uintptr => pointer => *int => int
+Pointer先转为 uintptr, uintptr进行计算之后, 需要再转为Pointer, 然后才能被 (*int)转换，之后加 * 号取到指针的值
 */
