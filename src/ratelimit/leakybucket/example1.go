@@ -39,7 +39,7 @@ func (r *BucketLimiter) LeakyBucket() bool {
         r.Balance = r.Cap
     }
     if r.Balance >= 1 { //漏桶余量足够容下当前的请求
-        r.Balance -= 1
+        r.Balance -= 1 // 每次请求拿走一个水滴
         ok = true
     }
     return ok
@@ -48,7 +48,7 @@ func main() {
 
     // 初始化 限制每秒2个请求 漏洞容量为5
     r := NewBucketLimiter(2, 5)
-    for i := 0; i < 20; i++ {
+    for i := 0; i < 200; i++ {
         ok := r.LeakyBucket()
         if ok {
             fmt.Println("pass ", i)
