@@ -140,9 +140,9 @@ func (n *Node) Generate() ID {
 	if now == n.time {
 		n.step = (n.step + 1) & n.stepMask
 
-		if n.step == 0 {
+		if n.step == 0 { // 表示当前时间12位的步骤用完了，当前时间不能使用，需要更大的时间，要不会产生重复id
 			for now <= n.time {
-				now = time.Since(n.epoch).Nanoseconds() / 1000000
+				now = time.Since(n.epoch).Nanoseconds() / 1000000 // 获取到比初始时间大的时间
 			}
 		}
 	} else {
@@ -154,7 +154,7 @@ func (n *Node) Generate() ID {
 	r := ID((now)<<n.timeShift |
 		(n.node << n.nodeShift) |
 		(n.step),
-	)
+	) // 时间 节点 步骤 或运算
 
 	n.mu.Unlock()
 	return r
@@ -179,7 +179,6 @@ func (f ID) String() string {
 func ParseString(id string) (ID, error) {
 	i, err := strconv.ParseInt(id, 10, 64)
 	return ID(i), err
-
 }
 
 // Base2 returns a string base2 of the snowflake ID
