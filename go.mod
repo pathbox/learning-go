@@ -77,6 +77,7 @@ require (
 	github.com/templexxx/xor v0.0.0-20191217153810-f85b25db303b // indirect
 	github.com/throttled/throttled v2.2.4+incompatible
 	github.com/tidwall/wal v0.1.1
+	github.com/tikv/minitrace-go v0.0.0-20210119063709-5194f6ab6fd7 // indirect
 	github.com/tjfoc/gmsm v1.3.2 // indirect
 	github.com/willf/bitset v1.1.10
 	github.com/xtaci/kcp-go v5.4.20+incompatible // indirect
