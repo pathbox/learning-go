@@ -63,6 +63,7 @@ require (
 	github.com/ory/ladon v1.2.0
 	github.com/pascaldekloe/redis v1.3.0
 	github.com/pborman/uuid v1.2.0 // indirect
+	github.com/pkg/browser v0.0.0-20210621091255-c198bc921a84 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/pkg/profile v1.4.0
 	github.com/pquerna/otp v1.2.0

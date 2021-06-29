@@ -29,7 +29,7 @@ func main() {
 	wg.Wait()
 }
 
-var g singleflight.Group
+var g singleflight.Group // 这个是全局的，所有goroutine都会使用到这个Group
 
 //获取数据
 func getData(key string) (string, error) {

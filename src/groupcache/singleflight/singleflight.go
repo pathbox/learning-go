@@ -41,7 +41,7 @@ func (g *Group) Do(key string, fn func() (interface{}, error)) (interface{}, err
 	c.wg.Done()
 
 	g.mu.Lock()
-	delete(g.m, key)
+	delete(g.m, key) // 执行完fn后，这个key意味着过期，需要从map中delete
 	g.mu.Unlock()
 
 	return c.val, c.err
