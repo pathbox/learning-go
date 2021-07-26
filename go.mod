@@ -63,6 +63,7 @@ require (
 	github.com/ory/ladon v1.2.0
 	github.com/pascaldekloe/redis v1.3.0
 	github.com/pborman/uuid v1.2.0 // indirect
+	github.com/pkg/browser v0.0.0-20210621091255-c198bc921a84 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/pkg/profile v1.4.0
 	github.com/pquerna/otp v1.2.0
@@ -74,9 +75,11 @@ require (
 	github.com/stretchr/testify v1.6.1
 	github.com/stvp/tempredis v0.0.0-20181119212430-b82af8480203
 	github.com/templexxx/cpufeat v0.0.0-20180724012125-cef66df7f161 // indirect
+	github.com/templexxx/tsc v0.0.3
 	github.com/templexxx/xor v0.0.0-20191217153810-f85b25db303b // indirect
 	github.com/throttled/throttled v2.2.4+incompatible
 	github.com/tidwall/wal v0.1.1
+	github.com/tikv/minitrace-go v0.0.0-20210119063709-5194f6ab6fd7 // indirect
 	github.com/tjfoc/gmsm v1.3.2 // indirect
 	github.com/willf/bitset v1.1.10
 	github.com/xtaci/kcp-go v5.4.20+incompatible // indirect
@@ -87,7 +90,6 @@ require (
 	go.uber.org/zap v1.14.1
 	golang.org/x/exp v0.0.0-20200331195152-e8c3332aa8e5
 	golang.org/x/net v0.0.0-20201021035429-f5854403a974
-	golang.org/x/sys v0.0.0-20201119102817-f84b799fce68 // indirect
 	golang.org/x/tools v0.0.0-20201125231158-b5590deeca9b // indirect
 	google.golang.org/grpc v1.29.1
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect

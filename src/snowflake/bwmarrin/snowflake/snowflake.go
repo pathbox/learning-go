@@ -24,12 +24,12 @@ var (
 	StepBits uint8 = 12
 
 	// DEPRECATED: the below four variables will be removed in a future release.
-	mu        sync.Mutex
-	nodeMax   int64 = -1 ^ (-1 << NodeBits)
-	nodeMask        = nodeMax << StepBits
-	stepMask  int64 = -1 ^ (-1 << StepBits)
-	timeShift       = NodeBits + StepBits
-	nodeShift       = StepBits
+	mu sync.Mutex
+	nodeMax int64 = -1 ^ (-1 << NodeBits)
+	nodeMask = nodeMax << StepBits
+	stepMask int64 = -1 ^ (-1<<StepBits)
+	timeShift = NodeBits + StepBits
+	nodeShift = StepBits
 )
 
 const encodeBase32Map = "ybndrfg8ejkmcpqxot1uwisza345h769"
@@ -40,8 +40,7 @@ const encodeBase58Map = "123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVW
 
 var decodeBase58Map [256]byte
 
-// A JSONSyntaxError is returned from UnmarshalJSON if an invalid ID is provided.
-type JSONSyntaxError struct{ original []byte }
+type JSONSyntaxError struct{ original []byte}
 
 func (j JSONSyntaxError) Error() string {
 	return fmt.Sprintf("invalid snowflake ID %q", string(j.original))
@@ -53,7 +52,11 @@ var ErrInvalidBase58 = errors.New("invalid base58")
 // ErrInvalidBase32 is returned by ParseBase32 when given an invalid []byte
 var ErrInvalidBase32 = errors.New("invalid base32")
 
+// Create maps for decoding Base58/Base32.
+// This speeds up the process tremendously.
+
 func init() {
+
 	for i := 0; i < len(encodeBase58Map); i++ {
 		decodeBase58Map[i] = 0xFF
 	}
@@ -61,6 +64,7 @@ func init() {
 	for i := 0; i < len(encodeBase58Map); i++ {
 		decodeBase58Map[encodeBase58Map[i]] = byte(i)
 	}
+
 	for i := 0; i < len(encodeBase32Map); i++ {
 		decodeBase32Map[i] = 0xFF
 	}
@@ -70,6 +74,8 @@ func init() {
 	}
 }
 
+// A Node struct holds the basic information needed for a snowflake generator
+// node
 type Node struct {
 	mu    sync.Mutex
 	epoch time.Time
@@ -84,9 +90,16 @@ type Node struct {
 	nodeShift uint8
 }
 
+// An ID is a custom type used for a snowflake ID.  This is used so we can
+// attach methods onto the ID.
 type ID int64
 
+// NewNode returns a new snowflake node that can be used to generate snowflake
+// IDs
 func NewNode(node int64) (*Node, error) {
+
+	// re-calc in case custom NodeBits or StepBits were set
+	// DEPRECATED: the below block will be removed in a future release.
 	mu.Lock()
 	nodeMax = -1 ^ (-1 << NodeBits)
 	nodeMask = nodeMax << StepBits
@@ -119,14 +132,17 @@ func NewNode(node int64) (*Node, error) {
 // - Make sure your system is keeping accurate system time
 // - Make sure you never have multiple nodes running with the same node ID
 func (n *Node) Generate() ID {
+
 	n.mu.Lock()
 
 	now := time.Since(n.epoch).Nanoseconds() / 1000000
+
 	if now == n.time {
 		n.step = (n.step + 1) & n.stepMask
-		if n.step == 0 {
+
+		if n.step == 0 { // 表示当前时间12位的步骤用完了，当前时间不能使用，需要更大的时间，要不会产生重复id
 			for now <= n.time {
-				now = time.Since(n.epoch).Nanoseconds() / 1000000
+				now = time.Since(n.epoch).Nanoseconds() / 1000000 // 获取到比初始时间大的时间
 			}
 		}
 	} else {
@@ -138,7 +154,7 @@ func (n *Node) Generate() ID {
 	r := ID((now)<<n.timeShift |
 		(n.node << n.nodeShift) |
 		(n.step),
-	)
+	) // 时间 节点 步骤 或运算
 
 	n.mu.Unlock()
 	return r
@@ -163,7 +179,6 @@ func (f ID) String() string {
 func ParseString(id string) (ID, error) {
 	i, err := strconv.ParseInt(id, 10, 64)
 	return ID(i), err
-
 }
 
 // Base2 returns a string base2 of the snowflake ID

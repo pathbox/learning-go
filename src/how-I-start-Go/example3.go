@@ -103,29 +103,3 @@ func (w multiWeatherProvider) temperature(city string) (float64, error){
   return sum / float64(len(w)), nil
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<script language="javascript">
+	//代码字符集-代码字符
+	var str0 = '0123456789ABCDEFGY';
+	var str1 = '1239';
+    var str = '0123456789ABCDEFGHJKLMNPQRTUWXY';
+	//代码字符集-代码字符数值
+    var charVal = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+  //各位置序号上的加权因子
+    var posWi = [1,3,9,27,19,26,16,17,20,29,25,13,8,24,10,30,28];
+    var city = { 11: "北京", 12: "天津", 13: "河北", 14: "山西", 15: "内蒙古", 21: "辽宁", 22: "吉林", 23: "黑龙江 ", 31: "上海", 32: "江苏", 33: "浙江", 34: "安徽", 35: "福建", 36: "江西", 37: "山东", 41: "河南", 42: "湖北 ", 43: "湖南", 44: "广东", 45: "广西", 46: "海南", 50: "重庆", 51: "四川", 52: "贵州", 53: "云南", 54: "西藏 ", 61: "陕西", 62: "甘肃", 63: "青海", 64: "宁夏", 65: "新疆", 71: "台湾", 81: "香港", 82: "澳门", 91: "国外" };
+    var reg = /^[0-9ABCDEFGY][1239]\d{6}([0-9ABCDEFGHJKLMNPQRTUWXY]{9})([0-9ABCDEFGHJKLMNPQRTUWXY])$/;
+  //省份机构代码 
+    var cityArr = ["11","12","13","14","15","21","22","23","31","32","33","34","35","36","37","41","42","43","44","45","46","50","51","52","53","54","61","62","63","64","65","71","81","82","91"];
+	  var number = [0,1,2,3,4,5,6,7,8,9];
+//判断是否为统一社会信用代码格式
+function isOrgId(obj) {
+   
+    //统一代码由十八位的数字或大写英文字母（不使用I、O、Z、S、V）组成，第18位为校验位。
+    //第1位为数字或大写英文字母，登记管理部门代码
+    //第2位为数字或大写英文字母，机构类别代码
+    //第3到8位共6位全为数字登记管理机关行政区划码
+    //第9-17位共9位为数字或大写英文字母组织机构代码
+    //第18为为数字或者大写的Y
+    obj = obj.trim();
+    if (obj.length != 0) {
+        if (!reg.test(obj)) {
+        	alert("编码规则不正确1");
+            return false;
+        }
+        else if (!city[obj.substr(2, 2)]) {
+        		alert("城市机构不正确");
+            return false;
+        }
+        else {
+            //校验位校验
+            obj = obj.split('');
+            //∑(ci×Wi)(mod 31)
+            var sum = 0;
+            var ci = 0;
+            var Wi = 0;
+            for (var i = 0; i < 17; i++) {
+                ci = charVal[str.indexOf(obj[i])];
+                Wi = posWi[i];
+                sum += ci * Wi;
+            }
+            var c10 = 31 - (sum % 31);
+            if(c10==31){c10='Y';}
+            else if(c10==30){c10='0';}
+            else{
+            	c10=str[c10];
+            	}
+            if (c10 != obj[17]) {
+            	alert("校验位出错");
+                return false;
+            }
+        }
+        alert("校验通过");
+        return true;
+    }
+}
+
+//生成号码
+function generateOrgId(){
+	
+	document.all.inputData.value = "";
+	
+	var c1 ;//第一位
+	var c2;//第二位
+	var c3;//第3-4位
+	var c4="";//第5-8位
+	var c5="";//第9-17位
+	var csum;//前17位
+	var c18;//第18位
+	
+	c1 = str0[getRandom(18)];
+	c2 = str1[getRandom(4)];
+	c3 = cityArr[getRandom(35)];
+	for(var i = 0;i<4;i++){
+		c4 += number[getRandom(10)];
+	}
+	
+	for(var i = 0;i<9;i++){
+		c5 += str[getRandom(31)]
+	}
+	
+ 	csum = c1+c2+c3+c4+c5;
+ 	c18 = getC18(csum);
+ 	var orgid = csum+c18;
+ 	document.all.inputData.value = orgid;
+}
+
+
+
+//生成小于m的随机整数
+function getRandom(m){
+	return parseInt(Math.random()*m, 10)
+}
+//获得第18位校验位值
+function getC18(obj){
+	obj = obj.split('');
+            //∑(ci×Wi)(mod 31)
+            var sum = 0;
+            var ci = 0;
+            var Wi = 0;
+            for (var i = 0; i < 17; i++) {
+                ci = charVal[str.indexOf(obj[i])];
+                Wi = posWi[i];
+                sum += ci * Wi;
+            }
+            var cc = (31 - (sum % 31));
+            if(cc==31){cc='Y';}
+            else if(cc==30){cc='0';}
+            else{
+            	cc=str[cc];
+            	}
+            return cc;
+}
+
+
+</script>
+
+
+</HEAD>
+
+
+
+
+
+<span style="color:blue;font-weight:bold;">信用机构号码：</span> <input type = 'text' name = 'inputData' /> <br><br>
+
+
+
+<input type="button"  value="随机生成一个" onClick="generateOrgId()" />
+
+<input type = "button"value = "校验号码" onclick="isOrgId(document.all.inputData.value)" />
+<br/>
+<span style="color:red;font-weight:bold;font-size:10;">注：信用机构代码是企业的身份证，号码唯一有校验。</span>
+
+<br><br>
+
+
+
+
+</HTML>
