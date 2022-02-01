@@ -9,6 +9,7 @@ require (
 	github.com/Shopify/sarama v1.26.4
 	github.com/asim/go-micro/v3 v3.5.0 // indirect
 	github.com/benmanns/goworker v0.1.3
+	github.com/bits-and-blooms/bitset v1.2.1 // indirect
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc
 	github.com/bramvdbogaerde/go-scp v0.0.0-20200119201711-987556b8bdd7 // indirect
 	github.com/bwmarrin/snowflake v0.3.0
@@ -57,7 +58,6 @@ require (
 	github.com/mediocregopher/radix.v2 v0.0.0-20181115013041-b67df6e626f9 // indirect
 	github.com/mitchellh/cli v1.1.2 // indirect
 	github.com/mitchellh/go-homedir v1.1.0
-	github.com/mushroomsir/blog v0.0.0-20200505101759-e70efefe73a5
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d
 	github.com/ory/ladon v1.2.0
