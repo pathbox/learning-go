@@ -8,6 +8,7 @@ require (
 	github.com/RoaringBitmap/roaring v0.4.21
 	github.com/Shopify/sarama v1.26.4
 	github.com/asim/go-micro/v3 v3.5.0 // indirect
+	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/benmanns/goworker v0.1.3
 	github.com/bits-and-blooms/bitset v1.2.1 // indirect
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc
