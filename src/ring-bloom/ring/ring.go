@@ -1,30 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@pathbox 
-tannerryan
-/
-ring
-Public
-Code
-Issues
-Pull requests
-1
-Actions
-Security
-Insights
-ring/ring.go /
-@jameshartig
-jameshartig Added Merge, MarshalBinary, UnmarshalBinary
-Latest commit 2ef476e on 29 May 2019
- History
- 1 contributor
-139 lines (125 sloc)  3.71 KB
-   
 // Copyright (c) 2019 Tanner Ryan. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
@@ -164,16 +137,3 @@ func (r *Ring) UnmarshalBinary(data []byte) error {
 	copy(r.bits, data[17:])
 	return nil
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
