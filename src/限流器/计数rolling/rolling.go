@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// 普通的加锁计数内存存储限流
+// 普通的加锁计数内存存储限流 可以考虑使用原子化的计数方式
 type Number struct {
 	Buckets map[int64]*numberBucket
 	Mutex   *sync.RWMutex
