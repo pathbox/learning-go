@@ -74,6 +74,6 @@ func (df *DBFile) Write(e *Entry) (err error) {
 		return err
 	}
 	_, err = df.File.WriteAt(enc, df.Offset) // 从df.Offset起始点开始写入enc数据
-	df.Offset += e.GetSize
+	df.Offset += e.GetSize()
 	return
 }
