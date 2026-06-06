@@ -29,9 +29,10 @@ func (lb *LeakyBucket) Allow() bool {
 	lb.mux.Lock()
 	defer lb.mux.Unlock()
 
-	elapsed := now - lb.lastLeakMs // 通过时间间隔来计算这段时间已经漏了多少水
-	leakAmount := int(float64(elapsed) / 1000 * lb.rate)
+	elapsed := now - lb.lastLeakMs                       // 通过时间间隔来计算这段时间已经漏了多少水
+	leakAmount := int(float64(elapsed) / 1000 * lb.rate) // 漏水速率就是 可以接受的请求量，漏的越快越多，能够加的水也是越多的，也就表示可以不被限量的请求越多
 
+	// 这里是漏水逻辑，如果这段时间内漏的水大于之前有多少水，则表示水都漏光了，直接将水量设为0
 	if leakAmount > 0 {
 		if leakAmount > lb.water {
 			lb.water = 0
@@ -46,6 +47,7 @@ func (lb *LeakyBucket) Allow() bool {
 		return false
 	}
 
+	// 这里是桶里增加水量逻辑，没有限量则会加水，一个请求一个水
 	// 没有限流，增加水量，设置通过时间，也就是最近漏水时间
 	lb.water++
 

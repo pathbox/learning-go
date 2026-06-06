@@ -46,7 +46,7 @@ func (tb *TokenBucket) Allow() bool {
 		tb.lastUpdate = now
 		return true
 	}
-
+	// 如果桶中没有足够的令牌，请求被拒绝。  令牌桶和漏桶的思维相反，令牌桶是桶里没令牌了，空了限流，漏桶是桶里的水满了限流。一个是生产的速率是固定的，没有可消费的了，一个消费的速率是固定，生产过快了溢出，容量满了
 	return false
 }
 
