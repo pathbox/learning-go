@@ -45,7 +45,7 @@ func (limiter *FixedWindowLimiter) AllowRequest() bool {
 func main() {
 	limiter := NewFixedWindowLimiter(1*time.Second, 3) // 每秒最多允许3个请求，算QPS的话 一般是1秒
 
-	for i := 0; i < 15; i++ {
+	for i := 0; i < 100; i++ {
 		now := time.Now().Format("15:04:05")
 		if limiter.AllowRequest() {
 			fmt.Println(now + ":pass")
